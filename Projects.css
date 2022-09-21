@@ -1,0 +1,56 @@
+.header {
+    height: 4vw;
+    width: 100%;
+    background-color: #0F265C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+h1 {
+    color: #FEDBAF;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: fira-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2vw;
+}
+
+body {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.project_title {
+    background-color: #FEDBAF;
+    margin-top: 2vw;
+    width: 30%;
+    height: 12vw;
+    margin-left: 3%;
+    border-radius: 0px 0px 2vw 2vw;
+    box-shadow: -5px 5px 10px 0 rgba(15, 38, 92, 0.5);
+    text-align: center;
+}
+
+h2 {
+    font-family: fira-sans, sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 4vw;
+    color: #0F265C;
+    position: relative;
+    top: 3vw;
+}
+
+h3 {
+    font-family: fira-sans, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 2vw;
+    color: #0F265C;
+    position: relative;
+    top: 1vw;
+}
