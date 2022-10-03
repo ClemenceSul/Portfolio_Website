@@ -1,0 +1,89 @@
+#project_title {
+    width: 27%;
+}
+
+#title_image {
+    width: 47%;
+    left: 40%;
+    position: absolute;
+    z-index: 0;
+    top: -3vw;
+}
+
+
+#summary_text {
+    color: #0F265C;
+    text-align: center;
+    width: 29%;
+    position: absolute;
+    left: 9%;
+    top: 26vw;
+    z-index: 1;
+}
+
+.skills_parts {
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+
+#img_part1 {
+    width: 20%;
+    margin-left: 57%;
+    top: -15vw;
+}
+#part1_text {
+    width: 40%;
+    padding-left: 2%;
+    padding-right: 1%;
+    left: 12%;
+    padding-bottom: 1.5vw;
+}
+#part1_2_text {
+    width: 40%;
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-top: 1vw;
+    left: 36%;
+    top: -17vw;
+}
+
+#img_part2 {
+    width: 80%;
+    margin-left: 10%;
+}
+#part2_text {
+    width: 45%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1vw;
+    top: -2vw;
+    left: 30%;
+}
+
+
+#img_part3 {
+    width: 80%;
+    left: 10%;
+}
+#part3_text {
+    width: 24%;
+    top: -13vw;
+    left: 13%;
+    padding-left: 2%;
+    padding-right: 5%;
+}
+
+
+#img_part4 {
+    width: 60%;
+    left: 20%;
+}
+#part4_text {
+    width: 35%;
+    left: 43%;
+    padding-left: 2%;
+    padding-right: 2%;
+    top: -1vw;
+}
+

@@ -5,4 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotfind</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="Projects.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./Images/P_Spotfind/P_Spotfind.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/xqf1uow.css">
 </head>
+
+<body>
+    <div class="header" style="display: flex;">
+        <img style="height: 4vw; position: relative; margin-top: 0vw;" src="./Images/Name 1.png">
+        <div style="display: flex; margin-left: auto; margin-right: 10px;">
+            <h1>Work</h1>
+            <h1>Gallery</h1>
+            <h1>About</h1>
+            <h1>Contact</h1>
+        </div>
+    </div>
+    <div id="project_title">
+        <h2>Spotfind</h2>
+        <h3>A helpful item tracker</h3>
+    </div>
+    <h3 style="text-align: right; margin-right: 3%; top: -10vw; z-index: 1;" >Summer 2022</h3>
+    <div id="title_image_div">
+        <img id="title_image" src="./Images/P_Spotfind/Spotfind on white.png">
+        <div id="summary_text">
+            <p>With SpotFind, never lose your treasures again! The device communicates with the tags attached to your frequently lost items, to help you find them when needed. It will vibrate every time a signal is received and the LEDs will light up to tell you how far away it is.</p>
+        </div>
+    </div>
+    <div id="skills_div">
+        <img id="skills_line" src="./Images/P_Skills/Line3.png">
+        <div class="skills_parts">
+            <div>
+                <img class="skills_dot" src="./Images/P_Skills/S_Users.png">
+                <h4>Thorough user research for an effective concept</h4>
+            </div>
+            <div>
+                <img class="skills_dot" src="./Images/P_Skills/S_Electronics.png">
+                <h4>Desk research and assembly of all electronics</h4>
+            </div>
+            <div>
+                <img class="skills_dot" src="./Images/P_Skills/S_Code.png">
+                <h4>Programmed with C++, Python and PyQt 5</h4>
+            </div>
+            <div>
+                <img class="skills_dot" src="./Images/P_Skills/S_Group.png">
+                <h4>Built within a group of 4, personally acting as CTO</h4>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="part" style="top: -1vw;">
+            <div id="part0_text" class="part_text">
+                <p>
+                    <span class="paragraph_title">User research.</span>
+                    <span>Multiple interviews were conducted with care-givers to identify the main issues they faced in their daily life which revealed one source of conflict to be commonly misplaced items. This would occur when tidying the home, and cause frustration for both parties when looking for these.</span>
+                </p>
+            </div>
+            <img src="./Images/P_Spotfind/Ideation.png" id="img_part1" class="part_img">
+            <div id="part1_text" class="part_text">
+                <p>
+                    <span class="paragraph_title">Concept ideation for users.</span>
+                    <span>To observe how care-givers would interact with an item tracking device, we asked them to test an existing product for a week. A tracking remote was connected to 6 color-coded tags, which would emit a sound when the corresponding button was pressed by the user. The care-givers were quite interested by this concept, and helped us refine our product’s requirements.</span>
+                </p>
+            </div>
+        </div>
+        <div class="part" style="top: 7vw;">
+            <img src="./Images/P_Spotfind/Prototyping image.png" id="img_part2" class="part_img">
+            <div id="part2_text" class="part_text">
+                <p>
+                    <span class="paragraph_title">Prototyping concepts.</span>
+                    <span>Commonly lost items have various shapes, and our tags need to be suitable for most. After prototyping multiple attachement methods, we combined a paper-clip system for documents and a sticker elements for other objects. For an enjoyable user experience, it was decided that each tag must be capable of both and easily reusable.\nThe tracking device shape was also explored as it must be comfortable to use for all users, with an easy grip for elderly users. With this idea, the user can hold it with the right grip, the left grip or both.</span>
+                </p>
+            </div>
+        </div>
+        <div class="part" style="top: 12vw;">
+            <img src="./Images/P_Spotfind/Images.png" id="img_part3" class="part_img">
+            <div id="part3_text" class="part_text">
+                <p>
+                    <span class="paragraph_title">Electronics research and assembly.</span>
+                    <span>After pinpointing the requirements for our product, as CTO, I conducted thorough desk research to analyse all the possible technologies available to measure distance between two systems and decided to use radio frequency (RF) as it offered the optimal price to range ratio. Furthermore, AtTiny 85 were optimal for tags with their small size while Raspberry Pi was prefered to control the main device system. To locate tags, two methods were combined, an LED range and haptic feedback. All components were tested and soldered together with battery supplies.</span>
+                </p>
+            </div>
+        </div>
+        <div class="part" style="top: 17vw;">
+            <img src="./Images/P_Spotfind/menu 1.png" id="img_part4" class="part_img">
+            <div id="part4_text" class="part_text">
+                <p>
+                    <span class="paragraph_title">Programming the product.</span>
+                    <span>The tags were coded with C++, using an Arduino Mega 2560 as an ISP. However, to create a user-friendly interface and control the sensors of the device, a desktop app was created with PyQt 5 which I taught myself as I went along. The main issue I faced, was to obtain an accurate distance tracking in long and short range. This was resolved with the combination of two methods, a haptic signal every time a tag’s signal is received and a moving average filter adjusting the number of lit LEDs. The frequency of vibration operated in the long range and the LEDs were useful in a shorter range.</span>
+                </p>
+            </div>
+        </div>
+        <div class="part" style="top: 26vw;">
+            <img src="./Images/P_Spotfind/Casing Images.png" id="img_part5" class="part_img">
+            <div id="part5_text" class="part_text">
+                <p>
+                    <span class="paragraph_title">Casing developement for quick assembly.</span>
+                    <span>With multiple irregular component assemblies in the device and tag, the casings were modelled in 3D on Fusion with self-tapering screw holes and precise positioning support to ease the assembly process. The tags were designed with a paper-clip like back which slots onto a sticker like element for other objects.</span>
+                </p>
+            </div>
+        </div>
+        <div class="part" style="top: 34vw;">
+            <img src="./Images/P_Spotfind/Tag final.png" id="img_part6" class="part_img">
+            <img src="./Images/P_Spotfind/device final.png" id="img_part7" class="part_img">
+            <div id="part6_text" class="part_text">
+                <p>
+                    <span class="paragraph_title">Final Product.</span>
+                    <span>Our tags have two methods of attachement, suitable for documents or other objects. It emits regular messages to the device, enabling it to locate the position of the item the tag is attached to and lead the user to them with haptic feedback and an LED range. The device can be linked to up to 100 tags, which can be stored in the drawer of the dock.</span>
+                </p>
+            </div>
+        </div>
+        <div class="part" style="top: 105vw;">
+            <video width="600" controls id="video_layout">
+                <source src="./Images/P_Spotfind/0_FINALSpotfindVideo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+
+

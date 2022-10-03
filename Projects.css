@@ -24,33 +24,132 @@ body {
     margin-right: 0%;
 }
 
-.project_title {
+#project_title {
     background-color: #FEDBAF;
     margin-top: 2vw;
-    width: 30%;
-    height: 12vw;
-    margin-left: 3%;
+    width: 25%;
+    height: 11vw;
+    margin-left: 5%;
     border-radius: 0px 0px 2vw 2vw;
     box-shadow: -5px 5px 10px 0 rgba(15, 38, 92, 0.5);
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 h2 {
     font-family: fira-sans, sans-serif;
     font-weight: 550;
     font-style: normal;
-    font-size: 4vw;
+    font-size: 3vw;
     color: #0F265C;
     position: relative;
-    top: 3vw;
+    top: 4vw;
 }
 
 h3 {
     font-family: fira-sans, sans-serif;
     font-weight: 500;
     font-style: italic;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #0F265C;
     position: relative;
+    top: 2.5vw;
+}
+
+#title_image_div {
+    width: 100%;
+    height: 40vw;
+    position: relative;
+    top: -10vw;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: fira-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3vw;
+    color: #0F265C;
+}
+
+#skills_div {
+    width: 100%;
+    height: 15vw;
+    position: relative;
+    top: -6vw;
+    text-align: center;
+    padding-top: 2vw;
+}
+
+#skills_line {
+    width: 53%;
+    position: relative;
     top: 1vw;
+}
+
+.skills_parts {
+    display: flex;
+    position: relative;
+    top: -12vw;
+}
+
+.skills_dot {
+    width: 90%;
+    position: relative;
+}
+
+/* Font for skills dots */
+h4 {
+    font-family: fira-sans, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1vw;
+    color: white;
+    position: relative;
+    top: -8vw;
+    left: 20%;
+    width: 60%;
+}
+
+.paragraph_title {
+    font-family: fira-sans, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.3vw;
+    color: #0F265C;
+}
+
+.part {
+    width: 100%;
+    height: 43vw;
+    position: relative;
+}
+
+.part_text {
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    position: relative;
+    z-index: 0;
+    border-style: solid;
+    border-color: #0F265C;
+    border-width: 0.3vw;
+    background-color: white;
+}
+
+.part_img {
+    position: relative;
+    z-index: 1;
+}
+
+#video_rect {
+    width: 100%;
+    top: -2vw;
+    height: 45vw;
+}
+
+#video_layout {
+    width: 60%;
+    position: relative;
+    left: 20%;
 }
