@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Master</title>
     <link rel="stylesheet" type="text/css" media="screen" href="Projects.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./Images/P_Color_Master/P_Color_Master.css" />
     <link rel="stylesheet" href="https://use.typekit.net/xqf1uow.css">
 </head>
 
@@ -13,27 +14,98 @@
     <div class="header" style="display: flex;">
         <img style="height: 4vw; position: relative; margin-top: 0vw;" src="./Images/Name 1.png">
         <div style="display: flex; margin-left: auto; margin-right: 10px;">
-            <h1>really Work</h1>
+            <h1>Work</h1>
             <h1>Gallery</h1>
             <h1>About</h1>
             <h1>Contact</h1>
         </div>
     </div>
-    <div class="project_title">
+    <div id="project_title">
         <h2>Color Master</h2>
         <h3>A sassy opponent</h3>
     </div>
-    <h3 style="text-align: right; margin-right: 3%; top: -12vw;" >Autumn 2021</h3>
-    <div class="title_image">
-        
+    <h3 style="text-align: right; margin-right: 3%; top: -10vw;" >Autumn 2021</h3>
+    <div id="title_image_div">
+        <img id="title_image" src="./Images/P_Color_Master/color master2.png">
+        <div id="summary_text">
+            <p>Mastermind is a simple logic game in which the user attempts to find the hidden code through multiple iterations. Play against the Color Master, as he removes the wrongly placed blocks but keeps those rightly placed until you crack the code, or lose!</p>
+        </div>
     </div>
-
-
-
-
-
-    <!-- <video width="400" controls>
-        <source src="./Video/Color master.mp4" type="video/mp4">
-    </video> -->
+    <div id="skills_div">
+        <img id="skills_line" src="./Images/P_Skills/Line3.png">
+        <div class="skills_parts">
+            <div>
+                <img class="skills_dot" src="./Images/P_Skills/S_Code.png">
+                <h4>Programmed Arduino Mega 2560 with C++</h4>
+            </div>
+            <div>
+                <img class="skills_dot" src="./Images/P_Skills/S_CAD.png">
+                <h4>Design validation with CAD</h4>
+            </div>
+            <div>
+                <img class="skills_dot" src="./Images/P_Skills/S_Electronics.png">
+                <h4>Color sensors and motorized arms assembly</h4>
+            </div>
+            <div>
+                <img class="skills_dot" src="./Images/P_Skills/S_Creation.png">
+                <h4>Prototyping & Laser cutting plywood</h4>
+            </div>
+        </div>
+    </div>
+    <!-- <div style="background-image: url(./Images/P_Color_Master/CM_Background.png); background-size: 100%;"> -->
+    <div>
+        <div class="part" style="top: 0vw;">
+            <img src="./Images/P_Color_Master/IMG_1518.jpg" id="img_part1" class="part_img">
+            <div id="part1_text" class="part_text">
+                <p>
+                    <span class="paragraph_title" >Creating color sensors.</span>
+                    <span>Red, green and blue are flashed by RGB Leds, and the reflected light perceived by CDS Photocells identifies each color.</span>
+                </p>
+            </div>
+        </div>
+        <div class="part" style="top: 4vw;">
+            <img src="./Images/P_Color_Master/IMG_code.png" id="img_part2" class="part_img">
+            <div id="part2_text" class="part_text">
+                <p>
+                    <span class="paragraph_title">Programming.</span>
+                    <span>A robot lacks the spontaneity and personality a human opponent would have. Therefore, a series of different movements were taught to the box and selected at random when blocks were pushed off.</span>
+                </p>
+            </div>
+        </div>
+        <div class="part" style="top: 4vw;">
+            <img src="./Images/P_Color_Master/IMG_1134.png" id="img_part3" class="part_img">
+            <div id="part3_text" class="part_text">
+                <p>
+                    <span class="paragraph_title">User Experience.</span>
+                    <span>Games must be portable and easy to set-up, therfore a small storage space for the blocks was added on the side of the box.</span>
+                </p>
+            </div>
+        </div>
+        <div class="part" style="top: 10vw;">
+            <img src="./Images/P_Color_Master/IMG_1489.png" id="img_part4" class="part_img">
+            <div id="part4_text" class="part_text">
+                <p>
+                    <span class="paragraph_title">User Testing.</span>
+                    <span> Verified the arms managed to push the blocks off. Validated the code with various users, ensuring it would behave as expected with all players.</span>
+                </p>
+            </div>
+        </div>
+        <div class="part" style="top: 14vw;">
+            <img src="./Images/P_Color_Master/IMG_Cad.png" id="img_part5" class="part_img">
+            <div id="part5_text" class="part_text">
+                <p>
+                    <span class="paragraph_title">3D Modelling.</span>
+                    <span>Before building the Color Master, a CAD model was created with Solidworks to ensure all the electronics components would fit together correctly.</span>
+                </p>
+            </div>
+        </div>
+        <div class="part" style="top: 22vw;">
+            <!-- <img src="./Images/Video_rectangle.png" id="video_rect"> -->
+            <video width="600" controls id="video_layout">
+                <source src="./Images/P_Color_Master/Color master.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
 </body>
+
 

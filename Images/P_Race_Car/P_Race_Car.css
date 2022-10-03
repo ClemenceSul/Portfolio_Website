@@ -1,0 +1,55 @@
+#title_image {
+    width: 100%;
+    left: 0%;
+    position: absolute;
+    z-index: 0;
+    top: -15vw;
+}
+
+#summary_text {
+    color: #0F265C;
+    text-align: center;
+    width: 27%;
+    position: absolute;
+    left: 4%;
+    top: 25vw;
+    z-index: 1;
+}
+
+/* (100 - 18 * nb) / 2 */
+.skills_parts {
+    margin-left: 41%;
+    margin-right: 41%;
+}
+
+#img_part1 {
+    width: 70%;
+    margin-bottom: 2vw;
+}
+
+#img_part2 {
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+#img_part3 {
+    width: 70%;
+    left: 30%;
+    margin-bottom: 2vw;
+}
+
+#img_part4 {
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+#img_part5 {
+    width: 80%;
+    left: 10%;
+    margin-bottom: 2vw;
+}
+
+#img_part6 {
+    width: 100%;
+    margin-bottom: 2vw;
+}

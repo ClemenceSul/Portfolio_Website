@@ -1,0 +1,115 @@
+#title_image {
+    width: 90%;
+    left: 22%;
+    position: absolute;
+    z-index: 0;
+    top: -4vw;
+}
+
+#summary_text {
+    color: #0F265C;
+    text-align: center;
+    width: 30%;
+    position: absolute;
+    left: 17%;
+    top: 25vw;
+    z-index: 1;
+}
+
+.skills_parts {
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+
+#part0_text {
+    width: 47%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1.5vw;
+    left: 37%;
+}
+#img_part1 {
+    width: 80%;
+    margin-left: 10%;
+    top: -2vw;
+}
+#part1_text {
+    width: 60%;
+    padding-left: 2%;
+    padding-right: 2%;
+    left: 12%;
+    top: -4vw;
+}
+
+
+#img_part2 {
+    width: 80%;
+    margin-left: 10%;
+}
+#part2_text {
+    width: 60%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1vw;
+    top: -2.5vw;
+    left: 20%;
+}
+
+
+#img_part3 {
+    width: 55%;
+    left: 5%;
+}
+#part3_text {
+    width: 35%;
+    top: -24vw;
+    left: 56%;
+    padding-left: 5%;
+}
+
+
+#img_part4 {
+    width: 50%;
+    left: 30%;
+}
+#part4_text {
+    width: 60%;
+    left: 17%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1.5vw;
+    top: -2.5vw;
+}
+
+
+#img_part5 {
+    width: 60%;
+    left: 15%;
+}
+#part5_text {
+    width: 60%;
+    left: 25%;
+    padding-top: 1.5vw;
+    padding-left: 2%;
+    padding-right: 2%;
+    top: -2.5vw;
+}
+
+
+#img_part6 {
+    width: 80%;
+    left: 0%;
+}
+#img_part7 {
+    width: 80%;
+    left: 20%;
+    top: 1vw;
+}
+#part6_text {
+    width: 75%;
+    left: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    top: 2vw;
+}
