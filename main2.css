@@ -159,6 +159,14 @@ h1 {
   font-size: 2vw;
 }
 
+h3 {
+  color: #0F265C;
+  font-size: 1.5vw;
+  font-family: fira-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
 }
