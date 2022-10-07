@@ -21,18 +21,20 @@ a {
 
 .header img {
     height: 4vw; 
-    position: absolute; 
-    margin-top: 0vw;
+    position: fixed; 
+    margin-top: 0px;
 }
 
 #tabs_group {
     display: flex;
-    position: absolute;
+    position: fixed;
+    margin-top: 0px;
     right: 0%;
 }
 
 .tabs {
     margin-left: 2vw;
+    margin-top: 0px;
     margin-right: 2vw;
 }
 
@@ -45,12 +47,13 @@ h1 {
 }
 /* <end of header> */
 
-
-
 body {
     margin-left: 0%;
     margin-right: 0%;
 }
+
+
+
 
 #project_title {
     background-color: #FEDBAF;
