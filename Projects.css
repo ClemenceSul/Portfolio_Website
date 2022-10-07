@@ -1,11 +1,12 @@
 .header {
-    height: 4vw;
+    height: 3vw;
     width: 100%;
     background-color: #0F265C;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
+    padding-bottom: 1vw;
 }
 
 h1 {
@@ -43,6 +44,7 @@ body {
     text-align: center;
     position: relative;
     z-index: 1;
+    padding-bottom: 0.5vw;
 }
 
 h2 {
