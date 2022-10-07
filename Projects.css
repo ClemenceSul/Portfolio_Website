@@ -1,3 +1,4 @@
+/* <header> */
 .header {
     height: 3vw;
     width: 100%;
@@ -20,22 +21,20 @@ a {
 
 .header img {
     height: 4vw; 
-    position: fixed; 
+    position: absolute; 
     margin-top: 0vw;
 }
 
 #tabs_group {
     display: flex;
-    position: fixed;
+    position: absolute;
     right: 0%;
 }
 
 .tabs {
-    /* position: relative; */
     margin-left: 2vw;
     margin-right: 2vw;
 }
-
 
 h1 {
     color: #FEDBAF;
@@ -44,6 +43,9 @@ h1 {
     font-style: normal;
     font-size: 2vw;
 }
+/* <end of header> */
+
+
 
 body {
     margin-left: 0%;
