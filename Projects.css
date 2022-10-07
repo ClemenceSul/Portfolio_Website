@@ -25,16 +25,16 @@ a {
     margin-top: 0px;
 }
 
-#header_space {
+/* #header_space {
     width: 70%;
-}
+} */
 
-/* #tabs_group {
+#tabs_group {
     display: flex;
     position: fixed;
     margin-top: 0px;
     right: 0%;
-} */
+}
 
 .tabs {
     margin-left: 2vw;
