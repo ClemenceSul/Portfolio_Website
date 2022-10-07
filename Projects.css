@@ -19,9 +19,7 @@ h1 {
 
 .tabs {
     position: relative;
-    top: 0vw;
-    -webkit-top: 0vw;
-    -moz-top: 0vw;
+    top: -20px;
     margin-top: 0;
     margin-left: 2vw;
     margin-right: 2vw;
