@@ -40,6 +40,8 @@ a {
     margin-left: 2vw;
     margin-right: 2vw;
     margin-top: 0px;
+    border: 1px solid #FEDBAF;
+    height: 4vw;
 }
 
 h1 {
@@ -48,6 +50,7 @@ h1 {
     font-weight: 500;
     font-style: normal;
     font-size: 2vw;
+    line-height: 2vw;
 }
 /* <end of header> */
 
