@@ -191,7 +191,8 @@ h4 {
 
 .part {
     width: 100%;
-    position: absolute;
+    position: static;
+    height: auto;
     border: 2px solid black;
     margin-top: 10vw;
 }
