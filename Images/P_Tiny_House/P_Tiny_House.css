@@ -1,9 +1,9 @@
 #title_image {
     width: 80%;
-    left: 0%;
+    left: 3%;
     position: absolute;
     z-index: 0;
-    top: -30px;
+    margin-top: 1vw;
 }
 
 #summary_text {
@@ -12,7 +12,7 @@
     width: 27%;
     position: absolute;
     right: 11vw;
-    top: 29vw;
+    top: 32vw;
     z-index: 1;
 }
 
