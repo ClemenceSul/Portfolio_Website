@@ -22,7 +22,7 @@
 
 
 #part1 {
-    height: 55rem;
+    height: 25rem;
     margin-top: 0;
 }
 #part0_text {
@@ -46,7 +46,7 @@
 }
 
 #part2 {
-    height: 53rem;
+    height: 25rem;
 }
 #img_part2 {
     width: 80%;
@@ -62,7 +62,7 @@
 }
 
 #part3 {
-    height: 55rem;
+    height: 25rem;
 }
 #img_part3 {
     width: 55%;
@@ -76,7 +76,7 @@
 }
 
 #part4 {
-    height: 55rem;
+    height: 25rem;
 }
 #img_part4 {
     width: 50%;
@@ -92,7 +92,7 @@
 }
 
 #part5 {
-    height: 55rem;
+    height: 25rem;
 }
 #img_part5 {
     width: 60%;
@@ -108,7 +108,7 @@
 }
 
 #part6 {
-    height: 127rem;
+    height: 110rem;
 }
 #img_part6 {
     width: 80%;
@@ -128,5 +128,5 @@
 }
 
 #part7 {
-    height: 42rem;
+    height: 21rem;
 }
