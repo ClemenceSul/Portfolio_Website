@@ -91,11 +91,11 @@ h2 {
     font-weight: 550;
     font-style: normal;
     font-size: 3vw;
+    line-height: 2.5vw;
     color: #0F265C;
     position: relative;
     /* top: 3.5vw; */
     padding-bottom: 0.5vw;
-    border: 2px solid;
 }
 
 h3 {
@@ -103,18 +103,18 @@ h3 {
     font-weight: 500;
     font-style: italic;
     font-size: 1.5vw;
+    line-height: 1vw;
     color: #0F265C;
     position: relative;
     /* top: 2.5vw; */
     z-index: 1;
-    border: 2px solid;
 }
 
 #date {
     position: absolute;
     text-align: right; 
     margin-right: 3%; 
-    margin-top: 5vw;
+    margin-top: 4vw;
     right: 0;
     /* top: -10vw;  */    
 }
