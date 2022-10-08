@@ -22,8 +22,8 @@
 
 
 #part1 {
-    height: 25rem;
-    margin-top: 0;
+    height: 46vw;
+    top: 68vw;
 }
 #part0_text {
     width: 47%;
@@ -46,7 +46,8 @@
 }
 
 #part2 {
-    height: 25rem;
+    top: 98vw;
+    height: 43vw;
 }
 #img_part2 {
     width: 80%;
@@ -62,7 +63,8 @@
 }
 
 #part3 {
-    height: 25rem;
+    top: 150vw;
+    height: 43vw;
 }
 #img_part3 {
     width: 55%;
@@ -76,7 +78,8 @@
 }
 
 #part4 {
-    height: 25rem;
+    top: 200vw;
+    height: 47vw;
 }
 #img_part4 {
     width: 50%;
@@ -92,7 +95,8 @@
 }
 
 #part5 {
-    height: 25rem;
+    top: 255vw;
+    height: 45vw;
 }
 #img_part5 {
     width: 60%;
@@ -108,7 +112,8 @@
 }
 
 #part6 {
-    height: 110rem;
+    top: 308vw;
+    height: 105vw;
 }
 #img_part6 {
     width: 80%;
@@ -128,5 +133,6 @@
 }
 
 #part7 {
-    height: 21rem;
+    top: 431vw;
+    height: 34vw;
 }
