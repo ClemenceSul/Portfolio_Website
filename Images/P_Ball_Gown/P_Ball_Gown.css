@@ -3,7 +3,7 @@
     left: 45%;
     position: absolute;
     z-index: 0;
-    top: -6vw;
+    margin-top: 1vw;
 }
 
 #summary_text {
