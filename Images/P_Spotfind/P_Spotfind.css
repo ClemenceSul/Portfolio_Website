@@ -21,6 +21,10 @@
 }
 
 
+#part1 {
+    height: 45vw;
+    margin-top: 0;
+}
 #part0_text {
     width: 47%;
     padding-left: 2%;
@@ -41,7 +45,9 @@
     top: -4vw;
 }
 
-
+#part2 {
+    height: 43vw;
+}
 #img_part2 {
     width: 80%;
     margin-left: 10%;
@@ -55,7 +61,9 @@
     left: 20%;
 }
 
-
+#part3 {
+    height: 43vw;
+}
 #img_part3 {
     width: 55%;
     left: 5%;
@@ -67,7 +75,9 @@
     padding-left: 5%;
 }
 
-
+#part4 {
+    height: 46vw;
+}
 #img_part4 {
     width: 50%;
     left: 30%;
@@ -81,7 +91,9 @@
     top: -2.5vw;
 }
 
-
+#part5 {
+    height: 46vw;
+}
 #img_part5 {
     width: 60%;
     left: 15%;
@@ -95,7 +107,9 @@
     top: -2.5vw;
 }
 
-
+#part6 {
+    height: 105vw;
+}
 #img_part6 {
     width: 80%;
     left: 0%;
@@ -111,4 +125,8 @@
     padding-left: 2%;
     padding-right: 2%;
     top: 2vw;
+}
+
+#part7 {
+    height: 35vw;
 }
