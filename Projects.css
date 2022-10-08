@@ -9,6 +9,7 @@
     z-index: 3;
     padding-bottom: 1vw;
     display: flex;
+    opacity: 0.5;
 }
 
 a {
@@ -50,6 +51,7 @@ h1 {
 /* <end of header> */
 
 
+
 body {
     margin-left: 0%;
     margin-right: 0%;
@@ -57,6 +59,19 @@ body {
 
 
 
+/* <title part> */
+
+#title_part {
+    height: 100%;
+    border: 2px dashed green;
+}
+
+#title_info {
+    display: flex;
+    border: 2px solid red;
+    position: relative;
+    top: 0;
+}
 
 #project_title {
     background-color: #FEDBAF;
@@ -78,8 +93,9 @@ h2 {
     font-size: 3vw;
     color: #0F265C;
     position: relative;
-    top: 3.5vw;
+    /* top: 3.5vw; */
     padding-bottom: 0.5vw;
+    border: 2px solid;
 }
 
 h3 {
@@ -89,15 +105,18 @@ h3 {
     font-size: 1.5vw;
     color: #0F265C;
     position: relative;
-    top: 2.5vw;
+    /* top: 2.5vw; */
+    z-index: 1;
+    border: 2px solid;
 }
 
 #date {
-    position: relative;
+    position: absolute;
     text-align: right; 
     margin-right: 3%; 
-    top: -10vw; 
-    z-index: 1;
+    margin-top: 5vw;
+    right: 0;
+    /* top: -10vw;  */    
 }
 
 #title_image_div {
@@ -116,6 +135,11 @@ p {
     font-size: 1.3vw;
     color: #0F265C;
 }
+
+/* <end of title part> */
+
+
+
 
 #skills_div {
     width: 100%;
