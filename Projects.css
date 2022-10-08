@@ -9,7 +9,6 @@
     z-index: 3;
     padding-bottom: 1vw;
     display: flex;
-    opacity: 0.5;
 }
 
 a {
@@ -63,12 +62,10 @@ body {
 
 #title_part {
     height: 100%;
-    border: 2px dashed green;
 }
 
 #title_info {
     display: flex;
-    border: 2px solid red;
     position: relative;
     top: 0;
 }
@@ -95,7 +92,8 @@ h2 {
     color: #0F265C;
     position: relative;
     /* top: 3.5vw; */
-    padding-bottom: 0.5vw;
+    padding-top: 1vw;
+    padding-bottom: 0.2vw;
 }
 
 h3 {
@@ -114,7 +112,7 @@ h3 {
     position: absolute;
     text-align: right; 
     margin-right: 3%; 
-    margin-top: 4vw;
+    margin-top: 5vw;
     right: 0;
     /* top: -10vw;  */    
 }
