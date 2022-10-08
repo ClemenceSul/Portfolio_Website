@@ -83,12 +83,9 @@
 }
 
 
-#img_part5 {
-    width: 50%;
-    left: 10%;
-}
 #part5_text {
     width: 25%;
+    top: -15vw;
     left: 63%;
     padding-left: 2%;
     padding-right: 2%;
