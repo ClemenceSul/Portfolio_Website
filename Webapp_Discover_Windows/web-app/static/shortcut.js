@@ -1,6 +1,3 @@
-// Import the Javascript modules to exchange messages with a server.
-import Ajax from "./ajax.js";
-
 //Array with all the active keys ids.
 const activekeys = [
     "ctrl",
@@ -45,7 +42,7 @@ const HTML_monitor_information = document.getElementById("information");
 //Constant function
 document.onmouseover = function () {
     //Display the initial message on the monitor to explain how the page works.
-    HTML_monitor_information.innerHTML = initial_message;
+    document.getElementById("information").innerHTML = initial_message;
 
     //Retrieve the HTML button on which the mouse is via it's id.
     let icon = JSON.parse(window.sessionStorage.getItem("Shortcut"));
@@ -57,20 +54,12 @@ document.onmouseover = function () {
         //Make the button outlined red
         button.style.boxShadow = "0 0 0 5px rgb(232, 90, 79)";
 
-        //Build the message (the button's id) to send to the server.
-        const object_to_send = {"message": button.id};
-        //Send the message and display response via Ajax
-        Ajax.query(object_to_send).then(function (response) {
-            //Make red the two keys needed to trigger the shortcut.
-            document.getElementById(response.shortcut[0]).style.background = (
-                "rgb(232, 90, 79)"
-            );
-            document.getElementById(response.shortcut[1]).style.background = (
-                "rgb(232, 90, 79)"
-            );
-            // Extract the information and display this in the text box.
-            HTML_monitor_information.innerHTML = response.shortcut[2];
-        });
+        //Make red the two keys needed to trigger the shortcut.
+        document.getElementById(Shortcut.data[button.id][0]).style.background = ("rgb(232, 90, 79)");
+        document.getElementById(Shortcut.data[button.id][1]).style.background = ("rgb(232, 90, 79)");
+
+        // Extract the information and display this in the text box.
+        HTML_monitor_information.innerHTML = Shortcut.data[button.id][2];
     };
 
 
@@ -87,6 +76,71 @@ document.onmouseover = function () {
             document.getElementById(element).style.boxShadow = "none";
         });
     };
+};
+
+
+
+//Data source for the shortcut page
+const Shortcut = Object.create(null);
+Shortcut.data = {
+    copy: [
+        "ctrl",
+        "letterC",
+        "Select what you want, copy it, " +
+        "and it will be temporarily kept in memory by your computer."
+    ],
+    cut: [
+        "ctrl",
+        "letterX",
+        "Select what you want, copy it, and it will be temporarily kept " +
+        "in memory by your computer and deleted from it's previous position."
+    ],
+    paste: [
+        "ctrl",
+        "letterV",
+        "Click where you want it to go and paste the element that has " +
+        "been temporarily kept in memory by your computer previously."
+    ],
+    save: [
+        "ctrl",
+        "letterS",
+        "Select what you want and save it permenatly in your computer."
+    ],
+    select: [
+        "ctrl",
+        "letterA",
+        "Used to select all the elements on the document."
+    ],
+    undo: [
+        "ctrl",
+        "letterZ",
+        "Used to undo the previous action."
+    ],
+    redo: [
+        "ctrl",
+        "letterY",
+        "Used to redo the previous action. Doesn't work everytime."
+    ],
+    print: [
+        "ctrl",
+        "letterP",
+        "Used to open the window which allows you to print your document."
+    ],
+    restore: [
+        "window",
+        "arrowdown",
+        "Used to restore down the window you are on."
+    ],
+    maximise: [
+        "window",
+        "arrowup",
+        "Used to maximize the window you are on."
+    ],
+    minimise: [
+        "window",
+        "letterD",
+        "Used to minimize all the opened windows."
+    ]
 };
 
 

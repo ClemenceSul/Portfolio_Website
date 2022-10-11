@@ -7,11 +7,11 @@
     <title>File Explorer</title>
     <link rel="stylesheet" href="https://use.typekit.net/uvs6foq.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script type="module" src="desktop.js"></script>
+    
 </head>
 
 
-<body>
+<body style="overflow: hidden;">
     <!--Javascript function: Obtain the Id of the icon on which the mouse hovers. Get those from the pop-up menus seperately.-->
     <script id="script">
         function GetId(button) {
@@ -81,6 +81,7 @@
             <h5 style="text-align: center; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;" id="desktop_information"></h5>
         </div>
 
-
+    </div>
+    <script src="desktop.js"></script>
 </body>
 </html>

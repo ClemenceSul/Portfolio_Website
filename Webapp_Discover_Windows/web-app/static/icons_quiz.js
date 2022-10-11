@@ -1,6 +1,3 @@
-// Import the Javascript modules to exchange messages with a server.
-import Ajax from "./ajax.js";
-
 //Set variables
 let real_answer;
 let answered = true;
@@ -141,7 +138,7 @@ function make_green(what) {
 //Display the question on the monitor
 function display_question(response) {
     //Retreive the question
-    let question = response.icons_quiz.question_answer[level.question_index];
+    let question = response.question_answer[level.question_index];
     //Find out the format needed for the question and adapt it to fit
     if (level.question_index === 0) {
         monitor_information.style.opacity = "1";
@@ -163,9 +160,9 @@ function display_question(response) {
 //Function to display the 4 possible answers
 function display_answers(question, response, location) {
     //Retreive the other possible answers
-    let other1 = response.icons_quiz.other1[level.answer_index];
-    let other2 = response.icons_quiz.other2[level.answer_index];
-    let other3 = response.icons_quiz.other3[level.answer_index];
+    let other1 = response.other1[level.answer_index];
+    let other2 = response.other2[level.answer_index];
+    let other3 = response.other3[level.answer_index];
     //Find out the format needed for the answer and place them randomly
     if (level.answer_index === 1) {
         possible_locations.forEach(function (element) {
@@ -209,28 +206,28 @@ function display_answers(question, response, location) {
 //Build the question
 function make_next_question() {
     //Ask the server for a set of question and response
-    Ajax.query().then(function (response) {
-        let question = response.icons_quiz.question_answer[level.answer_index];
-        //Check the question hasn't already been asked.
-        if (questions_asked.includes(question) === false) {
-            questions_asked.push(question);
+    // Ajax.query().then(function (response) {
+    let response = Icons_Quiz.output();
+    let question = response.question_answer[level.answer_index];
+    //Check the question hasn't already been asked.
+    if (questions_asked.includes(question) === false) {
+        questions_asked.push(question);
 
-            //Shuffle the location of answers to place them randomly
-            let location = shuffle(possible_locations);
-            if (level.answer_index === 1) {
-                real_answer = "image_" + location[0];
-            } else {
-                real_answer = "text_" + location[0];
-            }
-
-            //Display the question and answers in the correct location
-            //(depends with level)
-            display_answers(question, response, location);
-            display_question(response);
-        } else { //if the question has already been asked, repeat.
-            make_next_question();
+        //Shuffle the location of answers to place them randomly
+        let location = shuffle(possible_locations);
+        if (level.answer_index === 1) {
+            real_answer = "image_" + location[0];
+        } else {
+            real_answer = "text_" + location[0];
         }
-    });
+
+        //Display the question and answers in the correct location
+        //(depends with level)
+        display_answers(question, response, location);
+        display_question(response);
+    } else { //if the question has already been asked, repeat.
+        make_next_question();
+    }
 }
 
 
@@ -323,25 +320,23 @@ document.onmousemove = function () {
 
             //Build the message to send to the server with
             //the level played and the score obtained
-            let message_to_send = {"message": [current_level, Score]};
-            Ajax.query(message_to_send).then(function (response) {
-                //Get and display the previous results from the server
-                let easy_score = response.quiz_score[0];
-                let medium_score = response.quiz_score[1];
-                let hard_score = response.quiz_score[2];
-                HTML_easy_score.innerHTML = easy_score + "/10";
-                HTML_medium_score.innerHTML = medium_score + "/10";
-                HTML_hard_score.innerHTML = hard_score + "/10";
+            let response2 = Icons_Quiz.update_score([current_level, Score]);
+            //Get and display the previous results from the server
+            let easy_score = response2[0];
+            let medium_score = response2[1];
+            let hard_score = response2[2];
+            HTML_easy_score.innerHTML = easy_score + "/10";
+            HTML_medium_score.innerHTML = medium_score + "/10";
+            HTML_hard_score.innerHTML = hard_score + "/10";
 
-                //Check if the score obtained is better than previously
-                //Adapt message accordingly and display
-                if (response.quiz_score[3]) {
-                    motiv_message = "You have improved!";
-                } else {
-                    motiv_message = "Better luck next time!";
-                }
-                motivation_message.innerHTML = motiv_message;
-            });
+            //Check if the score obtained is better than previously
+            //Adapt message accordingly and display
+            if (response2[3]) {
+                motiv_message = "You have improved!";
+            } else {
+                motiv_message = "Better luck next time!";
+            }
+            motivation_message.innerHTML = motiv_message;
 
             //Display Score obtained
             document.getElementById("current_score").innerHTML = display_score;
@@ -372,3 +367,240 @@ document.onmousemove = function () {
     }
 };
 
+
+
+
+
+//Data source for the icon quiz page
+const Icons_Quiz = Object.create(null);
+const icons_quiz = [
+    [
+        "Battery",
+        "./Icons/Battery.png",
+        "Show how much battery your computer has left."
+    ],
+    [
+        "Battery charging",
+        "./Icons/Battery charge.png",
+        "Indicate your computer is charging."
+    ],
+    [
+        "Power",
+        "./Icons/Power.png",
+        "Turns on or off your computer."
+    ],
+    [
+        "Sound on",
+        "./Icons/Sound 1.png",
+        "Show how loud the sound is."
+    ],
+    [
+        "Mute",
+        "./Icons/Sound 2.png",
+        "Indicate the sound is off."
+    ],
+    [
+        "Microphone",
+        "./Icons/Microphone.png",
+        "Allow you to communicate vocally with your computer."
+    ],
+    [
+        "Wifi",
+        "./Icons/Wifi 2.png",
+        "Show how strong your wifi connection is."
+    ],
+    [
+        "Wifi Error",
+        "./Icons/Wifi 1.png",
+        "Indicate your computer has an issue with the wifi."
+    ],
+    [
+        "No Wifi",
+        "./Icons/Wifi 3.png",
+        "Indicate your computer is not connected to a wifi."
+    ],
+    [
+        "Ethernet",
+        "./Icons/Ethernet.png",
+        "Indicate your computer is connected to the wifi via a cable."
+    ],
+    [
+        "Airplane Mode",
+        "./Icons/Plane.png",
+        "Disables all connections with your computer."
+    ],
+    [
+        "Bluetooth",
+        "./Icons/Bluetooth.png",
+        "Type of communication between computers."
+    ],
+    [
+        "Notification",
+        "./Icons/Notification.png",
+        "Indicate you have a message."
+    ],
+    [
+        "Edit",
+        "./Icons/Edit.png",
+        "Enable modifications to be made."
+    ],
+    [
+        "Bin",
+        "./Icons/Bin.png",
+        "Delete the element."
+    ],
+    [
+        "Download",
+        "./Icons/Download.png",
+        "Download the file onto your computer."
+    ],
+    [
+        "Upload",
+        "./Icons/Upload.png",
+        "Bring the file to the location of interest."
+    ],
+    [
+        "Menu",
+        "./Icons/Menu1.png",
+        "Open more options or actions."
+    ],
+    [
+        "Filter",
+        "./Icons/Filter.png",
+        "Filter the elements."
+    ],
+    [
+        "Search",
+        "./Icons/Search.png",
+        "Launch the search for a result."
+    ],
+    [
+        "Refresh",
+        "./Icons/Refresh.png",
+        "Reload the page."
+    ],
+    [
+        "Undo",
+        "./Icons/Undo.png",
+        "Undo the last action made."
+    ],
+    [
+        "Finished",
+        "./Icons/Finished.png",
+        "Indicate the task is finished."
+    ],
+    [
+        "Settings",
+        "./Icons/Setting.png",
+        "Open the settings for the document."
+    ],
+    [
+        "Save",
+        "./Icons/Save.png",
+        "Save the work done on the document."
+    ],
+    [
+        "Minimise",
+        "./Icons/Minimise.png",
+        "Withdraw the window."
+    ],
+    [
+        "Maximise",
+        "./Icons/Maximise.png",
+        "Make the window full screen."
+    ],
+    [
+        "Restore Down",
+        "./Icons/Restore Down.png",
+        "Make the window smaller."
+    ],
+    [
+        "Close",
+        "./Icons/Close.png",
+        "Close the window completely."
+    ],
+    [
+        "Attach",
+        "./Icons/Join.png",
+        "Join a file in your email."
+    ],
+    [
+        "Cloud",
+        "./Icons/Cloud.png",
+        "Indicate the file is on the cloud."
+    ],
+    [
+        "Share",
+        "./Icons/Share.png",
+        "Share the file to someone else."
+    ],
+    [
+        "Send",
+        "./Icons/Send.png",
+        "Send the file."
+    ]
+];
+
+//Function: obtain 4 random numbers between 0 and 33
+//(corresponds to the amount of elements in the data source)
+Icons_Quiz.random_indexs = function () {
+    let indexs = [];
+    while (indexs.length < 4) {
+        let i = Math.floor(Math.random() * 33);
+        if (indexs.includes(i) === false) {
+            indexs.push(i);
+        }
+    }
+    return indexs;
+};
+
+//Function: retreive the 4 lines in the data source who's index
+//corresponds to the random numbers
+Icons_Quiz.output = function () {
+    let indexs = Icons_Quiz.random_indexs();
+    //The 1st line will be the question
+    let answer = {
+        question_answer: icons_quiz[indexs[0]],
+        other1: icons_quiz[indexs[1]],
+        other2: icons_quiz[indexs[2]],
+        other3: icons_quiz[indexs[3]]
+    };
+    return answer;
+};
+
+
+//GETTING SCORE
+
+//Set the variables needed later
+Icons_Quiz.score = {
+    easy: 0,
+    medium: 0,
+    hard: 0
+};
+let improved;
+
+//Treat the score obtained to display the previous ones and possible improvement
+Icons_Quiz.update_score = function (array) {
+    //Check if the quiz is finished
+    if (array !== undefined) {
+        let score_result = [
+            Icons_Quiz.score.easy,
+            Icons_Quiz.score.medium,
+            Icons_Quiz.score.hard
+        ];
+        let [current_level2, Score2] = array;
+        if (Score > Icons_Quiz.score[current_level2]) {
+            Icons_Quiz.score[current_level2] = Score2;
+            improved = true;
+        } else {
+            improved = false;
+        }
+        score_result.push(improved);
+        //Return the information as array (1, 2, 3, 4):
+        //1 - previous easy score
+        //2 - previous medium score
+        //3 - previous hard score
+        //4 - Has the user improved?
+        return score_result;
+    }
+};
