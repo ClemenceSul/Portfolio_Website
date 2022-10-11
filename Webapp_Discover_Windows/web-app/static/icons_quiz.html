@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uvs6foq.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="module" src="icons_quiz.js"></script> 
+</head>
+
+
+<body>
+    <!--Javascript function: Obtain the Id of the icon on which the mouse hovers.-->
+    <script id="script">
+        function GetId(answer) {
+            window.sessionStorage.setItem("Icons_quiz", JSON.stringify(answer.id));
+        }        
+    </script>
+
+    <!--Back button-->
+    <a href="icons.html" style="float: initial;">
+        <img src="back_button.png" style="width: 150px; margin-left: 3%; margin-top: 1%;">
+    </a>
+
+    <!--Title-->
+    <h1>Quiz</h1>
+
+    <h5 style="font-size: 2vw; margin-top: -2%; margin-left: 4%; width: 10%;">Score:</h5>
+    <h5 style="font-size: 2vw; margin-top: -2%; left: 12%; width: 10%;" id="score"></h5>
+
+    <!--Monitor and question elements-->
+    <img src="./Icons/monitor.png" style="float: left; width: 30%; margin-top: 0%; margin-left: 3%;">
+    <div style="margin-top: 5%; height: 22vw; position: relative; width: 26%; margin-left: 5%;">
+        <h5 style="text-align: center; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute; font-size: 4vw;" id="monitor_information"></h5>
+        <img class="icon" style="width: 80%; position: absolute; left: 10%; top: 5%;" id="icon_question">
+        <img src="./Icons/wrong.png" class="quiz_right_wrong" id="wrong_image">
+        <img src="./Icons/right.png" class="quiz_right_wrong" id="right_image">
+        <div style="width: 90%; position: absolute; left: 5%; bottom: 5%; text-align: center;">
+            <!--Level buttons.-->
+            <img src="./Icons/easy_level.png" class="quiz_level_button" id="easy_level">
+            <img src="./Icons/medium_level.png" class="quiz_level_button" id="medium_level">
+            <img src="./Icons/hard_level.png" class="quiz_level_button" id="hard_level">
+        </div>
+    </div>
+
+    <!--Possible answers-->
+    <div style="margin-top: -20%; position: relative; margin-left: 35%;">
+        <img src="./Icons/circle.png" class="quiz_circle" style="margin-left: 13%; margin-top: 15%;">
+        <img class="icon" style="width: 20%; left: 11.7%; position: absolute; margin-top: 17.3%;" id="image_answer1" onmousemove="GetId(this)">
+        <h5 class="quiz_question_text" style="margin-top: -23%; left: 15.3%;" id="text_answer1" onmousemove="GetId(this)"></h5>
+
+        <img src="./Icons/circle.png" class="quiz_circle" style="margin-left: -6%; margin-top: -3.7%; position: absolute;">
+        <img class="icon" style="width: 20%; left: 31%; position: absolute; margin-top: -1.5%;" id="image_answer2" onmousemove="GetId(this)">
+        <h5 class="quiz_question_text" style="margin-top: -42%; left: 34.6%;" id="text_answer2" onmousemove="GetId(this)"></h5>
+
+        <img src="./Icons/circle.png" class="quiz_circle" style="margin-left: 13%; margin-right: -3%;">
+        <img class="icon" style="width: 20%; left: 50.3%; position: absolute; margin-top: 17.3%;" id="image_answer3" onmousemove="GetId(this)">
+        <h5 class="quiz_question_text" style="margin-top: -23%; left: 53.5%;" id="text_answer3" onmousemove="GetId(this)"></h5>
+
+        <img src="./Icons/circle.png" class="quiz_circle" style="margin-left: -3%; margin-top: -3.7%; position: absolute;">
+        <img class="icon" style="width: 20%; right: 3.5%; position: absolute; margin-top: -1.5%;" id="image_answer4" onmousemove="GetId(this)">
+        <h5 class="quiz_question_text" style="margin-top: -42%; left: 73%;" id="text_answer4" onmousemove="GetId(this)"></h5>
+    </div>
+
+
+    <!--Start, next, result buttons-->
+    <img src="./Icons/start_button.png" class="quiz_button" style="opacity: 1;" id="start_button">
+    <img src="./Icons/result_button.png" class="quiz_button" id="result_button">
+    <img src="./Icons/next_button2.png" class="quiz_button" id="next_button">
+    
+
+
+    <!--Result box elements-->
+    <img src="./Icons/result_box.png" class="results" style="margin-left: 30%; top: 10%;" id="result_box">
+    <h5 class="results" style="margin-left: 30%; text-align: center; top: 5%; font-size: 3vw;">Results</h5>
+    <h5 class="results" style="margin-left: 32%; top: 25%;">You have scored: </h5>
+    <h5 class="results" style="margin-left: 47%; top: 25%;" id="current_score"></h5>
+    <h5 class="results" style="margin-left: 52%; top: 25%;">in</h5>
+    <h5 class="results" style="margin-left: 55%; top: 25%;" id="current_level"></h5>
+    <h5 class="results" style="margin-left: 32%; top: 35%;">Your previous results:</h5>
+    <h5 class="results" style="margin-left: 36%; top: 40%;">Easy Level - </h5>
+    <h5 class="results" style="margin-left: 48.5%; top: 40%;" id="easy_score"></h5>
+    <h5 class="results" style="margin-left: 36%; top: 45%;">Medium Level - </h5>
+    <h5 class="results" style="margin-left: 48.5%; top: 45%;" id="medium_score"></h5>
+    <h5 class="results" style="margin-left: 36%; top: 50%;">Hard Level - </h5>
+    <h5 class="results" style="margin-left: 48.5%; top: 50%;" id="hard_score"></h5>
+    <h5 class="results" style="margin-left: 30%; top: 60%; text-align: center; font-size: 2.5vw;" id="motivation_message">You have improved !</h5>
+    <img src="./Icons/restart_button.png" class="results" style="width: 15%; bottom: 8%; margin-left: 54%;" id="restart_button">
+
+
+</body>
+</html>

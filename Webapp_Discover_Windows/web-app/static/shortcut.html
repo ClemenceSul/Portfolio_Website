@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortcuts</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uvs6foq.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="module" src="shortcut.js"></script> 
+</head>
+
+
+<body>
+    <!--Javascript function: Obtain the Id of the icon on which the mouse hovers.-->
+    <script id="script">
+        function GetId(shortcut) {
+            let Shortcut_Id = shortcut.id;
+            window.sessionStorage.setItem("Shortcut", JSON.stringify(Shortcut_Id));
+        }        
+    </script>
+
+    <!--Back button-->
+    <a href="index.html" style="float: initial;">
+        <img src="back_button.png" alt="Back button" style="width: 150px; margin-left: 3%; margin-top: 1%;">
+    </a>
+
+    <!--Title-->
+    <h1>Shortcuts</h1>
+
+    <!--Monitor and the text zone-->
+    <div style="position: relative;">
+        <img src="./Shortcuts/monitor.png" style="width: 30%; margin-top: -70px;">
+        <div style="margin-top: -20%; height: 16vw; position: relative; width: 24%; margin-left: 3%;">
+            <h5 style="text-align: center; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;" id="information"></h5>
+        </div>
+    </div>
+
+    <!--Keyboard-->
+    <div style="margin-top: -16%; text-align: right; margin-right: 5%;">
+        <!--0th line-->
+        <div>
+            <h2 class="keyboard_symbols" style="width: 3.2%;">~ <br> `</h2>
+            <h2 class="keyboard_symbols">! <br> 1</h2>
+            <h2 class="keyboard_symbols">@ <br> 2</h2>
+            <h2 class="keyboard_symbols"># <br> 3</h2>
+            <h2 class="keyboard_symbols">$ <br> 4</h2>
+            <h2 class="keyboard_symbols">% <br> 5</h2>
+            <h2 class="keyboard_symbols">^ <br> 6</h2>
+            <h2 class="keyboard_symbols">& <br> 7</h2>
+            <h2 class="keyboard_symbols">? <br> 8</h2>
+            <h2 class="keyboard_symbols">( <br> 9</h2>
+            <h2 class="keyboard_symbols">) <br> 0</h2>
+            <h2 class="keyboard_symbols">_ <br> -</h2>
+            <h2 class="keyboard_symbols">+ <br> =</h2>
+            <h2 style="font-size: 1.2vw; vertical-align: 9%; width: 8%; line-height: 250%;">Backspace</h2>
+        </div>
+
+        <!--1rst line-->
+        <div>
+            <h2 style="font-size: 1.2vw; vertical-align: 8%; line-height: 250%;" id="tabs" name="active_keys">Tabs</h2>
+            <h2>Q</h2>
+            <h2>W</h2>
+            <h2>E</h2>
+            <h2>R</h2>
+            <h2>T</h2>
+            <h2 name="active_keys" id="letterY" >Y</h2>
+            <h2>U</h2>
+            <h2>I</h2>
+            <h2>O</h2>
+            <h2 name="active_keys" id="letterP" >P</h2>
+            <h2 class="keyboard_symbols2">{ <br> [</h2>
+            <h2 class="keyboard_symbols2">} <br> ]</h2>
+            <h2 class="keyboard_symbols2">\ <br> |</h2>
+        </div>
+
+        <!--2nd line-->
+        <div>
+            <h2 style="font-size: 1.2vw; vertical-align: 8%; width: 4.91%; line-height: 250%;" name="active_keys" id="caps">Caps</h2>
+            <h2 name="active_keys" id="letterA" >A</h2>
+            <h2 name="active_keys" id="letterS" >S</h2>
+            <h2 name="active_keys" id="letterD" >D</h2>
+            <h2>F</h2>
+            <h2>G</h2>
+            <h2>H</h2>
+            <h2>J</h2>
+            <h2>K</h2>
+            <h2>L</h2>
+            <h2 class="keyboard_symbols2" name="active_keys">: <br> ;</h2>
+            <h2 class="keyboard_symbols2" name="active_keys">" <br> '</h2>
+            <h2 style="font-size: 1.2vw; vertical-align: 7%; width: 7.9%; line-height: 250%;">Enter</h2>
+        </div>
+
+        <!--3rd line-->
+        <div>
+            <h2 style="font-size: 1.2vw; vertical-align: 8%; width: 7.04%; line-height: 250%;" name="active_keys" id="shift">Shift</h2>
+            <h2 name="active_keys" id="letterZ" >Z</h2>
+            <h2 name="active_keys" id="letterX" >X</h2>
+            <h2 name="active_keys" id="letterC" >C</h2>
+            <h2 name="active_keys" id="letterV" >V</h2>
+            <h2>B</h2>
+            <h2>N</h2>
+            <h2>M</h2>
+            <h2 class="keyboard_symbols2">< <br> ,</h2>
+            <h2 class="keyboard_symbols2">> <br> .</h2>
+            <h2 style="font-size: 1vw; line-height: 1.5; vertical-align: -27%;">? <br> /</h2>
+            <h2 style="font-size: 1.2vw; vertical-align: 8.5%; width: 10.67%; line-height: 250%;">Shift</h2>
+        </div>
+
+        <!--4th line-->
+        <div>
+            <h2 style="font-size: 1.2vw; vertical-align: 8%; width: 7.04%; line-height: 250%;" name="active_keys" id="ctrl">Ctrl</h2>
+            <h2 style="font-family: HoloLens MDL2 Assets; vertical-align: -12%;" name="active_keys" id="window"></h2>
+            <h2 style="font-size: 1.2vw; vertical-align: 8%; line-height: 250%;">Alt</h2>
+            <h2 style="width: 20.3%; color: rgb(56, 55, 54);">.</h2>
+            <h2 style="font-size: 1.2vw; vertical-align: 8%; line-height: 250%;">Alt</h2>
+            <h2 style="font-size: 1.2vw; vertical-align: 8%; line-height: 250%;">Fn</h2>
+            <h2>←</h2>
+            <h2 name="active_keys" id="arrowup" >↑</h2>
+            <h2 name="active_keys" id="arrowdown" >↓</h2>
+            <h2>→</h2>
+        </div>
+    </div>
+
+
+    <!--Line of buttons-->
+    <div style="text-align: center; margin-top: 1%;">
+        <img src="Shortcuts/copy.png" class="shortcuts_button" id="copy" onmouseover="GetId(this)">
+        <img src="Shortcuts/cut.png" class="shortcuts_button" id="cut" onmouseover="GetId(this)">
+        <img src="Shortcuts/paste.png" class="shortcuts_button" id="paste" onmouseover="GetId(this)">
+        <img src="Shortcuts/save.png" class="shortcuts_button" id="save" onmouseover="GetId(this)">
+        <img src="Shortcuts/select.png" class="shortcuts_button" id="select" onmouseover="GetId(this)">
+    </div>
+    <div style="text-align: center;">
+        <img src="Shortcuts/undo.png" class="shortcuts_button" id="undo" onmouseover="GetId(this)">
+        <img src="Shortcuts/redo.png" class="shortcuts_button" id="redo" onmouseover="GetId(this)">
+        <img src="Shortcuts/print.png" class="shortcuts_button" id="print" onmouseover="GetId(this)">
+        <img src="Shortcuts/restore.png" class="shortcuts_button" id="restore" onmouseover="GetId(this)">
+        <img src="Shortcuts/Maximise.png" class="shortcuts_button" id="maximise" onmouseover="GetId(this)">
+        <img src="Shortcuts/minimize.png" class="shortcuts_button" id="minimise" onmouseover="GetId(this)">
+    </div>
+</body>
+</html>

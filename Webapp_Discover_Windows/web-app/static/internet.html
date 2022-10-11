@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uvs6foq.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="module" src="internet.js"></script> 
+</head>
+
+
+<body>
+    <!--Javascript function: Obtain the Id of the icon on which the mouse hovers.-->
+    <script id="script">
+        function GetId(internet) {
+            window.sessionStorage.setItem("Internet", JSON.stringify(internet.id));
+        }        
+    </script>
+
+    <!--Back button-->
+    <a href="index.html" style="float: initial;">
+        <img src="back_button.png" style="width: 150px; margin-left: 3%; margin-top: 1%;">
+    </a>
+
+    <!--Title-->
+    <h1>Internet</h1>
+
+
+    <!--Diagram-->
+    <div style="margin-top: 15%;">
+        <img src="./Internet/arrow4.png" style="width: 8%; margin-bottom: 2%; margin-left: 43%; margin-right: -3%;" id="connection" onmouseover="GetId(this)">
+        <img src="./Internet/internet.png" class="internet_button" style="width: 10%; margin-left: 2%;" id="internet" onmouseover="GetId(this)">
+        <div style="width: 40%; margin-left: 60%; margin-top: -15%;">
+            <img src="./Internet/arrow2.png" class="internet_arrow" style="margin-bottom: 3%;">
+            <img src="./Internet/browser.png" class="internet_button" id="browser" onmouseover="GetId(this)">
+            <img src="./Internet/arrow1.png" class="internet_arrow" style="margin-bottom: 8%;">
+            <img src="./Internet/website.png" class="internet_button" id="website" onmouseover="GetId(this)">
+            <img src="./Internet/arrow3.png" class="internet_arrow" style="margin-bottom: 12%;">
+            <img src="./Internet/cloud.png" class="internet_button" style="margin-right: 40%;" id="cloud" onmouseover="GetId(this)">
+        </div>
+    </div>
+
+    <!--Monitor and the text zone-->
+    <img src="./Internet/monitor.png" style="float: left; width: 40%; margin-top: -25%; margin-left: 3%;">
+    <div style="margin-top: -23%; height: 21vw; position: relative; width: 30%; margin-left: 8%;">
+        <h5 style="text-align: center; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;" id="internet_information"></h5>
+    </div>
+
+
+</body>
+</html>

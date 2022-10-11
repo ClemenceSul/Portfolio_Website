@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Explorer</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uvs6foq.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="module" src="desktop.js"></script>
+</head>
+
+
+<body>
+    <!--Javascript function: Obtain the Id of the icon on which the mouse hovers. Get those from the pop-up menus seperately.-->
+    <script id="script">
+        function GetId(button) {
+            window.sessionStorage.setItem("desktop", JSON.stringify(button.id));
+        }
+        function StartId(button) {
+            window.sessionStorage.setItem("start_menu", JSON.stringify(button.id));
+        }
+        function NotifId(button) {
+            window.sessionStorage.setItem("notif_menu", JSON.stringify(button.id));
+        }
+    </script>
+
+    <!--Back button-->
+    <a href="index.html" style="float: initial;">
+        <img src="back_button.png" style="width: 150px; margin-left: 3%; margin-top: 1%;">
+    </a>
+
+    <!--Title-->
+    <h1>Desktop</h1>
+
+
+    <!--Virtual screen-->
+    <div style="width: 75%; margin-top: -3%; margin-left: 2%; position: relative;">
+        <!--Whole desktop screen-->
+        <img src="./Desktop/screen.png" style="width: 100%">  
+        <!--Pop-up menus-->
+        <img src="./Desktop/start_menu.png" class="desktop_button" style="width: 70%; top: 20%; left: -0.2%;" id="start_image">
+        <img src="./Desktop/notif_menu.png" class="desktop_button" style="height: 93%; top: 0%; right: 0%;" id="notification_image">
+        <img src="./Desktop/small_menu.png" class="desktop_button" style="width: 7%; bottom: 7%; right: 14.7%;" id="small_image">
+        <!--Pop_up menu buttons-->
+        <img src="./Desktop/start_button.png" class="desktop_button" style="width: 2.5%; bottom: 3%; left: 0.2%;" id="start_button" onmouseover="GetId(this)">
+        <img src="./Desktop/small_button.png" class="desktop_button" style="height: 4%; bottom: 3%; right: 17.4%;" id="small_button" onmouseover="GetId(this)">
+        <img src="./Desktop/notif_button.png" class="desktop_button" style="width: 3%; bottom: 3%; right: 0%;" id="notification_button" onmouseover="GetId(this)">
+        
+        <!--Start menu's buttons-->
+        <img src="./Desktop/start_menu_power.png" class="desktop_button" style="width: 2.7%; bottom: 7%; left: 0.2%;" id="start_power" onmouseover="StartId(this)">
+        <img src="./Desktop/start_menu_setting.png" class="desktop_button" style="width: 2.7%; bottom: 13%; left: 0.2%;" id="start_setting" onmouseover="StartId(this)">
+        <img src="./Desktop/start_menu_account.png" class="desktop_button" style="width: 2.7%; bottom: 19%; left: 0.2%;" id="start_account" onmouseover="StartId(this)">
+        <img src="./Desktop/start_menu_menu.png" class="desktop_button" style="width: 2.7%; bottom: 73%; left: 0.2%;" id="start_menu" onmouseover="StartId(this)">
+        <img src="./Desktop/start_menu_list.png" class="desktop_button" style="width: 17.5%; bottom: 7%; left: 3%;" id="start_list" onmouseover="StartId(this)">
+        <img src="./Desktop/start_menu_apps.png" class="desktop_button" style="width: 43.3%; bottom: 6.8%; left: 20%;" id="start_apps" onmouseover="StartId(this)">
+
+        <!--Notification menu's buttons-->
+        <img src="./Desktop/notif_menu_manage.png" class="desktop_button" style="width: 9.5%; top: 1%; right: 0.4%;" id="notif_manage" onmouseover="NotifId(this)">
+        <img src="./Desktop/notif_menu_notif.png" class="desktop_button" style="width: 25%; top: 5%; right: 1%;" id="notif_notif" onmouseover="NotifId(this)">
+        <img src="./Desktop/notif_menu_collapse.png" class="desktop_button" style="width: 5%; top: 43%; right: 21.5%;" id="notif_collapse" onmouseover="NotifId(this)">
+        <img src="./Desktop/notif_menu_clear.png" class="desktop_button" style="width: 10%; top: 43%; right: 0.1%;" id="notif_clear" onmouseover="NotifId(this)">
+        <img src="./Desktop/notif_menu_settings.png" class="desktop_button" style="width: 26%; top: 47.1%; right: 0.3%;" id="notif_settings" onmouseover="NotifId(this)">
+        <img src="./Desktop/notif_menu_light.png" class="desktop_button" style="width: 24%; top: 83.2%; right: 1.1%;" id="notif_light" onmouseover="NotifId(this)">
+
+        <!--Other buttons-->
+        <img src="./Desktop/search_bar.png" class="desktop_button" style="width: 24.5%; bottom: 3%; left: 3%;" id="search_bar" onmouseover="GetId(this)">
+        <img src="./Desktop/task_view.png" class="desktop_button" style="height: 4%; bottom: 3%; left: 32%;" id="task_view" onmouseover="GetId(this)">
+        <img src="./Desktop/programs.png" class="desktop_button" style="height: 4%; bottom: 3%; left: 35.1%;" id="programs" onmouseover="GetId(this)">
+        <img src="./Desktop/icons.png" class="desktop_button" style="height: 4%; bottom: 3%; right: 3.2%;" id="icones" onmouseover="GetId(this)">
+        <img src="./Desktop/recycle_bin.png" class="desktop_button" style="height: 13%; top: 7%; left: 5.2%;" id="recycle_bin" onmouseover="GetId(this)">
+        <img src="./Desktop/google_chrome.png" class="desktop_button" style="height: 12%; top: 21%; left: 0.5%;" id="google_chrome" onmouseover="GetId(this)">
+        <img src="./Desktop/itunes.png" class="desktop_button" style="height: 11%; top: 35.8%; left: 0.5%;" id="Itunes" onmouseover="GetId(this)">
+        <img src="./Desktop/microsoft.png" class="desktop_button" style="height: 12%; top: 49%; left: 0.1%;" id="microsoft" onmouseover="GetId(this)">
+        <img src="./Desktop/firefox.png" class="desktop_button" style="height: 12%; top: 63%; left: 0%;" id="firefox" onmouseover="GetId(this)">
+        <img src="./Desktop/vlc_media.png" class="desktop_button" style="height: 13%; top: 76%; left: -0.1%;" id="vlc_media" onmouseover="GetId(this)">
+
+        <!--Monitor and text zone.-->
+        <img src="./Desktop/monitor.png" style="width: 30%; margin-top: -100%; right: -100%; position: relative;">
+        <div style="margin-top: -26%; height: 15.5vw; position: absolute; width: 24.5%; right: -27%;">
+            <h5 style="text-align: center; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;" id="desktop_information"></h5>
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Explorer</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uvs6foq.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="module" src="file.js"></script>
+</head>
+<body>
+    <!--Javascript function: Obtain the Id of the icon on which the mouse hovers. Get those from the pop-up menus seperately.-->
+    <script id="script">
+        function GetId(file) {
+            window.sessionStorage.setItem("File", JSON.stringify(file.id));
+        }
+        function HomeId(file) {
+            window.sessionStorage.setItem("File_home", JSON.stringify(file.id));
+        }
+        function ShareId(file) {
+            window.sessionStorage.setItem("File_share", JSON.stringify(file.id));
+        }
+        function ViewId(file) {
+            window.sessionStorage.setItem("File_view", JSON.stringify(file.id));
+        }
+    </script>
+    
+
+    <!--Back button-->
+    <a href="index.html" style="float: initial;">
+        <img src="back_button.png" style="width: 150px; margin-left: 3%; margin-top: 1%;">
+    </a>
+
+    <!--Title-->
+    <h1>File Explorer</h1>
+
+    <!--Virtual screen-->
+    <div style="width: 75%; margin-top: -3%; margin-left: 2%; position: relative;">
+        <!--Whole file explorer screen-->
+        <img src="./File Explorer/screen.png" style="width: 100%"> 
+                
+        <!--Pop-up menus-->
+        <img src="./File Explorer/home_menu.png" class="file_button" style="width: 100%; top: 3.9%; opacity: 1" id="home_menu">
+        <img src="./File Explorer/share_menu.png" class="file_button" style="width: 100%; top: 3.9%;" id="share_menu">
+        <img src="./File Explorer/view_menu.png" class="file_button" style="width: 100%; top: 4%;" id="view_menu">
+        <img src="./File Explorer/customize_menu.jpg" class="file_button" style="width: 15%; top: 3.9%; left: 5.3%;" id="customize_menu">
+        <img src="./File Explorer/file_menu.png" class="file_button" style="width: 40%; top: 7.5%;" id="file_menu">
+
+        <!--Other buttons-->
+        <img src="./File Explorer/small_view.png" class="file_button" style="height: 3%; bottom: 3%; right: 0%;" id="small_view" onmouseover="GetId(this)">
+        <img src="./File Explorer/help.png" class="file_button" style="height: 2.5%; top: 4.3%; right: 0%;" id="help_button" onmouseover="GetId(this)">
+        <img src="./File Explorer/ribbon.png" class="file_button" style="height: 2.5%; top: 4.3%; right: 1.5%;" id="ribbon_button" onmouseover="GetId(this)">
+        <img src="./File Explorer/quick_access.png" class="file_button" style="height: 3%; top: 0.3%; left: 2.8%;" id="quick_accessbar">
+        <img src="./File Explorer/folder_content.png" class="file_button" style="height: 32.5%; top: 24.2%; left: 23%;" id="folder_content" onmouseover="GetId(this)">
+        <img src="./File Explorer/folder_list.png" class="file_button" style="width: 22%; bottom: 3.1%; left: 0%;" id="folder_list" onmouseover="GetId(this)">
+        <img src="./File Explorer/quickaccess_list.png" class="file_button" style="width: 22%; top: 25%; left: 0.3%;" id="quick_list" onmouseover="GetId(this)">
+        <img src="./File Explorer/close.png" class="file_button" style="height: 3.5%; top: 0%; right: 0%;" id="close" onmouseover="GetId(this)">
+        <img src="./File Explorer/maximise.png" class="file_button" style="height: 3.5%; top: 0%; right: 3.2%;" id="maximise" onmouseover="GetId(this)">
+        <img src="./File Explorer/minimise.png" class="file_button" style="height: 3.5%; top: 0%; right: 6.5%;" id="minimise" onmouseover="GetId(this)">
+
+        <!--Pop-up menu buttons-->
+        <img src="./File Explorer/button_menu_file.png" class="file_button" style="height: 5%; top: 3%; left: 0.2%;" id="menu_file_button" onmouseover="GetId(this)">
+        <img src="./File Explorer/button_menu_home.png" class="file_button" style="height: 5%; top: 3%; left: 3.6%;" id="menu_home_button" onmouseover="GetId(this)">
+        <img src="./File Explorer/button_menu_share.png" class="file_button" style="height: 5%; top: 3%; left: 7.4%;" id="menu_share_button" onmouseover="GetId(this)">
+        <img src="./File Explorer/button_menu_view.png" class="file_button" style="height: 5%; top: 3%; left: 11.7%;" id="menu_view_button" onmouseover="GetId(this)">
+        <img src="./File Explorer/button_menu_customize.png" class="file_button" style="height: 3.5%; top: 0.1%; left: 5.4%;" id="menu_customize_button" onmouseover="GetId(this)">
+
+        <!--Share menu buttons-->
+        <img src="./File Explorer/share_share.png" class="file_button" style="height: 9%; top: 7.7%; left: 0.3%;" id="share_share" onmouseover="ShareId(this)">
+        <img src="./File Explorer/share_email.png" class="file_button" style="height: 9%; top: 7.7%; left: 3.4%;" id="share_email" onmouseover="ShareId(this)">
+        <img src="./File Explorer/share_zip.png" class="file_button" style="height: 9%; top: 7.7%; left: 6.4%;" id="share_zip" onmouseover="ShareId(this)">
+        <img src="./File Explorer/share_burn.png" class="file_button" style="height: 3%; top: 7.8%; left: 9.3%;" id="share_burn" onmouseover="ShareId(this)">
+        <img src="./File Explorer/share_print.png" class="file_button" style="height: 3%; top: 10.6%; left: 9.3%;" id="share_print" onmouseover="ShareId(this)">
+        <img src="./File Explorer/share_fax.png" class="file_button" style="height: 3%; top: 13.5%; left: 9.3%;" id="share_fax" onmouseover="ShareId(this)">
+        <img src="./File Explorer/share_specific.png" class="file_button" style="height: 8%; top: 8.2%; left: 16.3%;" id="share_specific" onmouseover="ShareId(this)">
+        <img src="./File Explorer/share_remove.png" class="file_button" style="height: 9%; top: 7.7%; left: 25.5%;" id="share_remove" onmouseover="ShareId(this)">
+        <img src="./File Explorer/share_advanced.png" class="file_button" style="height: 9%; top: 7.7%; left: 29.5%;" id="share_advanced" onmouseover="ShareId(this)">
+        
+        <!--View menu buttons-->
+        <img src="./File Explorer/view_navigation.png" class="file_button" style="height: 9%; top: 8.1%; left: 0.3%;" id="view_navigation" onmouseover="ViewId(this)">
+        <img src="./File Explorer/view_preview.png" class="file_button" style="height: 2.8%; top: 8.9%; left: 4.8%;" id="view_preview" onmouseover="ViewId(this)">
+        <img src="./File Explorer/view_details.png" class="file_button" style="height: 2.8%; top: 12.8%; left: 4.8%;" id="view_details" onmouseover="ViewId(this)">
+        <img src="./File Explorer/view_type.png" class="file_button" style="height: 7.9%; top: 8.2%; left: 12.1%;" id="view_type" onmouseover="ViewId(this)">
+        <img src="./File Explorer/view_sort.png" class="file_button" style="height: 8.5%; top: 8.1%; left: 41.4%;" id="view_sort" onmouseover="ViewId(this)">
+        <img src="./File Explorer/view_group.png" class="file_button" style="height: 2.8%; top: 8%; left: 44.2%;" id="view_group" onmouseover="ViewId(this)">
+        <img src="./File Explorer/view_columns.png" class="file_button" style="height: 2.8%; top: 11%; left: 44.2%;" id="view_columns" onmouseover="ViewId(this)">
+        <img src="./File Explorer/view_size.png" class="file_button" style="height: 2.8%; top: 13.8%; left: 44.2%;" id="view_size" onmouseover="ViewId(this)">
+        <img src="./File Explorer/view_what.png" class="file_button" style="height: 8.8%; top: 7.8%; left: 54.3%;" id="view_what" onmouseover="ViewId(this)">
+        <img src="./File Explorer/view_hide.png" class="file_button" style="height: 8.8%; top: 7.8%; left: 64.2%;" id="view_hide" onmouseover="ViewId(this)">
+        <img src="./File Explorer/view_options.png" class="file_button" style="height: 8.8%; top: 7.9%; left: 70.4%;" id="view_options" onmouseover="ViewId(this)">
+
+        <!--Home menu buttons-->
+        <img src="./File Explorer/home_pin.png" class="file_button" style="height: 9%; top: 7.7%; left: 0.5%;" id="home_pin" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_copy.png" class="file_button" style="height:9%; top: 7.7%; left: 5%;" id="home_copy" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_paste.png" class="file_button" style="height:9%; top: 7.7%; left: 8%;" id="home_paste" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_cut.png" class="file_button" style="height:3%; top: 7.7%; left: 11.1%;" id="home_cut" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_copypath.png" class="file_button" style="height: 2.5%; top: 11%; left: 11.1%;" id="home_copypath" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_pasteshortcut.png" class="file_button" style="height: 2.9%; top: 13.5%; left: 11.1%;" id="home_pasteshortcut" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_moveto.png" class="file_button" style="height: 9%; top: 7.7%; left: 18.5%;" id="home_moveto" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_copyto.png" class="file_button" style="height: 9%; top: 7.7%; left: 21.8%;" id="home_copyto" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_delete.png" class="file_button" style="height: 9%; top: 7.7%; left: 25.2%;" id="home_delete" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_rename.png" class="file_button" style="height: 9%; top: 7.7%; left: 28%;" id="home_rename" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_newfolder.png" class="file_button" style="height: 9%; top: 7.7%; left: 32.2%;" id="home_newfolder" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_newitem.png" class="file_button" style="height: 3%; top: 7.7%; left: 35.1%;" id="home_newitem" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_easyaccess.png" class="file_button" style="height: 2.8%; top: 10.9%; left: 35.1%;" id="home_easyaccess" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_properties.png" class="file_button" style="height: 9%; top: 7.7%; left: 42.2%;" id="home_properties" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_open.png" class="file_button" style="height: 3%; top: 7.7%; left: 46.5%;" id="home_open" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_edit.png" class="file_button" style="height: 3%; top: 10.9%; left: 46.5%;" id="home_edit" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_history.png" class="file_button" style="height: 2.8%; top: 13.7%; left: 46.5%;" id="home_history" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_select_all.png" class="file_button" style="height: 3%; top: 7.7%; left: 51.5%;" id="home_select_all" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_select_none.png" class="file_button" style="height: 3%; top: 10.9%; left: 51.5%;" id="home_select_none" onmouseover="HomeId(this)">
+        <img src="./File Explorer/home_invert.png" class="file_button" style="height: 3%; top: 13.7%; left: 51.5%;" id="home_invert" onmouseover="HomeId(this)">
+
+        <!--Buttons along the search bar-->
+        <img src="./File Explorer/search_back.png" class="file_button" style="height: 4%; top: 20%; left: 0.5%;" id="search_back" onmouseover="GetId(this)">
+        <img src="./File Explorer/search_forward.png" class="file_button" style="height: 4%; top: 20%; left: 2.5%;" id="search_forward" onmouseover="GetId(this)">
+        <img src="./File Explorer/search_recent.png" class="file_button" style="height: 4%; top: 20%; left: 4.4%;" id="search_recent" onmouseover="GetId(this)">
+        <img src="./File Explorer/search_up.png" class="file_button" style="height: 4%; top: 20%; left: 5.8%;" id="search_up" onmouseover="GetId(this)">
+        <img src="./File Explorer/search_bar.png" class="file_button" style="height: 4%; top: 20%; left: 7.5%;" id="search_bar" onmouseover="GetId(this)">
+        <img src="./File Explorer/search_recent2.png" class="file_button" style="height: 4%; top: 20%; right: 23%;" id="search_recent2" onmouseover="GetId(this)">
+        <img src="./File Explorer/search_refresh.png" class="file_button" style="height: 4%; top: 20%; right: 20.6%;" id="search_refresh" onmouseover="GetId(this)">
+        <img src="./File Explorer/search_in.png" class="file_button" style="height: 4%; width: 19.2%; top: 20%; right: 0.7%;" id="search_in" onmouseover="GetId(this)">
+
+        <!--Monitor and text zone.-->
+        <img src="./File Explorer/monitor.png" style="width: 30%; margin-top: -100%; right: -100%; position: relative;">
+        <div style="margin-top: -26%; height: 15.5vw; position: absolute; width: 24.5%; right: -27%;">
+            <h5 style="text-align: center; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;" id="file_information">Hover on the different buttons of the virtual screen on the right to find out more about google's functionalities.</h5>
+        </div>
+
+</body>
+</html>
