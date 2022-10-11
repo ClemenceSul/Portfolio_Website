@@ -146,3 +146,7 @@ h5 {
     position: absolute;
     opacity: 0;
 }
+
+.index_button:hover {
+    filter: contrast(80%)
+}
