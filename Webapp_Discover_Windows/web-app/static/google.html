@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uvs6foq.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="google.js"></script> 
+</head>
+
+
+<body>
+    <!--Javascript function: Obtain the Id of the icon on which the mouse hovers.-->
+    <script id="script">
+        function GetId(button) {
+            window.sessionStorage.setItem("Google", JSON.stringify(button.id));
+        }        
+    </script>
+
+    <!--Back button-->
+    <a href="index.html" style="float: initial;">
+        <img src="back_button.png" style="width: 150px; margin-left: 3%; margin-top: 1%;">
+    </a>
+
+    <!--Title-->
+    <h1>Google</h1>
+
+    <!--Virtual screen-->
+    <div style="width: 90%; margin-top: -3%; margin-left: 8%; position: relative;">
+        <!--Whole google screen-->
+        <img src="./Google/screen.png" style="width: 100%">        
+        <!--Individual buttons-->
+        <img src="./Google/close.png" class="google_button" style="width: 2%; top: 0%; right: 0%;" id="close" onmouseover="GetId(this)">
+        <img src="./Google/tabbar.png" class="google_button" style="width: 89.3%; top: 3.8%; left: 7.3%;" id="tabbar" onmouseover="GetId(this)">
+        <img src="./Google/restore.png" class="google_button" style="width: 2%; top: 0%; right: 2.5%;" id="restore" onmouseover="GetId(this)">
+        <img src="./Google/minimize.png" class="google_button" style="width: 2%; top: 0%; right: 5%;" id="minimize" onmouseover="GetId(this)">
+        <img src="./Google/more_tabs.png" class="google_button" style="width: 1.5%; top: 0%; right: 7.5%;" id="more_tabs" onmouseover="GetId(this)">
+        <img src="./Google/menu_google.png" class="google_button" style="width: 1.5%; top: 5%; right: 0.2%;" id="menu_google" onmouseover="GetId(this)">
+        <img src="./Google/bookmark.png" class="google_button" style="width: 1.5%; top: 4.8%; right: 4%;" id="favorites" onmouseover="GetId(this)">
+        <img src="./Google/back.png" class="google_button" style="width: 1.5%; top: 5%; left: 0.3%;" id="back" onmouseover="GetId(this)">
+        <img src="./Google/forward.png" class="google_button" style="width: 1.5%; top: 5%; left: 2%;" id="forward" onmouseover="GetId(this)">
+        <img src="./Google/refresh.png" class="google_button" style="width: 1.5%; top: 5%; left: 3.7%;" id="refresh" onmouseover="GetId(this)">
+        <img src="./Google/home.png" class="google_button" style="width: 1.5%; top: 5%; left: 5.5%;" id="home" onmouseover="GetId(this)">
+        <img src="./Google/close_tab.png" class="google_button" style="width: 1%; top: 0.8%; left: 11.5%;" id="close_tab" onmouseover="GetId(this)">
+        <img src="./Google/new_tab.png" class="google_button" style="width: 1%; top: 0.8%; left: 13.5%;" id="new_tab" onmouseover="GetId(this)">
+        <img src="./Google/apps.png" class="google_button" style="width: 2%; top: 14%; right: 3%;" id="apps" onmouseover="GetId(this)">
+        <img src="./Google/account.png" class="google_button" style="width: 2%; top: 14%; right: 0.5%;" id="account" onmouseover="GetId(this)">
+        <img src="./Google/search.png" class="google_button" style="width: 29.7%; top: 46%; left: 35.5%;" id="search_bar" onmouseover="GetId(this)">
+        <img src="./Google/microphone.png" class="google_button" style="width: 1%; top: 47%; right: 36%;" id="microphone" onmouseover="GetId(this)">
+        <img src="./Google/menu_apps.png" class="google_button" style="width: 3.5%; top: 8.5%; left: 0.3%;" id="menu_apps" onmouseover="GetId(this)">
+        <img src="./Google/bookmark_gmail.png" class="google_button" style="width: 8%; top: 8.5%; left: 4%;" id="favorites_gmail" onmouseover="GetId(this)">
+        <img src="./Google/add_shortcut.png" class="google_button" style="width: 6%; top: 53%; left: 47%;" id="add_shortcut" onmouseover="GetId(this)">
+
+        <!--Monitor and text zone.-->
+        <img src="./Google/monitor.png" style="width: 30%; margin-top: -26%; left: -6%; position: relative;">
+        <div style="margin-top: -26%; height: 19vw; position: absolute; width: 24.5%; margin-left: -3%;">
+            <h5 style="text-align: center; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute;" id="google_information">Hover on the different buttons of the virtual screen on the right to find out more about google's functionalities.</h5>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
