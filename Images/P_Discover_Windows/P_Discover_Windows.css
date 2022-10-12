@@ -21,6 +21,21 @@
     z-index: 1;
 }
 
+#try_button {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 25%;
+    top: 5vw;
+    margin-left: 86%;
+    transition: 0.3s;
+    z-index: 3;
+    margin-top: -9vw;
+}
+
+#try_button:hover {
+    transform: translate(-2%, 0);
+}
+
 .skills_parts {
     margin-left: 32%;
     margin-right: 32%;
