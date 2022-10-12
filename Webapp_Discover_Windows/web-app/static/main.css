@@ -156,25 +156,9 @@ h5 {
     width: 25%;
     left: -10%;
     top: 3%;
-}
-
-h6 {
-    font-family: fira-sans, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5vw;
-    color: #FEDBAF;
-    position: absolute;
-    top: 7.8%;
-    margin-left: 1.2%;
-    width: 10%;
-    text-align: center;
+    transition: 0.3s;
 }
 
 #portfolio_button:hover {
     transform: translate(2%, 0);
-}
-
-#portfolio_button {
-    transition: 0.3s;
 }
