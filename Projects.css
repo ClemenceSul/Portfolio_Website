@@ -212,16 +212,20 @@ h4 {
     z-index: 1;
 }
 
-#video_rect {
-    width: 100%;
-    top: -2vw;
-    height: 45vw;
+.part.video {
+    background-image: url("./Images/triangle\ bg@4x.png");
+    background-position: center;
+    background-size: 145%;
+    background-repeat: no-repeat;
+    height: 55vw;
 }
+
 
 #video_layout {
     width: 60%;
     position: relative;
     left: 20%;
+    margin-top: 8vw;
 }
 
 footer {
