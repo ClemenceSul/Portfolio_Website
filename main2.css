@@ -274,7 +274,7 @@ figcaption {
   position: absolute;
   width: 98.5%;
   left: 2px;
-  bottom: 0;
+  bottom: 7px;
   z-index: 1;
   font-family: fira-sans, sans-serif;
   font-style: normal;
