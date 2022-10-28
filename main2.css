@@ -276,8 +276,7 @@ figure img {
 figcaption {
   position: absolute;
   width: 98.5%;
-  left: 2px;
-  bottom: 7px;
+  bottom: 3px;
   z-index: 1;
   font-family: fira-sans, sans-serif;
   font-style: normal;
