@@ -89,7 +89,6 @@
 	height: 1.5vw;
 	border-radius: 0.5vw;
 	background-color: #0F265C;
-	border: solid 0.2vw #FEDBAF;
 	animation: loadingG 1.5s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
 }
 
