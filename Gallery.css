@@ -20,7 +20,6 @@
 	columns: 3 20vw;
 }
 
-
 /*.gallery*/
 .gallery{
 	width: 98%;
@@ -83,3 +82,32 @@
 	}
 } */
 
+/* Loading element */
+/* V2 */
+.square {
+	width: 1.5vw;
+	height: 1.5vw;
+	border-radius: 0.5vw;
+	background-color: #0F265C;
+	border: solid 0.2vw #FEDBAF;
+	animation: loadingG 1.5s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+.square-holder {
+	width: 8.5vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3vw;
+}
+
+@keyframes loadingG {
+	0% {
+	  transform: translate(0, 0) rotate(0deg);
+	}
+	50% {
+	  transform: translate(7vw, 0) rotate(360deg);
+	}
+	100% {
+	  transform: translate(0, 0) rotate(0deg);
+	}
+  }
