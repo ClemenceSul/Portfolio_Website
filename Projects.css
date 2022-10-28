@@ -165,6 +165,10 @@ p {
     position: relative;
 }
 
+img {
+    transition: 0.3s ease;
+}
+
 h4 {
     font-family: fira-sans, sans-serif;
     font-weight: 100;
@@ -194,6 +198,13 @@ h4 {
     position: static;
     height: auto;
     margin-top: 2vw;
+
+
+    -moz-transition: 0.3s ease-in-out all;
+    -o-transition: 0.3s ease-in-out all;
+    -webkit-transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out all;
+
 }
 
 .part_text {
@@ -251,3 +262,25 @@ footer {
     margin-bottom: 3vw;
 }
 
+
+/* Text animation */
+.reveal{
+    opacity: 0;
+    transition: 0.7s all ease;
+}
+.right.reveal{
+    transform: translateX(150px);
+}
+.left.reveal{
+    transform: translateX(-150px);
+}
+.top.reveal{
+    transform: translateY(-150px);
+}
+.bottom.reveal{
+    transform: translateY(150px);
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}

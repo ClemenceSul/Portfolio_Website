@@ -57,7 +57,7 @@
 
 .gallery .gallery-item-inner img{
 	width: 100%;
-	border: 2px solid #DBDEE7;
+	/* border: 2px solid #DBDEE7; */
 	transition: all 0.3s ease;
 }
 
