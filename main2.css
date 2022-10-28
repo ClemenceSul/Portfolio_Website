@@ -269,6 +269,9 @@ figure {
   margin: 0;
   transition: 0.3s;
 }
+figure img {
+  filter: brightness(90%);
+}
 
 figcaption {
   position: absolute;
@@ -294,7 +297,10 @@ figcaption span {
 }
 
 figure:hover {
-  transform: scale(1.05);
+  transform: scale(1);
+}
+figure:hover img {
+  filter: brightness(105%);
 }
 figure:hover figcaption {
   opacity: 1;

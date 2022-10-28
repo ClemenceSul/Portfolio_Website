@@ -217,6 +217,10 @@ figure {
 	width: 100%;
 	margin: 0;
     transition: .3s;
+
+    img {
+        filter: brightness(90%);
+    }
 }
 
 figcaption {
@@ -244,8 +248,10 @@ figcaption span {
 
 
 figure:hover {
-
-    transform: scale(1.05);
+    transform: scale(1);
+    img {
+        filter: brightness(105%);
+    }
 
 	figcaption {
 		opacity: 1;
