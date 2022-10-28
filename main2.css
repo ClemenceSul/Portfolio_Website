@@ -270,7 +270,7 @@ figure {
   transition: 0.3s;
 }
 figure img {
-  filter: brightness(90%);
+  filter: brightness(95%);
 }
 
 figcaption {
