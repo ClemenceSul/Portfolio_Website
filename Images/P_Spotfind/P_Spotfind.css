@@ -84,6 +84,7 @@
 #img_part4 {
     width: 50%;
     left: 30%;
+    box-shadow: 0 0 20px darkgray;
 }
 #part4_text {
     width: 60%;
