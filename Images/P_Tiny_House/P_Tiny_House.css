@@ -60,6 +60,7 @@
     left: 62%;
     padding-left: 2%;
     padding-right: 2%;
+    z-index: 2;
 }
 #diagram_table {
     position: relative;
