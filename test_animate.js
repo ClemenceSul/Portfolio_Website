@@ -16,8 +16,8 @@ function reveal() {
         var windowHeight = window.innerHeight;
         var elementTopV = Vreveals[i].getBoundingClientRect().top;
         var videoVisible = 500;
-
-        if (elementTopV < windowHeight - videoVisible) {
+        let height = Vreveals[i].offsetHeight;
+        if (elementTopV < windowHeight - height + 500) {
             Vreveals[i].classList.add("active");
         } else {
             Vreveals[i].classList.remove("active");
