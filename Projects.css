@@ -266,7 +266,7 @@ footer {
 /* Text animation */
 .reveal{
     opacity: 0;
-    transition: 0.7s all ease;
+    transition: 0.5s all ease;
 }
 .right.reveal{
     transform: translateX(150px);
@@ -282,5 +282,15 @@ footer {
 }
 .reveal.active{
     transform: translateY(0);
+    opacity: 1;
+}
+.video.reveal{
+    opacity: 0;
+    transition: 0.3s all ease;
+    transform: scale(0.5);
+}
+
+.video.reveal.active{
+    transform: scale(1);
     opacity: 1;
 }

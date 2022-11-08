@@ -1,15 +1,26 @@
 function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-
-    for (var i = 0; i < reveals.length; i++) {
+    var Treveals = document.querySelectorAll(".part_text.reveal");
+    for (var i = 0; i < Treveals.length; i++) {
         var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 100;
+        var elementTopT = Treveals[i].getBoundingClientRect().top;
+        var textVisible = 100;
 
-        if (elementTop < windowHeight - elementVisible && elementTop > elementVisible) {
-            reveals[i].classList.add("active");
+        if (elementTopT < windowHeight - textVisible && elementTopT > textVisible) {
+            Treveals[i].classList.add("active");
         } else {
-            reveals[i].classList.remove("active");
+            Treveals[i].classList.remove("active");
+        }
+    }
+    var Vreveals = document.querySelectorAll(".video.reveal");
+    for (var i = 0; i < Vreveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTopV = Vreveals[i].getBoundingClientRect().top;
+        var videoVisible = 500;
+
+        if (elementTopV < windowHeight - videoVisible) {
+            Vreveals[i].classList.add("active");
+        } else {
+            Vreveals[i].classList.remove("active");
         }
     }
 }
