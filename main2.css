@@ -303,4 +303,64 @@ figure:hover img {
 }
 figure:hover figcaption {
   opacity: 1;
+}
+
+/* last gallery */
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-115vw);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-115vw);
+  }
+}
+.slider {
+  height: 20vw;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  top: -2vw;
+  width: 100%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgb(254, 219, 175) 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.6;
+  content: "";
+  height: 20vw;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 10s linear infinite;
+          animation: scroll 10s linear infinite;
+  display: flex;
+  width: 230vw;
+}
+.slider .slide img {
+  height: 20vw;
+  margin-left: 1vw;
+}
+.slider .slide img.P {
+  width: 15vw;
+}
+.slider .slide img.L {
+  width: 26.6666666667vw;
 }/*# sourceMappingURL=main2.css.map */

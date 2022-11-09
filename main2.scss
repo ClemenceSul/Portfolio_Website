@@ -259,3 +259,72 @@ figure:hover {
 	}
 }
 
+/* last gallery */
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgb(254, 219, 175) 0%,rgba(255,255,255,0) 100%);
+    opacity: 0.6;
+}
+
+$animationSpeed: 10s;
+$height: 20vw;
+$widthL: $height * 4/3;
+$widthP: $height * 3/4;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-23vw * 5))}
+}
+
+// Styling
+.slider {
+	height: $height;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+    top: -2vw;
+	width: 100%;
+	
+    &::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: $height;
+		position: absolute;
+		width: 100px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(23vw * 10);
+	}
+	
+	.slide {
+        img{
+            height: $height;
+            margin-left: 1vw;
+        }
+        img.P{
+            width: $widthP;
+        }
+        img.L{
+            width: $widthL;
+        }
+	}
+}
+
+
