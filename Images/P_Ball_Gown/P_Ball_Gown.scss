@@ -112,6 +112,7 @@ $animationSpeed: 30s;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
+    background-color: transparent;
 	
     &::before,
 	&::after {
