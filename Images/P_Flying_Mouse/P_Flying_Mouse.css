@@ -1,0 +1,111 @@
+
+#summary_text {
+    color: #0F265C;
+    text-align: center;
+    width: 34%;
+    position: absolute;
+    left: 50%;
+    top: 12vw;
+    z-index: 1;
+}
+
+.skills_parts {
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+.rectangle {
+    width: 5vw;
+    background-color: #FEDBAF;
+    border-radius: 1vw;
+    position: relative;
+    z-index: 2;
+    top: -5vw;
+}
+
+.icon{
+    position: relative;
+    width: 100%;
+    margin-top: 0.5vw;
+    z-index: 2;
+}
+
+.left_side {
+    width: 50%;
+    margin-left: 50%;
+    display: flex;
+    margin-top: -4vw;
+}
+.right_side {
+    width: 50%;
+    margin-left: 0%;
+    display: flex;
+    margin-top: -4vw;
+}
+
+.lineL {
+    position: relative;
+    height: 3.5vw;
+    margin-top: 1.5vw;
+    margin-left: 3vw;
+    z-index: 1;
+}
+
+.lineR {
+    position: relative;
+    height: 3.5vw;
+    margin-top: 1.5vw;
+    margin-left: -7vw;
+    z-index: 1;
+}
+
+.img_textL {
+    width: 80%;
+    margin-left: -2vw;
+    margin-top: -1.5vw;
+}
+
+.img_textR {
+    width: 80%;
+    margin-left: 4vw;
+    margin-top: -1.5vw;
+}
+
+h5 {
+    font-family: fira-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1vw;
+    color: #0F265C;
+}
+
+.img {
+    position: relative;
+    z-index: 0;
+    margin-top: 2vw;
+}
+
+.img.L {
+    margin-left: -2vw;
+}
+
+.img.R {
+    margin-left: 4vw;
+}
+
+
+.s1.rectangle {
+    height: 25vw;
+}
+.s1.img {
+    width: 80%;
+}
+
+
+.s2.rectangle {
+    height: 33vw;
+}
+
+.s2.img {
+    width: 80%;
+}
