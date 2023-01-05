@@ -308,6 +308,11 @@ $imgMargins: 1vw;
   height: 50rem;
 }
 
+.carousel-img {
+  position: relative;
+  justify-self: center;
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
