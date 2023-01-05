@@ -1,145 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8SL1TS6MW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-W8SL1TS6MW');
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Color Master</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="Projects.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./Images/P_Color_Master/P_Color_Master.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/xqf1uow.css">
-</head>
+    <link href="./Resources/bootstrap-5.3.0-alpha1-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<body>
-    <div class="header">
-        <a href="./index.html" class="header_button"><img src="./Images/Name 1.png"></a>
-        <div id="tabs_group">
-            <a href="./index.html#test_title" class="header_button"><div class="tabs"><h1>Work</h1></div></a>
-            <a href="./Gallery.html" class="header_button"><div class="tabs"><h1>Gallery</h1></div></a>
-            <a href="./About_Me.html" class="header_button"><div class="tabs"><h1>About</h1></div></a>            
-        </div>
-    </div>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
     
-    <div id="title_part">
-        <div id="title_info">
-            <div id="project_title">
-                <h2>Color Master</h2>
-                <h3>A sassy opponent</h3>
-            </div>
-            <h3 id="date">Autumn 2021</h3>
-        </div>
-        <div id="title_image_div">
-            <img id="title_image" src="./Images/P_Color_Master/color master2.png">
-            <div id="summary_text">
-                <p>Mastermind is a simple logic game in which the user attempts to find the hidden code through multiple iterations. Play against the Color Master, as he removes the wrongly placed blocks but keeps those rightly placed until you crack the code, or lose!</p>
-            </div>
-        </div>
+    <!-- Custom styles for this template -->
+    <link href="./main.css" rel="stylesheet">
+  </head>
+
+<body class="text-start text-bg-light">
+    <!-- 
+    Header 
+    -->
+    <div class="w-100 h-auto p-2 fixed-top the_header">
+        <header class="mb-auto cover-container d-flex mx-auto flex-column">
+          <div>
+            <h3 class="float-md-start text-center">Clémence Sulmont</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a class="nav-link fw-semibold fs-5 py-1 px-0 active dropdown-toggle" style="margin-right: 1.8rem;" href="./work.html" data-bs-toggle="dropdown" aria-current="page" aria-expanded="false">Work</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./work.html">Menu</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./Color_Master.html">Color Master</a></li>
+                <li><a class="dropdown-item" href="./Spotfind.html">Spotfind</a></li>
+                <li><a class="dropdown-item" href="./Discover_Windows.html">Discover Windows</a></li>
+                <li><a class="dropdown-item" href="./Sensko.html">Sensko</a></li>
+                <li><a class="dropdown-item" href="./Race_Car.html">Race Car</a></li>
+                <li><a class="dropdown-item" href="./Ball_Gown.html">Ball Gown</a></li>
+                <li><a class="dropdown-item" href="./Taking_Over.html">Taking Over</a></li>
+                <li><a class="dropdown-item" href="./Refill_Shampoo.html">Refill Shampoo</a></li>
+              </ul>
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./Gallery.html">Gallery</a>
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./About_Me.html">About</a>
+            </nav>
+          </div>
+        </header>
     </div>
 
-    <div id="skills_div">
-        <img id="skills_line" src="./Images/P_Skills/Line3.png">
-        <div class="skills_parts">
-            <div>
-                <img class="skills_dot" src="./Images/P_Skills/S_Code.png">
-                <h4>Programmed Arduino Mega 2560 with C++</h4>
-            </div>
-            <div>
-                <img class="skills_dot" src="./Images/P_Skills/S_CAD.png">
-                <h4>Design validation with CAD</h4>
-            </div>
-            <div>
-                <img class="skills_dot" src="./Images/P_Skills/S_Electronics.png">
-                <h4>Color sensors and motorized arms assembly</h4>
-            </div>
-            <div>
-                <img class="skills_dot" src="./Images/P_Skills/S_Creation.png">
-                <h4>Prototyping & Laser cutting plywood</h4>
-            </div>
-        </div>
+<main>
+
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div style="background-image: url(./Images/P_Color_Master/CM_Background.png); background-size: 100%; background-repeat: no-repeat;">
-    <div>
-        <div class="part" style="margin-top: 6vw;">
-            <img loading="lazy" src="./Images/P_Color_Master/IMG_1518.jpg" id="img_part1" class="part_img video reveal">
-            <div id="part1_text" class="part_text left reveal">
-                <p>
-                    <span class="paragraph_title">Creating color sensors.</span>
-                    <span>Red, green and blue are flashed by RGB Leds, and the reflected light perceived by CDS Photocells identifies each color.</span>
-                </p>
-            </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Images/P_Color_Master/img_user_playing.png" class="bd-placeholder-img carousel_img" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption right text-end">
+            <h1>Color Master</h1>
+            <p>Mastermind is a simple logic game in which the user attempts to find the hidden color code through multiple iterations. </p>
+            <p><a class="btn btn-lg btn-outline-light" href="#block_color">See more about the color detection</a></p>
+          </div>
         </div>
-        <div class="part">
-            <img loading="lazy" src="./Images/P_Color_Master/IMG_code.png" id="img_part2" class="part_img video reveal">
-            <div id="part2_text" class="part_text top reveal">
-                <p>
-                    <span class="paragraph_title">Programming.</span>
-                    <span>A robot lacks the spontaneity and personality a human opponent would have. Therefore, a series of different movements were taught to the box and selected at random when blocks were pushed off.</span>
-                </p>
-            </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Images/P_Color_Master/img_pushing_off.png" class="bd-placeholder-img carousel_img" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption left text-start">
+            <h1>Color Master</h1>
+            <p>Play against the Color Master, as he removes the wrongly placed blocks but keeps those rightly placed until you crack the code, or lose!</p>
+            <p><a class="btn btn-lg btn-outline-light" href="#program_code">See how the arms operate</a></p>
+          </div>
         </div>
-        <div class="part">
-            <img loading="lazy" src="./Images/P_Color_Master/IMG_1134.png" id="img_part3" class="part_img video reveal">
-            <div id="part3_text" class="part_text left reveal">
-                <p>
-                    <span class="paragraph_title">User Experience.</span>
-                    <span>Games must be portable and easy to set-up, therfore a small storage space for the blocks was added on the side of the box.</span>
-                </p>
-            </div>
+      </div>
+      <div class="carousel-item" style="background-color: #777;">
+        <img src="./Images/P_Color_Master/img_box_inside.png" class="bd-placeholder-img" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption right text-end">
+            <h1>Color Master</h1>
+            <p>It's compact form was designed to contain all the necessary electronics, along with a storage space for the blocks, enhancing user experience.</p>
+            <p><a class="btn btn-lg btn-outline-light" href="#design_cad">See more about CAD validation</a></p>
+          </div>
         </div>
-        <div class="part">
-            <img loading="lazy" src="./Images/P_Color_Master/IMG_1489.png" id="img_part4" class="part_img video reveal">
-            <div id="part4_text" class="part_text right reveal">
-                <p>
-                    <span class="paragraph_title">User Testing.</span>
-                    <span> Verified the arms managed to push the blocks off. Validated the code with various users, ensuring it would behave as expected with all players.</span>
-                </p>
-            </div>
-        </div>
-        <div class="part">
-            <img loading="lazy" src="./Images/P_Color_Master/IMG_Cad.png" id="img_part5" class="part_img video reveal">
-            <div id="part5_text" class="part_text top reveal">
-                <p>
-                    <span class="paragraph_title">3D Modelling.</span>
-                    <span>Before building the Color Master, a CAD model was created with Solidworks to ensure all the electronics components would fit together correctly.</span>
-                </p>
-            </div>
-        </div>
-        <div class="part video reveal" style="margin-top: 4vw;">
-            <video width="600" controls id="video_layout">
-                <source src="./Images/P_Color_Master/Color master.mp4" type="video/mp4">
-            </video>
-        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Skills and details
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="./Images/P_Skills/S_Create.png" class="bd-placeholder-img" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+        <h2 class="fw-normal">Physical Creation</h2>
+        <p>Prototyping & Laser cutting plywood</p>
+        <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="./Images/P_Skills/S_Electronics.png" class="bd-placeholder-img" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+        <h2 class="fw-normal">Electronics</h2>
+        <p>Color sensors and motorized arms assembly</p>
+        <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="./Images/P_Skills/S_Code.png" class="bd-placeholder-img" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+        <h2 class="fw-normal">Programming</h2>
+        <p>Programmed Arduino Mega 2560 with C++</p>
+        <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider" id="block_color">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Detecting block colors. <span class="text-muted">Without buying color sensors.</span></h2>
+        <p class="lead">Red, green and blue are flashed by RGB Leds, and the reflected light perceived by CDS Photocells is recorded. Using the differences in values established through prior analysis and calibration, each color is identified.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./Images/P_Color_Master/IMG_1518.jpg"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+      </div>
     </div>
 
-    <footer style="position: relative; top: 5vw;">
-        <div id="contact_info">
-            <div style="display: flex;">
-                <img src="./Images/Email Icon.png" class="footer_icon">
-                <p style="font-size: 1vw;">clemence.sulmont@gmail.com</p>
-            </div>
-            <div style="display: flex; margin-left: 10%;">
-                <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
-                    <img src="./Images/LinkedIn Logo.png" class="footer_icon">
-                </a>
-                <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
-                    <p style="font-size: 1vw;">www.linkedin.com/in/clémence-sulmont/</p>
-                </a>
-            </div>
-        </div>
-        <p style="font-size: 1vw; text-align: center; line-height: 1.3vw;">This website was designed and created by Clémence Sulmont. <br> © 2022 Clémence Sulmont</p>
-    </footer>
+    <hr class="featurette-divider" id="program_code">
 
-    <script src="./test_animate.js"></script>
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Programming the Color Master's response. <span class="text-muted">Sassy like a real opponent.</span></h2>
+        <p class="lead">A robot lacks the spontaneity and personality a human opponent would have. Therefore, a series of different movements were taught to the box and selected at random when blocks were pushed off.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./Images/P_Color_Master/Artboard 3.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+      </div>
+    </div>
 
-</body>
+    <hr class="featurette-divider" id="design_cad">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Validating design in CAD. <span class="text-muted">To avoid XX errors.</span></h2>
+        <p class="lead">Before building the Color Master, a CAD model was created with Solidworks to ensure all the electronics components would fit together correctly.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./Images/P_Color_Master/Portfolio 1.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
 
 
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="./Resources/bootstrap-5.3.0-alpha1-examples/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
