@@ -29,8 +29,8 @@ body {
 */
 
 .the_header {
-  background: linear-gradient(to bottom, rgba(248,249,250, 1) 0%,rgba(255,255,255,0) 100%);
-  //background-color: yellow;
+  // background: linear-gradient(to bottom, rgba(248,249,250, 1) 70%,rgba(255,255,255,0) 100%);
+  background-color: rgba(248,249,250, 1);
 }
 
 .nav-masthead .nav-link {
@@ -247,8 +247,9 @@ $amount: 5;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 1rem;
   z-index: 10;
+  width: 30vw;
 }
 
 /* Declare heights because of positioning of img element */
@@ -256,9 +257,12 @@ $amount: 5;
   height: 50rem;
 }
 
-.carousel-img{
-  position: relative;
-  justify-self: center;
+.carousel-caption.left {
+  margin-left: -5vw;
+}
+
+.carousel-caption.right {
+  margin-left: 45vw;
 }
 
 
