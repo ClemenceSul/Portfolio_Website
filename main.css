@@ -305,7 +305,7 @@ $imgMargins: 1vw;
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 50rem;
 }
 
 /* MARKETING CONTENT
