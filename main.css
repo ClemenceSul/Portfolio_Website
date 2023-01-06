@@ -297,6 +297,10 @@ $imgMargins: 1vw;
   margin-bottom: 4rem;
 }
 
+.carousel.nb2 {
+  margin-bottom: 1rem;
+}
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 1rem;
@@ -309,6 +313,11 @@ $imgMargins: 1vw;
   height: 50rem;
 }
 
+.carousel-item.nb2 {
+  height: 500px;
+  width: 500px;
+}
+
 .carousel-caption.left {
   margin-left: -5vw;
 }
@@ -317,7 +326,7 @@ $imgMargins: 1vw;
   margin-left: 45vw;
 }
 
-/* MARKETING CONTENT
+/* Marketing Content
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
@@ -345,7 +354,7 @@ $imgMargins: 1vw;
 }
 
 /* rtl:end:remove */
-/* RESPONSIVE CSS
+/* Responsive CSS
 -------------------------------------------------- */
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
@@ -362,4 +371,51 @@ $imgMargins: 1vw;
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+/*
+ * CARROUSEL 2 (Ball Gown)
+*/
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1530px);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1530px);
+  }
+}
+.slider {
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  top: -2vw;
+  width: 100%;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 30s linear infinite;
+          animation: scroll 30s linear infinite;
+  display: flex;
+  width: 3060px;
+}
+.slider .slide img {
+  height: 500px;
+  margin-left: 10px;
+  width: 500px;
 }/*# sourceMappingURL=main.css.map */

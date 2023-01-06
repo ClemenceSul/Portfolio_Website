@@ -245,6 +245,11 @@ $amount: 5;
 .carousel {
   margin-bottom: 4rem;
 }
+
+.carousel.nb2 {
+  margin-bottom: 1rem;
+}
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 1rem;
@@ -257,6 +262,11 @@ $amount: 5;
   height: 50rem;
 }
 
+.carousel-item.nb2 {
+  height: 500px;
+  width: 500px;
+}
+
 .carousel-caption.left {
   margin-left: -5vw;
 }
@@ -266,7 +276,7 @@ $amount: 5;
 }
 
 
-/* MARKETING CONTENT
+/* Marketing Content
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
@@ -297,7 +307,7 @@ $amount: 5;
 
 /* rtl:end:remove */
 
-/* RESPONSIVE CSS
+/* Responsive CSS
 -------------------------------------------------- */
 
 @media (min-width: 40em) {
@@ -318,3 +328,80 @@ $amount: 5;
     margin-top: 7rem;
   }
 }
+
+
+/*
+ * CARROUSEL 2 (Ball Gown)
+*/
+
+// @mixin white-gradient {
+// 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+//     opacity: 0.6;
+// }
+
+$animationSpeed: 30s;
+$nbpictures: 3;
+$margin: 10px;
+$height: 500px;
+$width: 500px;
+// $widthL: $height * 4/3;
+// $widthP: $height * 3/4;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(calc($width + $margin) * (-1) * $nbpictures))}
+}
+
+// Styling
+.slider {
+	height: $height;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+  top: -2vw;
+	width: 100%;
+	
+  // &::before,
+	// &::after {
+	// 	@include white-gradient;
+	// 	content: "";
+	// 	height: $height;
+	// 	position: absolute;
+	// 	width: 100px;
+	// 	z-index: 2;
+	// }
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(calc($width + $margin) * calc($nbpictures * 2));
+	}
+	
+	.slide {
+        img{
+            height: $height;
+            margin-left: $margin;
+            width: $width;
+        }
+        // img.P{
+        //     width: $widthP;
+        // }
+        // img.L{
+        //     width: $widthL;
+        // }
+	}
+}
+
+
