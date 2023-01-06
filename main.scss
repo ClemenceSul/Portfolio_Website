@@ -334,18 +334,11 @@ $amount: 5;
  * CARROUSEL 2 (Ball Gown)
 */
 
-// @mixin white-gradient {
-// 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-//     opacity: 0.6;
-// }
-
 $animationSpeed: 30s;
 $nbpictures: 3;
 $margin: 10px;
 $height: 500px;
 $width: 500px;
-// $widthL: $height * 4/3;
-// $widthP: $height * 3/4;
 
 // Animation
 @keyframes scroll {
@@ -361,16 +354,6 @@ $width: 500px;
 	position: relative;
   top: -2vw;
 	width: 100%;
-	
-  // &::before,
-	// &::after {
-	// 	@include white-gradient;
-	// 	content: "";
-	// 	height: $height;
-	// 	position: absolute;
-	// 	width: 100px;
-	// 	z-index: 2;
-	// }
 	
 	&::after {
 		right: 0;
@@ -395,12 +378,6 @@ $width: 500px;
             margin-left: $margin;
             width: $width;
         }
-        // img.P{
-        //     width: $widthP;
-        // }
-        // img.L{
-        //     width: $widthL;
-        // }
 	}
 }
 
