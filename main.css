@@ -418,4 +418,12 @@ $imgMargins: 1vw;
   height: 500px;
   margin-left: 10px;
   width: 500px;
+}
+
+.btn-webapp {
+  width: 24rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+  font-size: x-large;
 }/*# sourceMappingURL=main.css.map */
