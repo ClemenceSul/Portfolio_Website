@@ -297,10 +297,6 @@ $imgMargins: 1vw;
   margin-bottom: 4rem;
 }
 
-.carousel.nb2 {
-  margin-bottom: 1rem;
-}
-
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 1rem;
@@ -310,12 +306,12 @@ $imgMargins: 1vw;
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 50rem;
+  height: 56rem;
 }
 
-.carousel-item.nb2 {
-  height: 500px;
-  width: 500px;
+.carousel-item.race-car {
+  width: 100%;
+  height: auto;
 }
 
 .carousel-caption.left {
