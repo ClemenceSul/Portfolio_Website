@@ -1,148 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8SL1TS6MW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-W8SL1TS6MW');
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Taking Over</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="Projects.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./Images/P_Taking_Over/P_Taking_Over.css"/>
-    <link rel="stylesheet" href="https://use.typekit.net/xqf1uow.css">
-</head>
+    <link href="./Resources/bootstrap-5.3.0-alpha1-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<body style="overflow-x: hidden;">
-    <div class="header">
-        <a href="./index.html" class="header_button"><img src="./Images/Name 1.png"></a>
-        <div id="tabs_group">
-            <a href="./index.html#test_title" class="header_button"><div class="tabs"><h1>Work</h1></div></a>
-            <a href="./Gallery.html" class="header_button"><div class="tabs"><h1>Gallery</h1></div></a>
-            <a href="./About_Me.html" class="header_button"><div class="tabs"><h1>About</h1></div></a>            
-        </div>
-    </div>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
     
-    <div id="title_part">
-        <div id="title_info">
-            <div id="project_title">
-                <h2>Taking Over</h2>
-                <h3>A 3D printed automaton</h3>
-            </div>
-            <h3 id="date">Winter 2022</h3>
-        </div>
-        <div id="title_image_div">
-            <img id="title_image" src="./Images/P_Taking_Over/IMG_2208 1.png">
-            <div id="summary_text">
-                <p>This automaton is a memento to climate change, depicting factories taking over the arctic and antarctic, invading the animals’ natural habitats. All components have been 3D printed and assembled to bring this scene to life.</p>
-            </div>
-        </div>
+    <!-- Custom styles for this template -->
+    <link href="./main.css" rel="stylesheet">
+  </head>
+
+<body class="text-start text-bg-light">
+    <!-- 
+    Header 
+    -->
+    <div class="w-100 h-auto p-3 fixed-top the_header">
+        <header class="mb-auto cover-container d-flex mx-auto flex-column">
+          <div>
+            <h3 class="float-md-start text-center">Clémence Sulmont</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a class="nav-link fw-semibold fs-5 py-1 px-0 active dropdown-toggle" style="margin-right: 1.8rem;" href="./work.html" data-bs-toggle="dropdown" aria-current="page" aria-expanded="false">Work</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./work.html">Menu</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./Color_Master.html">Color Master</a></li>
+                <li><a class="dropdown-item" href="./Spotfind.html">Spotfind</a></li>
+                <li><a class="dropdown-item" href="./Discover_Windows.html">Discover Windows</a></li>
+                <li><a class="dropdown-item" href="./Sensko.html">Sensko</a></li>
+                <li><a class="dropdown-item" href="./Race_Car.html">Race Car</a></li>
+                <li><a class="dropdown-item" href="./Ball_Gown.html">Ball Gown</a></li>
+                <li><a class="dropdown-item" href="./Taking_Over.html">Taking Over</a></li>
+                <li><a class="dropdown-item" href="./Refill_Shampoo.html">Refill Shampoo</a></li>
+              </ul>
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./Gallery.html">Gallery</a>
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./About_Me.html">About</a>
+            </nav>
+          </div>
+        </header>
     </div>
 
-    <div id="skills_div">
-        <img id="skills_line" src="./Images/P_Skills/Line3.png">
-        <div class="skills_parts">
-            <div>
-                <img class="skills_dot" src="./Images/P_Skills/S_CAD.png">
-                <h4>Creation and validation of all elements in CAD</h4>
-            </div>
-            <div>
-                <img class="skills_dot" src="./Images/P_Skills/S_Workshop.png">
-                <h4>3D printing pieces before fine tuning and assembling</h4>
-            </div>
-            <div>
-                <img class="skills_dot" src="./Images/P_Skills/S_Photo.png">
-                <h4>Smart video editing to showcase final result</h4>
-            </div>
-        </div>
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
     </div>
-    <div style="background-image: url(./Images/P_Taking_Over/TO_Background.png); background-size: 100%; background-repeat: no-repeat;">
-    <div>
-        <div class="part" style="margin-top: 5vw;">
-            <img loading="lazy" src="./Images/P_Taking_Over/Antarctica.png" id="img_part1" class="part_img video reveal">
-            <div id="part1_text" class="part_text left reveal">
-                <p>
-                    <span class="paragraph_title">Designing a memento to climate change.</span>
-                    <span>Our earth is suffering from mankind’s actions, the rise of temperature  causing drastic damage in the arctic and antarctic, with ice melting generating a chain of problems. Furthermore, the race for unexploited ressources in these territories exhasterbates the banishment of the arctic and antarctic animals. This is what I wished to expose with my automaton, a factory taking over the land from the animals, whom will only appear in old videos if we continue on this destructive path.</span>
-                </p>
-            </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Images/P_Taking_Over/img_glacier.png" class="bd-placeholder-img carousel_img" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption left">
+            <h1 style="color: black;">Taking Over</h1>
+            <p style="color: black;">This automaton is a memento to climate change, depicting factories taking over the arctic and antarctic, invading the animals’ natural habitats. All components have been 3D printed and assembled to bring this scene to life.</p>
+            <p><a class="btn btn-lg btn-outline-dark" href="#mise_en_scene">See more about the 'mise en scene'</a></p>
+          </div>
         </div>
-        <div class="part" style="margin-top: 5vw;">
-            <img loading="lazy" src="./Images/P_Taking_Over/Actors Images.png" id="img_part2" class="part_img video reveal">
-            <div id="part2_text" class="part_text top reveal">
-                <p>
-                    <span class="paragraph_title">Actors’ creation through CAD.</span>
-                    <span>Actors are a crutial element when narrating a compelling story. In the factory line, all workers were made identical, with very few details, so the sense of seperate individuals disappears and they become a uniform robot-like group drilling into the ice. In comparison, the animals were given a low poly aesthetic granting them a ghost like appearance as phantoms of a past reality.</span>
-                </p>
-            </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Images/P_Taking_Over/img_backdrop.png" class="bd-placeholder-img carousel_img" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption right">
+            <h1>Taking Over</h1>
+            <p>Each actor's movements was designed to mimick their real actions and bring the story to life.</p>
+            <p><a class="btn btn-lg btn-outline-light" href="#mechanisms">See more about the mechanisms</a></p>
+          </div>
         </div>
-        <div class="part" style="margin-top: 5vw;">
-            <img loading="lazy" src="./Images/P_Taking_Over/Mech Images.png" id="img_part3" class="part_img video reveal">
-            <div id="part3_text" class="part_text top reveal">
-                <p>
-                    <span class="paragraph_title">Various cams for precise actor movements.</span>
-                    <span>To mimick reality, the cams were designed according to the movements required for each actor. Each worker in the factory line must go up and down to represent drilling. In addition, the cams were designed with a sudden drop to create a constant ticking noise like a machine would. For the penguins, an oscillating motion was prefered, to resemble their walk (top middle). The polar bear and seal used uneven cams for a story-like result of the polar bear reaching for the seal. In the polar bear, the weight of the arm pulled the link up, hence an inversed slider was designed (bottom right).</span>
-                </p>
-            </div>
+      </div>
+      <!-- <div class="carousel-item">
+        <img src="./Images/P_Taking_Over/img_gears.png" class="bd-placeholder-img carousel_img" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Taking Over</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-outline-dark" href="#">Browse gallery</a></p>
+          </div>
         </div>
-        <div class="part" style="margin-top: 5vw;">
-            <img loading="lazy" src="./Images/P_Taking_Over/Assembly Images.png" id="img_part4" class="part_img video reveal">
-            <div id="part4_text" class="part_text right reveal">
-                <p>
-                    <span class="paragraph_title">Assembling all 3D printed components.</span>
-                    <span>Although each part of the automaton can designed seperately, all the gears and shafts used the same male / female shapes which made them interchangeable (top left). This was quite useful to test mechanisms with pre-printed pieces and solved multiple issues encountered when assembling. As this project stipulated only 3D printed pieces were allowed, blocks (top right) were designed to avoid unwanted movements of the pieces and some pieces were melted (bottom right) to permenantly attach them.</span>
-                </p>
-            </div>
-        </div>
-        <div class="part">
-            <img loading="lazy" src="./Images/P_Taking_Over/IMG_1601 1.png" id="img_part5" class="part_img video reveal">
-            <div id="part5_text" class="part_text top reveal">
-                <p>
-                    <span class="paragraph_title">Final product visual effect.</span>
-                    <span>After assembling the working automaton together, I realized some shapes were hard to distinguish from one another as they had all been printed with the same filament. Hence, the actors of the scene were painted to make them stand out from the rest of the automaton.</span>
-                </p>
-            </div>
-        </div>
-        <div class="part video reveal">
-            <div id="part6_text" class="part_text">
-                <p>
-                    <span class="paragraph_title">Video sound effect.</span>
-                    <span>When actioned, the automaton generates an interesting clicking noise from the factory line cams and other connections, however I wished to discretely enhance certain movements of the actors in the video. Therefore various sound effects were imagined, recorded and implemented.</span>
-                </p>
-            </div>
-            <video width="600" controls id="video_layout">
-                <source src="./Images/P_Taking_Over/Taking Over - Video.mp4" type="video/mp4">
-            </video>
-        </div>
+      </div> -->
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Skills and details
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="./Images/P_Skills/S_CAD.png" class="bd-placeholder-img" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+        <h2 class="fw-normal">CAD Validation</h2>
+        <p>Creation and validation of all elements in CAD</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="./Images/P_Skills/S_Create.png" class="bd-placeholder-img" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+        <h2 class="fw-normal">Physical Creation</h2>
+        <p>3D printing pieces before fine tuning and assembling</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="./Images/P_Skills/S_Video.png" class="bd-placeholder-img" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+        <h2 class="fw-normal">Photo / Video</h2>
+        <p>Smart video editing to showcase final result, and the different mechanisms</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <!-- <h2 class=" fw-normal lh-1" style="margin-bottom: 4rem;">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2> -->
+      <video controls style="width: 80%; margin-left: 10%;">
+        <source src="./Images/P_Taking_Over/Taking Over - Video.mp4" type="video/mp4">
+    </video>
     </div>
 
-    <footer style="position: relative; top: 5vw;">
-        <div id="contact_info">
-            <div style="display: flex;">
-                <img src="./Images/Email Icon.png" class="footer_icon">
-                <p style="font-size: 1vw;">clemence.sulmont@gmail.com</p>
-            </div>
-            <div style="display: flex; margin-left: 10%;">
-                <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
-                    <img src="./Images/LinkedIn Logo.png" class="footer_icon">
-                </a>
-                <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
-                    <p style="font-size: 1vw;">www.linkedin.com/in/clémence-sulmont/</p>
-                </a>
-            </div>
-        </div>
-        <p style="font-size: 1vw; text-align: center; line-height: 1.3vw;">This website was designed and created by Clémence Sulmont. <br> © 2022 Clémence Sulmont</p>
-    </footer>
+    <hr class="featurette-divider" id="mise_en_scene">
 
-    <script src="./test_animate.js"></script>
-    
-</body>
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Actor's Creation. <span class="text-muted">From CAD to life.</span></h2>
+        <p class="lead">Actors are a crutial element when narrating a compelling story. In the factory line, all workers were made identical, with very few details, so the sense of seperate individuals disappears and they become a uniform robot-like group drilling into the ice. In comparison, the animals were given a low poly aesthetic granting them a ghost like appearance as phantoms of a past reality.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./Images/P_Taking_Over/img_actors.png"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+      </div>
+    </div>
+
+    <hr class="featurette-divider" id="mechanisms">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Design Actor's Movements. <span class="text-muted">Enhancing Realism.</span></h2>
+        <p class="lead">To mimick reality, the cams were designed according to the movements required for each actor. Each worker in the factory line must go up and down to represent drilling. In addition, the cams were designed with a sudden drop to create a constant ticking noise like a machine would. For the penguins, an oscillating motion was prefered, to resemble their walk (top middle). The polar bear and seal used uneven cams for a story-like result of the polar bear reaching for the seal. In the polar bear, the weight of the arm pulled the link up, hence an inversed slider was designed (bottom right).</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./Images/P_Taking_Over/img_mech.png"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Final Assembly. <span class="text-muted">A XX piece puzzle.</span></h2>
+        <p class="lead">Although each part of the automaton can designed seperately, all the gears and shafts used the same male / female shapes which made them interchangeable (top left). This was quite useful to test mechanisms with pre-printed pieces and solved multiple issues encountered when assembling. As this project stipulated only 3D printed pieces were allowed, blocks (top right) were designed to avoid unwanted movements of the pieces and some pieces were melted (bottom right) to permenantly attach them.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./Images/P_Taking_Over/assembly.png"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
 
 
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="./Resources/bootstrap-5.3.0-alpha1-examples/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
