@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8SL1TS6MW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W8SL1TS6MW');
+    </script>
+	<title>Gallery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="main2.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="Gallery.css"/>
+	<link rel="stylesheet" href="https://use.typekit.net/xqf1uow.css">
+</head>
+<body style="width: 100%; overflow-x: hidden;">
+
+	<div class="header">
+        <a href="./index.html" class="header_button"><img src="./Images/Name 1.png"></a>
+        <div id="tabs_group">
+            <a href="./index.html#test_title" class="header_button"><div class="tabs"><h1>Work</h1></div></a>
+            <a href="./Gallery.html" class="header_button" style="opacity: 0.6;"><div class="tabs"><h1>Gallery</h1></div></a>
+            <a href="./About_Me.html" class="header_button"><div class="tabs"><h1>About</h1></div></a>            
+        </div>
+    </div>
+
+<section class="gallery">
+	<div class="container">
+		<div class="row">
+			<div class="gallery-filter">
+				<span class="filter-item active" data-filter="all">All</span>
+				<span class="filter-item" data-filter="creations">Creations</span>
+				<span class="filter-item" data-filter="concepts">Concepts</span>
+				<span class="filter-item" data-filter="sketches_graphics">Visualisation</span>
+			</div>
+		</div>
+
+		<body onload="loadingTimer()" style="margin:0;"></body>
+
+		<div class="square-holder" id="loader">
+			<div class="square"></div>
+		</div>
+
+		<div class="pictures" id="picture_block" style="display: none;">
+			<div class="gallery-item creations">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/color mind.png">
+						<figcaption><span>COLOR MASTER - INTERACTIVE ROBOT</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item creations">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/device final.png">
+						<figcaption><span>SPOTFINDER - ITEM TRACKER RENDER</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item sketches_graphics">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Carbon Neutral Housing_Page_04.jpg">
+						<figcaption><span>CARBON NEUTRAL HOUSING - SKETCHES</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item creations">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/taking over.jfif">
+						<figcaption><span>TAKING OVER - 3D PRINTED AUTOMATON</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item creations">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/dress black & white.png">
+						<figcaption><span>BALL GOWN - B&W EFFECT</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item creations sketches_graphics">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/render4 1.png">
+						<figcaption><span>RACE CAR - RENDER</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item creations">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/spofind.jpg">
+						<figcaption><span>SPOTFIND - FUNCTIONNING PROTOTYPE</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item sketches_graphics">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Carbon Neutral Housing_Page_03.jpg">
+						<figcaption><span>CARBON NEUTRAL HOUSING - SKETCHES</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item creations">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/sumo bot.JPG">
+						<figcaption><span>SUMO BOT - WON COMPETITION</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item concepts">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Clem_Concepts_Booklet v29.jpg">
+						<figcaption><span>EASYVAC - CONCEPT OVERVIEW</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item concepts sketches_graphics">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Lightning Path_Page_10.png">
+						<figcaption><span>LIGHTING PATH - CONCEPT STORYBOARD</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item sketches_graphics">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Clem_Concepts_Booklet v2.jpg">
+						<figcaption><span>UNDERSERVED USER RESEARCH</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item creations">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Tag final.png">
+						<figcaption><span>SPOTFIND - TAG USAGE</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item concepts sketches_graphics">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Clem_Concepts_Booklet v210.jpg">
+						<figcaption><span>EASYVAC - EXPLODED VIEW</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item sketches_graphics">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Individual_v52_Page_03.jpg">
+						<figcaption><span>ATHLETE CURRENT TREATMENT STORYBOARD</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item concepts sketches_graphics">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Lightning Path_Page_09.png">
+						<figcaption><span>LIGHTING PATH - FINAL CONCEPT</span></figcaption>
+					</figure>
+				</div>
+			</div>			
+      		<div class="gallery-item creations">
+      			<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/dress street.png">
+						<figcaption><span>BALL GOWN - SOLO PHOTOSHOOT</span></figcaption>
+					</figure>
+      			</div>
+      		</div>
+			<div class="gallery-item creations">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/jaguar pillow.jpg">
+						<figcaption><span>LOCKSTICH CUSHION - LEOPARD</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item sketches_graphics">
+				<div class="gallery-item-inner white">
+					<figure>
+						<img src="./Images/Gallery/Sustainable Shampoo Analysis_Page_04.png">
+						<figcaption><span>REFILL SHAMPOO - MARKET RESEARCH</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item creations sketches_graphics">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/render5 3.png">
+						<figcaption><span>RACE CAR - RENDER</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item concepts sketches_graphics">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Individual_v52_Page_09.jpg">
+						<figcaption><span>ATHLETE TREATMENT - CONCEPT COMPARISON</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item concepts sketches_graphics">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Urban Car Aerodynamics_Page_04.jpg">
+						<figcaption><span>URBAN CAR - SKETCHES</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item creations">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/Card mat.JPG">
+						<figcaption><span>PATCHWORK - CARD GAME MAT</span></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="gallery-item creations">
+				<div class="gallery-item-inner">
+					<figure>
+						<img src="./Images/Gallery/wolf pillow.jpg">
+						<figcaption><span>LOCKSTICH CUSHION - WOLF</span></figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	//Loading
+	var timer;
+
+	function loadingTimer() {
+		timer = setTimeout(showPage, 3000);
+	}
+
+	function showPage() {
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("picture_block").style.display = "block";
+	}
+
+	//Gallery
+	const filterContainer = document.querySelector(".gallery-filter"),
+	galleryItems = document.querySelectorAll(".gallery-item");
+
+	filterContainer.addEventListener("click", (event) =>{
+    	if(event.target.classList.contains("filter-item")){
+   			// deactivate existing active 'filter-item'
+   			filterContainer.querySelector(".active").classList.remove("active");
+	   		// activate new 'filter-item'
+	   	 	event.target.classList.add("active");
+	   	 	const filterValue = event.target.getAttribute("data-filter");
+	   	 	galleryItems.forEach((item) =>{
+	       		if(item.classList.contains(filterValue) || filterValue === 'all'){
+		       		item.classList.remove("hide");
+		       	 	item.classList.add("show");
+		    	}
+		        else{
+		     	  	item.classList.remove("show");
+		       		item.classList.add("hide");
+		        }
+		  	});
+		}
+ 	});
+
+//  document.addEventListener("DOMContentLoaded", function() {
+//   var lazyloadImages = document.querySelectorAll("img.lazy");    
+//   var lazyloadThrottleTimeout;
+  
+//   function lazyload () {
+//     if(lazyloadThrottleTimeout) {
+//       clearTimeout(lazyloadThrottleTimeout);
+//     }    
+    
+//     lazyloadThrottleTimeout = setTimeout(function() {
+//         var scrollTop = window.pageYOffset;
+//         lazyloadImages.forEach(function(img) {
+//             if(img.offsetTop < (window.innerHeight + scrollTop)) {
+//               img.src = img.dataset.src;
+//               img.classList.remove('lazy');
+//             }
+//         });
+//         if(lazyloadImages.length == 0) { 
+//           document.removeEventListener("scroll", lazyload);
+//           window.removeEventListener("resize", lazyload);
+//           window.removeEventListener("orientationChange", lazyload);
+//         }
+//     }, 20);
+//   }
+  
+//   document.addEventListener("scroll", lazyload);
+//   window.addEventListener("resize", lazyload);
+//   window.addEventListener("orientationChange", lazyload);
+// });
+</script>
+
+<footer>
+	<div id="contact_info">
+		<div style="display: flex;">
+			<img src="./Images/Email Icon.png" class="footer_icon">
+			<p style="font-size: 1vw;">clemence.sulmont@gmail.com</p>
+		</div>
+		<div style="display: flex; margin-left: 10%;">
+			<a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
+				<img src="./Images/LinkedIn Logo.png" class="footer_icon">
+			</a>
+			<a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
+				<p style="font-size: 1vw;">www.linkedin.com/in/clémence-sulmont/</p>
+			</a>
+		</div>
+	</div>
+	<p style="font-size: 1vw; text-align: center; line-height: 1.3vw;">This website was designed and created by Clémence Sulmont. <br> © 2022 Clémence Sulmont</p>
+</footer>
+
+</body>
+</html>
