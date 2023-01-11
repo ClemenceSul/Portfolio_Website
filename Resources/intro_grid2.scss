@@ -1,0 +1,68 @@
+*{box-sizing: border-box; -webkit-box-sizing: border-box}
+
+body{
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;	
+}
+.wrap{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-perspective: 2500px;
+  perspective: 2500px;    
+  -webkit-perspective-origin: 100% 50%;
+  perspective-origin: 100% 50%;
+  .list{
+    width: 80%; //width of the slanted slideshow
+    height: 250vh; //height of the slanted slideshow
+    overflow-x: hidden; //needed otherwise doesn't scroll
+    webkit-transform: rotateX(15deg) rotateY(5deg) rotateZ(15deg); //copy the values from the line below
+    transform: rotateX(15deg) rotateY(5deg) rotateZ(15deg); //change these values to change the angle of the slideshow
+    margin: 0 0 0 200px; //Changes the margin on the left, move the slideshow horizontally
+    padding: 100px 100px 100px 0;
+    scrollbar-width: none;
+    &::-webkit-scrollbar { 
+      display: none; 
+    }
+    &::-webkit-scrollbar { 
+      display: none; 
+    }
+    &::-webkit-scrollbar { 
+      display: block; 
+    }
+.item{
+	// filter: grayscale(100%);
+      width: 70%;
+      height: 30vw;
+      margin: 20px;
+      display: inline-block;
+      position: relative;
+	&::after {
+    content: '';
+    position: absolute;
+    z-index: 150;
+    width: 100%;
+		top: 0px;
+		left: -0px;
+    height: 100%;
+    opacity: .1;
+  }
+      .img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        box-shadow: 1px 1px 50px 0 #000;
+        -webkit-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        z-index: 10;
+        position: relative;
+        
+			}
+		}
+  }
+}

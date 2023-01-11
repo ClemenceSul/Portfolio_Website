@@ -64,16 +64,16 @@ body {
  * SLIDESHOW (FOR INTRO)
 */
 
-/*
-@mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-    opacity: 0.6;
-}
 
-$animationSpeed: 10s;
-$nbPictures: 5;
-// rn the height value coresponds to the width value of the pictures
-$imgHeight: 20vw;
+// @mixin white-gradient {
+// 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+//     opacity: 0.6;
+// }
+
+//40s is best
+$animationSpeed: 40s;
+$nbPictures: 7;
+$imgHeight: 30vw;
 $imgMargins: 1vw;
 
 // Animation
@@ -83,58 +83,43 @@ $imgMargins: 1vw;
         transform: translateY(0);
     }
 	100% {
-        transform: translateY(calc(calc($imgHeight + $imgMargins * 2) * -1 * $nbPictures))
+        transform: translateY(calc(calc($imgHeight + $imgMargins * 2) * -1 * $nbPictures));
     }
 }
+
 
 // Styling
 .slider {
 	height: 100%;
 	margin: auto;
-	overflow: hidden;
+	overflow: x;
 	position: absolute;
-    z-index: -1;
-	width: 100%;
-    background-color: transparent;
-	
-    &::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 100%;
-		position: absolute;
-		width: 100px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
-
-	&::before {
-		left: 0;
-		top: 0;
-	}
+  // z-index: -1;
+	width: auto;
+  margin-left: 25rem;
+  top: -20vh;
+  padding-right: 20px;
+  transform: rotateZ(20deg);
 
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
-		// display: flex;
-		width: calc(calc($imgHeight + $imgMargins * 2) * 10);
-
+		height: calc(calc($imgHeight + $imgMargins * 2) * $nbPictures * 2);
+    text-align: center;
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.4);
 	}
 	
 	.slide {
+    
         img {
-            width: $imgHeight;
-            height: 100%;
-            margin-left: $imgMargins;
-            margin-right: $imgMargins;
+            height: $imgHeight;
+            width: auto;
+            margin-top: $imgMargins;
+            margin-bottom: $imgMargins;
+            // box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.4);
         }
 	}
 }
-*/
+
 
 /*
  * INTRODUCTION PAGE
@@ -147,95 +132,95 @@ $imgMargins: 1vw;
 }
 
 #index_text_div {
-    margin-top: 17%;
-    margin-left: 7rem;
+    margin-top: 27%;
+    margin-left: 70%;
     position: relative;
 }
 
 /*
- * WORK MENU
+ * WORK Hexagon MENU
 */
 
-$amount: 5;
+// $amount: 5;
 
-:root {
-    --Nhexa: 4;
-    --gap: 2vw;
-    --size: calc(calc(100vw / var(--Nhexa)) - var(--gap))
-}
+// :root {
+//     --Nhexa: 4;
+//     --gap: 2vw;
+//     --size: calc(calc(100vw / var(--Nhexa)) - var(--gap))
+// }
 
-.hex-grid__list {
-    --amount: 5;
-    --counter: 1;
-    display: grid;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    grid-template-columns: repeat(var(--amount), 1fr, 2fr) 1fr;
-    grid-gap: 1rem 2rem;
-}
+// .hex-grid__list {
+//     --amount: 5;
+//     --counter: 1;
+//     display: grid;
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     grid-template-columns: repeat(var(--amount), 1fr, 2fr) 1fr;
+//     grid-gap: 1rem 2rem;
+// }
 
-.hex-grid__item {
-    position: relative;
-    grid-column: 1 / span 3;
-    grid-row: calc(var(--counter) + var(--counter)) / span 2;
-    height: 0;
-    padding-bottom: 90%;
+// .hex-grid__item {
+//     position: relative;
+//     grid-column: 1 / span 3;
+//     grid-row: calc(var(--counter) + var(--counter)) / span 2;
+//     height: 0;
+//     padding-bottom: 90%;
 
-    // Columns
-    @for $i from 1 through $amount {
-        &:nth-of-type(#{$amount}n + #{$i}) {
-            grid-column: #{$i + $i - 1} / span 3;
-            @if $i % 2 == 0 {
-                grid-row: calc(var(--counter) + var(--counter) - 1) / span 2;
-            }
-        }
-    }
-    // Rows
-    @for $i from 1 through 20 {
-        &:nth-of-type(n + #{$i * $amount + 1}) {
-            --counter: #{$i + 1};
-        }
-    }
-}
+//     // Columns
+//     @for $i from 1 through $amount {
+//         &:nth-of-type(#{$amount}n + #{$i}) {
+//             grid-column: #{$i + $i - 1} / span 3;
+//             @if $i % 2 == 0 {
+//                 grid-row: calc(var(--counter) + var(--counter) - 1) / span 2;
+//             }
+//         }
+//     }
+//     // Rows
+//     @for $i from 1 through 20 {
+//         &:nth-of-type(n + #{$i * $amount + 1}) {
+//             --counter: #{$i + 1};
+//         }
+//     }
+// }
 
-.hex-grid__content {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: var(--size);
-    width: var(--size);
-}
+// .hex-grid__content {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     height: var(--size);
+//     width: var(--size);
+// }
 
-.hex-grid__content.blank {
-    background-color: transparent;
-}
+// .hex-grid__content.blank {
+//     background-color: transparent;
+// }
 
-.Image {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-	transform-origin: 0% 50%;
-    z-index: 1;
-}
+// .Image {
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//     top:50%;
+//     left:50%;
+//     transform: translate(-50%, -50%);
+// 	transform-origin: 0% 50%;
+//     z-index: 1;
+// }
 
-.Image.Skill_B {
-    width: 120%;
-    height: 120%;
-    z-index: 0;
-}
+// .Image.Skill_B {
+//     width: 120%;
+//     height: 120%;
+//     z-index: 0;
+// }
 
-.Image.Project_B_C {
-    position: absolute;
-    opacity: 0%;
-}
+// .Image.Project_B_C {
+//     position: absolute;
+//     opacity: 0%;
+// }
 
-.Image.Project_B_C:hover {
-    opacity: 100%;
-}
+// .Image.Project_B_C:hover {
+//     opacity: 100%;
+// }
 
 /*
  * PROJECTS
@@ -333,7 +318,7 @@ $amount: 5;
 /*
  * CARROUSEL 2 (Ball Gown)
 */
-
+/*
 $animationSpeed: 30s;
 $nbpictures: 3;
 $margin: 10px;
@@ -388,10 +373,12 @@ $width: 500px;
   font-weight: 600;
   font-size: x-large;
 }
+*/
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
+
+/*
+* Portfolio menu page
+*/
 
 /*--/ Title A /--*/
 .title-box {
@@ -483,9 +470,7 @@ $width: 500px;
   font-size: 1.2rem;
   color: #1e1e1e;
 }
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
+
 .portfolio-details {
   padding-top: 40px;
 }
@@ -611,10 +596,6 @@ figure:hover {
 	}
 }
 
-// .container{
-// 	width: 98%;
-// 	margin-left: 1%;
-// }
 
 .row{
 	display: flex;
@@ -687,12 +668,6 @@ figure:hover {
 	display: none;
 }
 
-/* @media(max-width: 1000px) {
-	.gallery .gallery-filter .filter-item{
-		font-size: 1.5vw;
-		background-color: yellow;
-	}
-} */
 
 /* Loading element */
 /* V2 */
