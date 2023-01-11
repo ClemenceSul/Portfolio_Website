@@ -1,155 +1,230 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8SL1TS6MW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-W8SL1TS6MW');
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sensko</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="Projects.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./Images/P_Sensko/P_Sensko.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/xqf1uow.css">
-</head>
+    <link href="./Resources/bootstrap-5.3.0-alpha1-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<body>
-    <div class="header">
-        <a href="./index.html" class="header_button"><img src="./Images/Name 1.png"></a>
-        <div id="tabs_group">
-            <a href="./index.html#test_title" class="header_button"><div class="tabs"><h1>Work</h1></div></a>
-            <a href="./Gallery.html" class="header_button"><div class="tabs"><h1>Gallery</h1></div></a>
-            <a href="./About_Me.html" class="header_button"><div class="tabs"><h1>About</h1></div></a>            
-        </div>
-    </div>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
     
-    <div id="title_part">
-        <div id="title_info">
-            <div id="project_title">
-                <h2>Sensko</h2>
-                <h3>An easy donning shoe</h3>
-            </div>
-            <h3 id="date">Summer 2021</h3>
-        </div>
-        <div id="title_image_div">
-            <img id="title_image" src="./Images/P_Sensko/IMG_2316.png">
-            <div id="summary_text">
-                <p>In the midst of covid, our group discovered the challenges runners face during pain treatment. Sensko was designed to enable them to continue their exercise routine without hindering their treatment.</p>
-            </div>
-        </div>
+    <!-- Custom styles for this template -->
+    <link href="./main.css" rel="stylesheet">
+  </head>
+
+<body class="text-start text-bg-light">
+    <!-- 
+    Header 
+    -->
+    <div class="w-100 h-auto p-3 fixed-top the_header">
+        <header class="mb-auto cover-container d-flex mx-auto flex-column">
+          <div>
+            <h3 class="float-md-start text-center">Clémence Sulmont</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a class="nav-link fw-semibold fs-5 py-1 px-0 active dropdown-toggle" style="margin-right: 1.8rem;" href="./work.html" data-bs-toggle="dropdown" aria-current="page" aria-expanded="false">Portfolio</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./work.html">Menu</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./Spotfind.html">Spotfind</a></li>
+                <li><a class="dropdown-item" href="./Color_Master.html">Color Master</a></li>
+                <li><a class="dropdown-item" href="./Discover_Windows.html">Discover Windows</a></li>
+                <li><a class="dropdown-item" href="./Sensko.html">Sensko</a></li>
+                <li><a class="dropdown-item" href="./Ball_Gown.html">Ball Gown</a></li>
+                <li><a class="dropdown-item" href="./Race_Car.html">Race Car</a></li>
+                <li><a class="dropdown-item" href="./Taking_Over.html">Taking Over</a></li>
+              </ul>
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./Gallery.html">Gallery</a>
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./About_Me.html">About</a>
+            </nav>
+          </div>
+        </header>
     </div>
 
-    <div id="skills_div">
-        <img id="skills_line" src="./Images/P_Skills/Line3.png">
-        <div class="skills_parts">
-            <div>
-                <img class="skills_dot" src="./Images/P_Skills/S_Users.png">
-                <h4>Conducted user interviews, testing and validation</h4>
-            </div>
-            <div>
-                <img class="skills_dot" src="./Images/P_Skills/S_Creation.png">
-                <h4>Low-fi and hi-fi prototyping for a refined concept</h4>
-            </div>
-            <div>
-                <img class="skills_dot" src="./Images/P_Skills/S_Photo.png">
-                <h4>Smart video editing to showcase final result</h4>
-            </div>
-            <div>
-                <img class="skills_dot" src="./Images/P_Skills/S_Group.png">
-                <h4>Led the project within a group of 3 during Covid</h4>
-            </div>
-        </div>
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
     </div>
-    <div style="background-image: url(./Images/P_Sensko/S_Background.png); background-size: 100%; background-repeat: no-repeat;">
-    <div>
-        <div class="part" style="margin-top: 6vw;">
-            <img loading="lazy" src="./Images/P_Sensko/Storyboard.png" id="img_part1" class="part_img video reveal">
-            <div id="part1_text" class="part_text left reveal">
-                <p>
-                    <span class="paragraph_title">User Interviews.</span>
-                    <span>After performing primary and secondary research about the issues runners face, our group found out the greatest challenge to be pain treatment. Indeed, multiple product are available on the market but are often hard to use or are too much of a hassle. Furthermore, most experienced runners experience a runner’s high, thus making it hard for them to stop during a treatment. </span>
-                </p>
-            </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Images/P_Sensko/user_onfloor.png" class="bd-placeholder-img carousel_img" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 style="color: black;">Sensko</h1>
+            <p style="color: black;">In the midst of covid, our group discovered the challenges runners face during pain treatment. Sensko was designed to enable them to continue their exercise routine without hindering their treatment.</p>
+            <p><a class="btn btn-lg btn-outline-dark" href="#user">See more about the user research</a></p>
+            <!-- person walking in them  -->
+          </div>
         </div>
-        <div class="part" style="margin-top: -4vw;">
-            <img loading="lazy" src="./Images/P_Sensko/ideation.png" id="img_part2" class="part_img video reveal">
-            <div id="part2_text" class="part_text top reveal">
-                <p>
-                    <span class="paragraph_title">Initial creative ideation.</span>
-                    <span>How might we ensure and preserve treatment for runners? I came up with a multitude of possible solutions, some very simple, others quite new and complex. However, only 3 were deemed innovative and efficient, thus were taken forward.</span>
-                </p>
-            </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./Images/P_Sensko/img_in_kitchen.png" class="bd-placeholder-img carousel_img" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <div class="container">
+          <div class="carousel-caption right">
+            <h1 style="color: black;">Sensko</h1>
+            <p style="color: black;">Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-outline-dark" href="#alone">See more about prototyping</a></p>
+            <!-- sneakers on the kitchen tiles -->
+          </div>
         </div>
-        <div class="part" style="margin-top: 7vw;">
-            <img loading="lazy" src="./Images/P_Sensko/Group 57.png" id="img_part3" class="part_img video reveal">
-            <div id="part3_text" class="part_text right reveal">
-                <p>
-                    <span class="paragraph_title">Low-fi prototyping with users.</span>
-                    <span>Despite the covid lockdown which made it harder to communicate with users, I built several low-fi prototypes aimed to better convey my ideas and collect their feedback. In some case, the runners used items from their homes to experience the concept, and validate, refine or eliminate ideas.</span>
-                </p>
-            </div>
+      </div>
+      <!-- sneakers on box? -->
+      <!-- <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Sensko</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-outline-light" href="#">See more about prototyping</a></p>
+          </div>
         </div>
-        <div class="part" style="margin-top: 5vw;">
-            <img loading="lazy" src="./Images/P_Sensko/wrapping shoe 1.png" id="img_part4" class="part_img video reveal">
-            <div id="part4_text" class="part_text top reveal">
-                <p>
-                    <span class="paragraph_title">Final user discussion.</span>
-                    <span>After multiple exchanges with all users, the best concept was found to be the ‘wrapping shoe’. This shoes’ tongue can be completely opened, which enables the user to place their foot in the shoes without jostling bandages or plasters. The elastic laces allows the shoes to fully adopt the foot’s shape, preventing shifting of the foot within the shoe when exercising.</span>
-                </p>
-            </div>
-        </div>
-        <div class="part" style="margin-top: 5vw;">
-            <img loading="lazy" src="./Images/P_Sensko/IMG_2221 1.png" id="img_part5" class="part_img video reveal">
-            <div id="part5_text" class="part_text left reveal">
-                <p>
-                    <span class="paragraph_title">Hi-fi Prototype for a refined experience validation.</span>
-                    <span>Once the initial concept was validated by the user, we regrouped and I built a hi-fi prototype of our idea, using an ordinary sneaker as a base and sewing the different elements accordingly.</span>
-                </p>
-            </div>
-        </div>
-        <div class="part" style="margin-top: 5vw;">
-            <img loading="lazy" src="./Images/P_Sensko/IMG_2397.png" id="img_part6" class="part_img video reveal">
-            <div id="part6_text" class="part_text top reveal">
-                <p>
-                    <span class="paragraph_title">User testing.</span>
-                    <span>Following the lifting of covid restrictions, we were able to meet up with a few users to test our product. Most were very intrigued and though this concept could be very useful to them. However, some wished to test a more advanced prototype for a longer period to determine how impactful this idea would be.</span>
-                </p>
-            </div>
-        </div>
-        <div class="part video reveal" style="margin-top: 4vw;">
-            <video width="600" controls id="video_layout">
-                <source src="./Images/P_Sensko/Clemence Sulmont - Wrapping Shoes.mp4" type="video/mp4">
-            </video>
-        </div>
+      </div> -->
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Skills and details
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="./Images/P_Skills/S_User.png" class="bd-placeholder-img" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+        <h2 class="fw-normal">User Collaboration</h2>
+        <p>Conducted user interviews, testing and validation</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="./Images/P_Skills/S_Create.png" class="bd-placeholder-img" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+        <h2 class="fw-normal">Workshop Creation</h2>
+        <p>Low-fi and hi-fi prototyping for a refined concept</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="./Images/P_Skills/S_Video.png" class="bd-placeholder-img" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+        <h2 class="fw-normal">Photo / Video</h2>
+        <p>Smart video editing to showcase final result</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider" id="user">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">User Research. <span class="text-muted">Despite Covid Restrictions.</span></h2>
+        <p class="lead">After multiple exchanges with all users, the best concept was found to be the ‘wrapping shoe’. This shoes’ tongue can be completely opened, which enables the user to place their foot in the shoes without jostling bandages or plasters. The elastic laces allows the shoes to fully adopt the foot’s shape, preventing shifting of the foot within the shoe when exercising.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./Images/P_Sensko/sketch.png"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <!-- IMG dessin de la chaussure -->
+      </div>
     </div>
 
-    <footer style="position: relative; top: 5vw;">
-        <div id="contact_info">
-            <div style="display: flex;">
-                <img src="./Images/Email Icon.png" class="footer_icon">
-                <p style="font-size: 1vw;">clemence.sulmont@gmail.com</p>
-            </div>
-            <div style="display: flex; margin-left: 10%;">
-                <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
-                    <img src="./Images/LinkedIn Logo.png" class="footer_icon">
-                </a>
-                <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
-                    <p style="font-size: 1vw;">www.linkedin.com/in/clémence-sulmont/</p>
-                </a>
-            </div>
-        </div>
-        <p style="font-size: 1vw; text-align: center; line-height: 1.3vw;">This website was designed and created by Clémence Sulmont. <br> © 2022 Clémence Sulmont</p>
-    </footer>
+    <hr class="featurette-divider" id="alone">
 
-    <script src="./test_animate.js"></script>
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Validation through Prototyping. <span class="text-muted">Real-life testing.</span></h2>
+        <p class="lead">Once the initial concept was validated by the user, we regrouped and I built a hi-fi prototype of our idea, using an ordinary sneaker as a base and sewing the different elements accordingly. Following the lifting of covid restrictions, we were able to meet up with a few users to test our product. Most were very intrigued and though this concept could be very useful to them. However, some wished to test a more advanced prototype for a longer period to determine how impactful this idea would be.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./Images/P_Sensko/sewing.png"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <!-- img sewing -->
+      </div>
+    </div>
 
-</body>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <video controls style="width: 80%; margin-left: 10%;">
+        <source src="./Images/P_Sensko/Clemence Sulmont - Wrapping Shoes.mp4" type="video/mp4">
+    </video>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
 
 
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="./Resources/bootstrap-5.3.0-alpha1-examples/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
