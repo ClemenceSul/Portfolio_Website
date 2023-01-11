@@ -61,7 +61,7 @@ body {
 /*
  * SLIDESHOW (FOR INTRO)
 */
-@-webkit-keyframes scroll {
+@-webkit-keyframes scroll_2 {
   0% {
     transform: translateX(0);
     transform: translateY(0);
@@ -70,7 +70,7 @@ body {
     transform: translateY(-224vw);
   }
 }
-@keyframes scroll {
+@keyframes scroll_2 {
   0% {
     transform: translateX(0);
     transform: translateY(0);
@@ -79,26 +79,26 @@ body {
     transform: translateY(-224vw);
   }
 }
-.slider {
+.slider_2 {
   height: 100%;
   margin: auto;
   overflow: x;
   position: absolute;
   z-index: 2;
   width: auto;
-  margin-left: 26rem;
+  margin-left: 24rem;
   top: -20vh;
   padding-right: 20px;
   transform: rotateZ(20deg);
 }
-.slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+.slider_2 .slide-track_2 {
+  -webkit-animation: scroll_2 40s linear infinite;
+          animation: scroll_2 40s linear infinite;
   height: 448vw;
   text-align: center;
   box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.4);
 }
-.slider .slide img {
+.slider_2 .slide_2 img {
   height: 30vw;
   width: auto;
   margin-top: 1vw;
@@ -206,52 +206,49 @@ body {
 /*
  * CARROUSEL 2 (Ball Gown)
 */
-/*
-$animationSpeed: 30s;
-$nbpictures: 3;
-$margin: 10px;
-$height: 500px;
-$width: 500px;
-
-// Animation
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(calc($width + $margin) * (-1) * $nbpictures))}
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1530px);
+  }
 }
-
-// Styling
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1530px);
+  }
+}
 .slider {
-	height: $height;
-	margin: auto;
-	overflow: hidden;
-	position: relative;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
   top: -2vw;
-	width: 100%;
-
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
-
-	&::before {
-		left: 0;
-		top: 0;
-	}
-
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(calc($width + $margin) * calc($nbpictures * 2));
-	}
-
-	.slide {
-        img{
-            height: $height;
-            margin-left: $margin;
-            width: $width;
-        }
-	}
+  width: 100%;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 30s linear infinite;
+          animation: scroll 30s linear infinite;
+  display: flex;
+  width: 3060px;
+}
+.slider .slide img {
+  height: 500px;
+  margin-left: 10px;
+  width: 500px;
 }
 
 .btn-webapp {
@@ -261,7 +258,7 @@ $width: 500px;
   font-weight: 600;
   font-size: x-large;
 }
-*/
+
 /*
 * Portfolio menu page
 */
