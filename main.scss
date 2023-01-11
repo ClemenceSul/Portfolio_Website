@@ -33,6 +33,7 @@ body {
 .the_header {
   // background: linear-gradient(to bottom, rgba(248,249,250, 1) 70%,rgba(255,255,255,0) 100%);
   background-color: rgba(248,249,250, 1);
+  padding: 0.5rem 2rem 0.5rem 1rem;
 }
 
 .nav-masthead .nav-link {
@@ -48,9 +49,9 @@ body {
   border-bottom-color: rgba(0, 0, 0, .25);
 }
 
-.nav-masthead .nav-link + .nav-link {
+.nav-masthead .nav-item .nav-link {
   /* Margins between buttons */
-  margin-left: 1.8rem;
+  margin-left: 2rem;
 }
 
 .nav-masthead .active {

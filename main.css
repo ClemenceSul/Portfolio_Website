@@ -30,6 +30,7 @@ body {
 */
 .the_header {
   background-color: rgb(248, 249, 250);
+  padding: 0.5rem 2rem 0.5rem 1rem;
 }
 
 .nav-masthead .nav-link {
@@ -45,9 +46,9 @@ body {
   border-bottom-color: rgba(0, 0, 0, 0.25);
 }
 
-.nav-masthead .nav-link + .nav-link {
+.nav-masthead .nav-item .nav-link {
   /* Margins between buttons */
-  margin-left: 1.8rem;
+  margin-left: 2rem;
 }
 
 .nav-masthead .active {
