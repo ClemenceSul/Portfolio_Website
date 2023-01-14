@@ -78,7 +78,7 @@
     <!-- 
     Header 
     -->
-    <nav class="navbar navbar-expand-md the_header" aria-label="Fourth navbar example">
+    <nav class="navbar navbar-expand-md the_header" aria-label="Fourth navbar example" style="position: relative; z-index: 2;">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html"><h3>Clémence Sulmont</h3></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,7 +87,10 @@
   
         <div class="nav nav-masthead collapse navbar-collapse justify-content-end float-md-end" id="navbarsExample04">
           <ul class="navbar-nav me-2 mb-2 mb-md-0">
-            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" aria-current="page" href="./work.html">Portfolio</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link fw-semibold fs-5 py-1 px-0 dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./work.html">Menu</a></li>
@@ -100,25 +103,28 @@
                 <li><a class="dropdown-item" href="./Race_Car.html">Race Car</a></li>
                 <li><a class="dropdown-item" href="./Taking_Over.html">Taking Over</a></li>
               </ul>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link fw-semibold fs-5 py-1 px-0" aria-current="page" href="./Gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold fs-5 py-1 px-0 active" href="./About_Me.html">About</a>
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./About_Me.html">About</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div style="margin-top: 7rem; padding-left: 10rem; padding-right: 10rem; gap: 7rem" class="d-flex">
-        <img src="./Images/About_Me/Clemence Photo.png" style="width: 20%; position: relative;">
-        <div style="align-self: center;">
-            <!-- <img class="my_Name" src="./Images/Name 2.png"> -->
-            <h3 style="position: relative; text-align: center; top: 1vw;">Inventive, curious, adaptable and perseverant are qualities that have been used to describe me. I have always been intrigued by the prospect of developing products from conception to implementation. I am constantly aiming to improve my skillset, across a wide variety of disciplines from engineering, to visual communication, to creative ideation.</h3>
-        </div>
-    </div>    
+    <div class="row featurette" style="width: 80%; margin-left: 10%; margin-top: 4rem; gap: 1rem; justify-content: center;">
+      <div class="col-md-5 order-md-1" style="width: auto;">
+        <img src="./Images/About_Me/Clemence Photo.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+      </div>
+      <div class="col-md-7 order-md-2" style="align-self: center;">
+        <h4 style="position: relative; text-align: center; top: 1vw;">Inventive, curious, adaptable and perseverant are qualities that have been used to describe me. I have always been intrigued by the prospect of developing products from conception to implementation. I am constantly aiming to improve my skillset, across a wide variety of disciplines from engineering, to visual communication, to creative ideation.</h4>
+      </div>
+    </div>
+
+     
 
     <img src="./Images/About_Me/Clemence Sulmont - CV.jpg" style="width: 60%; margin-left: 20%; margin-top: 10rem; box-shadow: -1px 1px 10px 0 rgba(0, 0, 0, 0.4);">
 
