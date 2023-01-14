@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8SL1TS6MW"></script>
     <script>
@@ -9,299 +9,176 @@
       gtag('js', new Date());
 
       gtag('config', 'G-W8SL1TS6MW');
-    </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </script><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Clémence Sulmont">
     <title>Clémence Sulmont</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main2.css" />
+    <link href="./Resources/bootstrap-5.3.0-alpha1-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xqf1uow.css">
-</head>
-
-<!-- Colors
-DARK BLUE
-#0F265C;
-
-CREAM
-#FEDBAF;
--->
 
 
-<!--TO DO
-Header when window width is shrinked
--->
+    <style>
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
-<body>
-    <div class="header">
-        <a href="./index.html" class="header_button"><img src="./Images/Name 1.png"></a>
-        <div id="tabs_group">
-            <a href="./index.html#test_title" class="header_button" style="opacity: 0.6;"><div class="tabs"><h1>Work</h1></div></a>
-            <a href="./Gallery.html" class="header_button"><div class="tabs"><h1>Gallery</h1></div></a>
-            <a href="./About_Me.html" class="header_button"><div class="tabs"><h1>About</h1></div></a>            
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="./main.css" rel="stylesheet">
+  </head>
+
+<!-- The following line doesn't impact the header -->
+  <body class="text-start text-bg-light" style="overflow: hidden; height: 100%;">
+    <!-- 
+    Header 
+    -->
+
+    <nav class="navbar navbar-expand-md the_header" aria-label="Fourth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><h3>Clémence Sulmont</h3></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="nav nav-masthead collapse navbar-collapse justify-content-end float-md-end" id="navbarsExample04">
+          <ul class="navbar-nav me-2 mb-2 mb-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link fw-semibold fs-5 py-1 px-0 dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./work.html">Menu</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./Spotfind.html">Spotfind</a></li>
+                <li><a class="dropdown-item" href="./Color_Master.html">Color Master</a></li>
+                <li><a class="dropdown-item" href="./Discover_Windows.html">Discover Windows</a></li>
+                <li><a class="dropdown-item" href="./Sensko.html">Sensko</a></li>
+                <li><a class="dropdown-item" href="./Ball_Gown.html">Ball Gown</a></li>
+                <li><a class="dropdown-item" href="./Race_Car.html">Race Car</a></li>
+                <li><a class="dropdown-item" href="./Taking_Over.html">Taking Over</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" aria-current="page" href="./Gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./About_Me.html">About</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+
+    <!-- 
+      Slideshow
+    -->
+    <div class="tilt">
+      <div class="slider_2">
+        <div class="slide-track_2">
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Color Master.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Discover Windows.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Dress.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Race Car.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Sensko.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Spotfind.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Taking Over.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Color Master.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Discover Windows.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Dress.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Race Car.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Sensko.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Spotfind.png"/>
+            </div>
+            <div class="slide_2">
+                <img src="./Images/Portfolio_Menu/Taking Over.png"/>
+            </div>
+        </div>
+      </div>
     </div>
 
-    <!-- <div class="title_element">
-        <h2 style="color: #FEDBAF;">Clémence Sulmont</h2>
-        <img class="my_Name" src="./Images/Name 2.png">
-        <h2 style="position: relative; top: 17%; text-align: center;">DESIGN ENGINEER</h2>
-    </div> -->
-
-    <!-- <div class="slider" style="background-color: #FEDBAF;">
-        <div class="slide-track">
-            <div class="slide">
-                <img class="L" src="./Images/Gallery/color mind.png"/>
-            </div>
-            <div class="slide">
-                <img class="P" src="./Images/Gallery/dress black & white.png"/>
-            </div>
-            <div class="slide">
-                <img class="L" src="./Images/Gallery/spofind.jpg"/>
-            </div>
-            <div class="slide">
-                <img class="L" src="./Images/Gallery/render5 3.png"/>
-            </div>
-            <div class="slide">
-                <img class="P" src="./Images/Gallery/Clem_Concepts_Booklet v210.jpg"/>
-            </div>
-            <div class="slide">
-                <img class="L" src="./Images/Gallery/color mind.png"/>
-            </div>
-            <div class="slide">
-                <img class="P" src="./Images/Gallery/dress black & white.png"/>
-            </div>
-            <div class="slide">
-                <img class="L" src="./Images/Gallery/spofind.jpg"/>
-            </div>
-            <div class="slide">
-                <img class="L" src="./Images/Gallery/render5 3.png"/>
-            </div>
-            <div class="slide">
-                <img class="P" src="./Images/Gallery/Clem_Concepts_Booklet v210.jpg"/>
-            </div>
+    <div class="w-100 d-flex" id="index_img_div">
+        <!-- <img src="./Images/IMG_E2169_cleaned.png" id="index_img"> -->
+        <div id="index_text_div">
+            <!-- <h4>Hi! I'm</h4> -->
+            <h1 style="margin-top: 1rem; font-family: hobeaux, sans-serif; font-style: normal; font-weight: 500; font-size: 3rem;">Clémence Sulmont</h1>
+            <h4 style="margin-top: 1rem;">Designer • Engineer • Developer</h4>
+            <a role="button" class="btn btn-action btn-lg px-4 gap-3" style="margin-top: 2rem;" href="./work.html">Portfolio ➜</a>
         </div>
-    </div> -->
-
-
-    <p id="test_title"></p>
-    <!-- <h2 style="position: relative; top: 8vw; text-align: center;">Click on each project to find out more!</h2> -->
-    <div class="Project_menu" style="width: 95%; margin-left: 3%; overflow: hidden; margin-top: -12vw;">
-        <ul class="hex-grid__list">
-            <li class="hex-grid__item">
-                <!-- <div class="hex-grid__content">
-                    portfolio
-                    <img class="Image Project_B" src="./Images/Project_B/Portfolio.png">
-                    <a href="Portfolio.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Portfolio_C.png" onclick="">
-                    </a>
-                </div> -->
-                <div class="hex-grid__content blank"></div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content blank"></div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content blank"></div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content blank"></div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content blank"></div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- skill : coding -->
-                    <img class="Image Skill_B" src="./Images/Skills_B/Programming.png">
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- color master -->
-                    <img class="Image Project_B" src="./Images/Project_B/Color_Master.png">
-                    <a href="Color_Master.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Color_Master_C.png">
-                    </a>
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- skill : electronics -->
-                    <img class="Image Skill_B" src="./Images/Skills_B/Electronics.png">
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- ball gown -->
-                    <img class="Image Project_B" src="./Images/Project_B/Ball_Gown.png">
-                    <a href="Ball_Gown.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Ball_Gown_C.png">
-                    </a>
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content blank"></div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- discover windows -->
-                    <img class="Image Project_B" src="./Images/Project_B/Discover_Windows.png">
-                    <a href="Discover_Windows.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Discover_Windows_C.png">
-                    </a>
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- spotfinder -->
-                    <img class="Image Project_B" src="./Images/Project_B/Spotfind.png">
-                    <a href="Spotfind.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Spotfind_C.png">
-                    </a>
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- skill : Line -->
-                    <img class="Image Skill_B" src="./Images/Skills_B/Line.png">
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- skill : physical building -->
-                    <img class="Image Skill_B" src="./Images/Skills_B/Creation.png">
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- skill : 3D modelling -->
-                    <img class="Image Skill_B" src="./Images/Skills_B/3D_Modelling.png">
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- refill shampoo -->
-                    <img class="Image Project_B" src="./Images/Project_B/Refill_Shampoo.png">
-                    <a href="Refill_Shampoo.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Refill_Shampoo_C.png">
-                    </a>
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- skill : user research -->
-                    <img class="Image Skill_B" src="./Images/Skills_B/User_Research.png">
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- Sensko -->
-                    <img class="Image Project_B" src="./Images/Project_B/Sensko.png">
-                    <a href="Sensko.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Sensko_C.png">
-                    </a>
-                    <!-- <a href="Coming_Soon.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Sensko_C.png">
-                    </a> -->
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- Taking Over -->
-                    <img class="Image Project_B" src="./Images/Project_B/Taking_Over.png">
-                    <a href="Taking_Over.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Taking_Over_C.png">
-                    </a>
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- Race car -->
-                    <img class="Image Project_B" src="./Images/Project_B/Race_Car.png">
-                    <a href="Race_Car.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Race_Car_C.png">
-                    </a>
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content blank"></div>
-            </li>
-            <li class="hex-grid__item">
-                <!-- shoe treatment -->
-                <!-- <div class="hex-grid__content">
-                    <img class="Image Project_B" src="./Images/Project_B/Runners.png">
-                    <a href="Runners.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Runners_C.png">
-                    </a>
-                </div> -->
-                <div class="hex-grid__content">
-                    <!-- Skill : secondary research -->
-                    <img class="Image Skill_B" src="./Images/Skills_B/Desk_Research.png">
-                </div>
-                
-            </li>
-            <li class="hex-grid__item">
-                <!-- <div class="hex-grid__content">
-                    skill : sketching
-                    <img class="Image Skill_B" src="./Images/Skills_B/Sketching.png">
-                </div> -->
-                <div class="hex-grid__content blank"></div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content">
-                    <!-- skill : video -->
-                    <img class="Image Skill_B" src="./Images/Skills_B/Video.png">
-                </div>
-            </li>
-            <!-- <li class="hex-grid__item">
-                <div class="hex-grid__content" style="margin-top: 7vw;">
-                    current: flying mouse
-                    <img class="Image Project_B" src="./Images/Project_B/Current_project.png">
-                    <a href="Flying_Mouse.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Current_C.png">
-                    </a>
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content blank"></div>
-            </li>
-            <li class="hex-grid__item" style="margin-top: -5vw;">
-                <div class="hex-grid__content" style="margin-top: 2vw;">
-                    tiny house
-                    <img class="Image Project_B" src="./Images/Project_B/Tiny_House.png">
-                    <a href="Tiny_House.html">
-                        <img class="Image Project_B_C" src="./Images/Project_B_C/Tiny_House_C.png">
-                    </a>
-                </div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content blank"></div>
-            </li>
-            <li class="hex-grid__item">
-                <div class="hex-grid__content blank"></div>
-            </li>
-            <li class="hex-grid__item" >
-                <div class="hex-grid__content blank"></div>
-            </li> -->
-        </ul>
     </div>
+    
 
-    <footer>
-        <div id="contact_info">
-            <div style="display: flex;">
-                <img src="./Images/Email Icon.png" class="footer_icon">
-                <p style="font-size: 1vw;">clemence.sulmont@gmail.com</p>
-            </div>
-            <div style="display: flex; margin-left: 10%;">
-                <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
-                    <img src="./Images/LinkedIn Logo.png" class="footer_icon">
-                </a>
-                <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
-                    <p style="font-size: 1vw;">www.linkedin.com/in/clémence-sulmont/</p>
-                </a>
-            </div>
-        </div>
-        <p style="font-size: 1vw; text-align: center; line-height: 1.3vw;">This website was designed and created by Clémence Sulmont. <br> © 2022 Clémence Sulmont</p>
-    </footer>
-</body>
+
+
+    <script src="./Resources/bootstrap-5.3.0-alpha1-examples/assets/dist/js/bootstrap.bundle.min.js"></script>  
+  </body>
+</html>
