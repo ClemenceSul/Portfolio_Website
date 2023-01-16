@@ -117,40 +117,49 @@
 <main>
 
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
+    <div class="carousel-indicators hidden-mobile">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item r active">
         <img src="./Images/P_Spotfind/img_in_kitchen.png" class="bd-placeholder-img carousel_img" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <div class="container">
+        <div class="container hidden-mobile">
           <div class="carousel-caption left">
             <h1>Spotfind</h1>
             <p>Spotfind aims to help care-givers and care-receivers locate their frequently lost belongings. Items are often misplaced when either party tidies the house, and often leads to great frustration and tension. Extensive user research was conducted throughout our design process, implementing the insights found to ensure our solution matched what our users needed.</p>
             <p><a class="btn btn-lg btn-outline-light" href="#user_research">➜ User Research</a></p>
           </div>
         </div>
+        <div class="mobile-carousel-caption">
+          <p class="show-mobile"><span style="font-weight: 600; font-style: normal;">Spotfind. </span>Spotfind aims to help care-givers and care-receivers locate their frequently lost belongings. Items are often misplaced when either party tidies the house, and often leads to great frustration and tension. Extensive user research was conducted throughout our design process, implementing the insights found to ensure our solution matched what our users needed.</p>
+        </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item l">
         <img src="./Images/P_Spotfind/img_on white.png" class="bd-placeholder-img carousel_img" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <div class="container">
+        <div class="container hidden-mobile">
           <div class="carousel-caption right">
             <h1>Spotfind</h1>
             <p>Upon installation, the tags are attached to frequently lost documents and objects, and linked to the main device. Equipped with Radio Frequency technology, the device communicates with the tags, and informs users how far away their item is, guiding them throughout their house.</p>
             <p><a class="btn btn-lg btn-outline-light" href="#communication">➜ Communcation between devices.</a></p>
           </div>
         </div>
+        <div class="mobile-carousel-caption">
+          <p class="show-mobile"><span style="font-weight: 600; font-style: normal;">Spotfind. </span>Upon installation, the tags are attached to frequently lost documents and objects, and linked to the main device. Equipped with Radio Frequency technology, the device communicates with the tags, and informs users how far away their item is, guiding them throughout their house.</p>
+        </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item r">
         <img src="./Images/P_Spotfind/img_using_envelope.png" class="bd-placeholder-img carousel_img" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <div class="container">
+        <div class="container hidden-mobile">
           <div class="carousel-caption left">
             <h1>Spotfind</h1>
             <p>When an item is lost, the users select which tag they wish to find, initiating communication. As users roam their house, the main device will vibrate with varying intensity and activate the LEDs to display how far away the tag is. Thus, guiding the users towards their item until they find it.</p>
             <p><a class="btn btn-lg btn-outline-light" href="#user_experience">➜ User experience</a></p>
           </div>
+        </div>
+        <div class="mobile-carousel-caption">
+          <p class="show-mobile"><span style="font-weight: 600; font-style: normal;">Spotfind. </span>When an item is lost, the users select which tag they wish to find, initiating communication. As users roam their house, the main device will vibrate with varying intensity and activate the LEDs to display how far away the tag is. Thus, guiding the users towards their item until they find it.</p>
         </div>
       </div>
     </div>
@@ -251,26 +260,29 @@
 </main>
 
 <hr style="margin: 5rem 0 2rem 5%; width: 90%;">
-<footer class="footer mt-auto py-3 bg-light">
-  <div class="d-flex justify-content-center">
-    <div style="display: flex;">
-        <img src="./Images/Email Icon.png" class="footer_icon">
-        <p style="font-size: 1vw; line-height: 2.3vw;">clemence.sulmont@gmail.com</p>
+<footer class="footer mt-auto py-3 bg-light" style="width: 70%; margin-left: 15%;">
+  <div class="d-flex justify-content-center row gap-3">
+    <div class="col-md-7 footer_col">
+      <h3>CONTACT ME :</h3>
     </div>
-    <div style="display: flex; margin-left: 10%;">
-        <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
-            <img src="./Images/LinkedIn Logo.png" class="footer_icon">
-        </a>
-        <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/" style="text-decoration: none; color: black;">
-            <p style="font-size: 1vw; line-height: 2.3vw;">www.linkedin.com/in/clémence-sulmont/</p>
-        </a>
+    <div class="col-md-5 footer_col">
+      <div>
+          <a href="mailto:clemence.sulmont@gmail.com" style="text-decoration: none; color: black;">
+              <p style="text-align: center;">clemence.sulmont@gmail.com</p>
+          </a>
+      </div>
+      <div>
+          <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/" style="text-decoration: none; color: black;">
+              <p style="text-align: center;">www.linkedin.com/in/clémence-sulmont/</p>
+          </a>
+      </div>
     </div>
   </div>
-  <p style="font-size: 1vw; text-align: center; line-height: 1.3vw; margin-top: 2vw;">This website was designed and created by Clémence Sulmont. <br> © 2022 Clémence Sulmont</p>
+  <p style="text-align: center; margin-top: 5rem;">This website was designed and created by Clémence Sulmont. <br> © 2022 Clémence Sulmont</p>
 </footer>
 
 
-<script src="./bootstrap.bundle.min.js"></script>  
+<script src="./Assets/Javascript/bootstrap.bundle.min.js"></script>  
 
       
   </body>

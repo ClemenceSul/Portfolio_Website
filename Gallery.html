@@ -69,7 +69,7 @@
       }
     </style>
 
-    <!-- Custom styles for this template -->
+    
     <link href="./main.css" rel="stylesheet">
   </head>
 
@@ -115,238 +115,240 @@
         </div>
       </nav>
 
-    <section class="gallery">
-        <div class="container" style="width: 100%;">
-            <div class="row">
-                <div class="gallery-filter">
-                    <span class="filter-item active" data-filter="all">All</span>
-                    <span class="filter-item" data-filter="creations">Creations</span>
-                    <span class="filter-item" data-filter="concepts">Concepts</span>
-                    <span class="filter-item" data-filter="sketches_graphics">Visualisation</span>
-                </div>
+      <section id="portfolio" class="portfolio" style="margin-top: 3rem;">
+        <div class="container">
+  
+          <ul id="portfolio-flters" class="d-flex justify-content-center">
+            <li data-filter="*" class="filter-active hidden-mobile">All</li>
+            <li data-filter=".filter-product" class="hidden-mobile">Products</li>
+            <li data-filter=".filter-concept" class="hidden-mobile">Concepts</li>
+            <li data-filter=".filter-visualisation" class="hidden-mobile">Visualisation</li>
+          </ul>
+  
+          <div class="row portfolio-container">
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/1.discover quiz.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Discover Windows</h4>
+                <a href="./Discover_Windows.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
             </div>
-    
-            <body onload="loadingTimer()" style="margin:0;"></body>
-    
-            <div class="square-holder" id="loader">
-                <div class="square"></div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product filter-concept">
+              <div class="portfolio-img"><img src="./Images/Gallery/2.device final.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Spotfind</h4>
+                <a href="./Spotfind.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
             </div>
-    
-            <div class="pictures" id="picture_block" style="display: none;">
-                <div class="gallery-item creations">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/color mind.png">
-                            <figcaption><span>COLOR MASTER - INTERACTIVE ROBOT</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item creations">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/device final.png">
-                            <figcaption><span>SPOTFINDER - ITEM TRACKER RENDER</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item sketches_graphics">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Carbon Neutral Housing_Page_04.jpg">
-                            <figcaption><span>CARBON NEUTRAL HOUSING - SKETCHES</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item creations">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/taking over.jfif">
-                            <figcaption><span>TAKING OVER - 3D PRINTED AUTOMATON</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item creations">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/dress black & white.png">
-                            <figcaption><span>BALL GOWN - B&W EFFECT</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item creations sketches_graphics">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/render4 1.png">
-                            <figcaption><span>RACE CAR - RENDER</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item creations">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/spofind.jpg">
-                            <figcaption><span>SPOTFIND - FUNCTIONNING PROTOTYPE</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item sketches_graphics">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Carbon Neutral Housing_Page_03.jpg">
-                            <figcaption><span>CARBON NEUTRAL HOUSING - SKETCHES</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item creations">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/sumo bot.JPG">
-                            <figcaption><span>SUMO BOT - WON COMPETITION</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item concepts">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Clem_Concepts_Booklet v29.jpg">
-                            <figcaption><span>EASYVAC - CONCEPT OVERVIEW</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item concepts sketches_graphics">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Lightning Path_Page_10.png">
-                            <figcaption><span>LIGHTING PATH - CONCEPT STORYBOARD</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item sketches_graphics">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Clem_Concepts_Booklet v2.jpg">
-                            <figcaption><span>UNDERSERVED USER RESEARCH</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item creations">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Tag final.png">
-                            <figcaption><span>SPOTFIND - TAG USAGE</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item concepts sketches_graphics">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Clem_Concepts_Booklet v210.jpg">
-                            <figcaption><span>EASYVAC - EXPLODED VIEW</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item sketches_graphics">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Individual_v52_Page_03.jpg">
-                            <figcaption><span>ATHLETE CURRENT TREATMENT STORYBOARD</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item concepts sketches_graphics">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Lightning Path_Page_09.png">
-                            <figcaption><span>LIGHTING PATH - FINAL CONCEPT</span></figcaption>
-                        </figure>
-                    </div>
-                </div>			
-                  <div class="gallery-item creations">
-                      <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/dress street.png">
-                            <figcaption><span>BALL GOWN - SOLO PHOTOSHOOT</span></figcaption>
-                        </figure>
-                      </div>
-                  </div>
-                <div class="gallery-item creations">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/jaguar pillow.jpg">
-                            <figcaption><span>LOCKSTICH CUSHION - LEOPARD</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item sketches_graphics">
-                    <div class="gallery-item-inner white">
-                        <figure>
-                            <img src="./Images/Gallery/Sustainable Shampoo Analysis_Page_04.png">
-                            <figcaption><span>REFILL SHAMPOO - MARKET RESEARCH</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item creations sketches_graphics">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/render5 3.png">
-                            <figcaption><span>RACE CAR - RENDER</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item concepts sketches_graphics">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Individual_v52_Page_09.jpg">
-                            <figcaption><span>ATHLETE TREATMENT - CONCEPT COMPARISON</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item concepts sketches_graphics">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Urban Car Aerodynamics_Page_04.jpg">
-                            <figcaption><span>URBAN CAR - SKETCHES</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item creations">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/Card mat.JPG">
-                            <figcaption><span>PATCHWORK - CARD GAME MAT</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="gallery-item creations">
-                    <div class="gallery-item-inner">
-                        <figure>
-                            <img src="./Images/Gallery/wolf pillow.jpg">
-                            <figcaption><span>LOCKSTICH CUSHION - WOLF</span></figcaption>
-                        </figure>
-                    </div>
-                </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/3.color mind.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Color Master</h4>
+                <a href="./Color_Master.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
             </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-visualisation">
+              <div class="portfolio-img"><img src="./Images/Gallery/4.car metal.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Race Car</h4>
+                <a href="./Race_Car.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-visualisation">
+              <div class="portfolio-img"><img src="./Images/Gallery/5.Carbon Neutral Housing_Page_04.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Tiny House (sketches)</h4>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/6.jaguar pillow.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Jaguar pillow (Lockstich)</h4>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-concept">
+              <div class="portfolio-img"><img src="./Images/Gallery/sketch.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Sensko</h4>
+                <a href="./Sensko.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/7.taking over.jfif" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Taking Over</h4>
+                <a href="./Taking_Over.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/8.dress black & white.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Ball Gown</h4>
+                <a href="./Ball_Gown.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-concept filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/9.sensko.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Sensko</h4>
+                <a href="./Sensko.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-concept">
+              <div class="portfolio-img"><img src="./Images/Gallery/10.Clem_Concepts_Booklet v29.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>EasyVac (Vaccum concept)</h4>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product filter-concept">
+              <div class="portfolio-img"><img src="./Images/Gallery/11.Tag final.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Spotfind</h4>
+                <a href="./Spotfind.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/12.sumo bot.JPG" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Sumo Bot</h4>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/13.color master.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Color Master</h4>
+                <a href="./Color_Master.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/14.spofind.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Spotfind</h4>
+                <a href="./Spotfind.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/15.discover_menu.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Discover Windows</h4>
+                <a href="./Discover_Windows.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-concept">
+              <div class="portfolio-img"><img src="./Images/Gallery/16.Lightning Path_Page_10.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Lightning Path (Floor tiles concept)</h4>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-visualisation">
+              <div class="portfolio-img"><img src="./Images/Gallery/17.car b&w.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Race Car</h4>
+                <a href="./Race_Car.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/18.Card mat.JPG" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Card Mat (Patchwork)</h4>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-visualisation">
+              <div class="portfolio-img"><img src="./Images/Gallery/19..jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>EasyVac (Vaccum concept)</h4>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/20.dress street.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Ball Gown</h4>
+                <a href="./Ball_Gown.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-visualisation">
+              <div class="portfolio-img"><img src="./Images/Gallery/21.Sustainable Shampoo Analysis_Page_04.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Refill Shampoo - Sustainability Analysis</h4>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-visualisation filter-concept">
+              <div class="portfolio-img"><img src="./Images/Gallery/22.color cad.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Color Master</h4>
+                <a href="./Color_Master.html"><img src="./Images/Gallery/plus_sign.png" class="details-link"></a>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-concept">
+              <div class="portfolio-img"><img src="./Images/Gallery/23.Lightning Path_Page_09.png" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Lightning Path (Floor tiles concept)</h4>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-img"><img src="./Images/Gallery/24.wolf pillow.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Wolf pillow (Lockstich)</h4>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-visualisation filter-concept">
+              <div class="portfolio-img"><img src="./Images/Gallery/25.Urban Car Aerodynamics_Page_04.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Futuristic urban car (sketches)</h4>
+              </div>
+            </div>
+  
+          </div>
         </div>
-    </section>
+      </section><!-- End My Portfolio Section -->
     
     <hr style="margin: 5rem 0 2rem 5%; width: 90%;">
-    <footer class="footer mt-auto py-3 bg-light">
-      <div class="d-flex justify-content-center">
-        <div style="display: flex;">
-            <img src="./Images/Email Icon.png" class="footer_icon">
-            <p style="font-size: 1vw; line-height: 2.3vw;">clemence.sulmont@gmail.com</p>
+    <footer class="footer mt-auto py-3 bg-light" style="width: 70%; margin-left: 15%;">
+        <div class="d-flex justify-content-center row gap-3">
+          <div class="col-md-7 footer_col">
+            <h3>CONTACT ME :</h3>
+          </div>
+          <div class="col-md-5 footer_col">
+            <div>
+                <a href="mailto:clemence.sulmont@gmail.com" style="text-decoration: none; color: black;">
+                    <p style="text-align: center;">clemence.sulmont@gmail.com</p>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/" style="text-decoration: none; color: black;">
+                    <p style="text-align: center;">www.linkedin.com/in/clémence-sulmont/</p>
+                </a>
+            </div>
+          </div>
         </div>
-        <div style="display: flex; margin-left: 10%;">
-            <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/">
-                <img src="./Images/LinkedIn Logo.png" class="footer_icon">
-            </a>
-            <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/" style="text-decoration: none; color: black;">
-                <p style="font-size: 1vw; line-height: 2.3vw;">www.linkedin.com/in/clémence-sulmont/</p>
-            </a>
-        </div>
-      </div>
-      <p style="font-size: 1vw; text-align: center; line-height: 1.3vw; margin-top: 2vw;">This website was designed and created by Clémence Sulmont. <br> © 2022 Clémence Sulmont</p>
-    </footer>
+        <p style="text-align: center; margin-top: 5rem;">This website was designed and created by Clémence Sulmont. <br> © 2022 Clémence Sulmont</p>
+      </footer>
     <script>
         //Loading
         var timer;
@@ -387,7 +389,9 @@
     
 
 
-
-    <script src="./bootstrap.bundle.min.js"></script>  
+    <script src="./Assets/Javascript/isotope.pkgd.min.js"></script>
+    <script src="./Assets/Javascript/swiper-bundle.min.js"></script> 
+    <script src="./Assets/Javascript/bootstrap.bundle.min.js"></script>  
+    <script src="./Assets/Javascript/gallery.js"></script>  
   </body>
 </html>
