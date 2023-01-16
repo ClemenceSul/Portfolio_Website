@@ -157,16 +157,6 @@ body {
   width: 100%;
 }
 
-.carousel-item.race-car {
-  width: auto;
-  height: 56rem;
-}
-
-.carousel-item.race-car img {
-  width: auto;
-  height: 56rem;
-}
-
 .carousel-caption.left {
   margin-left: -5vw;
 }
@@ -627,6 +617,8 @@ figure:hover figcaption {
 */
 .mobile-carousel-caption {
   margin: 0.5rem 2rem 0 2rem;
+  text-align: center;
+  font-style: italic;
 }
 
 .show-mobile {
@@ -639,5 +631,21 @@ figure:hover figcaption {
   }
   .show-mobile {
     display: inline;
+  }
+  .carousel-item.r img {
+    width: 200%;
+    margin-left: -75%;
+  }
+  .carousel-item.m img {
+    width: 200%;
+    margin-left: -50%;
+  }
+  .carousel-item.l img {
+    width: 200%;
+    margin-left: -25%;
+  }
+  .carousel-item.ll img {
+    width: 200%;
+    margin-left: -25%;
   }
 }/*# sourceMappingURL=main.css.map */
