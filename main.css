@@ -121,10 +121,11 @@ body {
 }
 
 #index_text_div {
-  margin-top: 27%;
+  margin-top: 30rem;
   margin-left: 70%;
   position: relative;
   z-index: 5;
+  transition: transform 0.5s ease;
 }
 
 /*
@@ -804,10 +805,21 @@ figure:hover figcaption {
 
 .footer_col p:hover {
   transform: translateY(-2px);
-  color: blue;
   text-decoration: underline;
 }
 
+@media (max-width: 1500px) {
+  #index_text_div {
+    transform: translateX(-25%) translateY(5rem);
+  }
+}
+@media (max-width: 1300px) {
+  #index_text_div {
+    width: 15rem;
+    transform: translateX(0%);
+    text-align: center;
+  }
+}
 @media (max-width: 1000px) {
   .hidden-mobile {
     display: none;
@@ -835,5 +847,10 @@ figure:hover figcaption {
     width: 90%;
     margin-left: 5%;
     margin-top: 5rem;
+  }
+  #index_text_div {
+    text-align: center;
+    width: 17rem;
+    transform: translateX(-40%) translateY(5rem);
   }
 }/*# sourceMappingURL=main.css.map */
