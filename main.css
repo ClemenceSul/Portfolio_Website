@@ -853,4 +853,15 @@ figure:hover figcaption {
     width: 17rem;
     transform: translateX(-40%) translateY(5rem);
   }
+}
+@media (max-width: 600px) {
+  .hidden-mobile-xs {
+    display: none;
+  }
+  #index_text_div {
+    margin-top: 30%;
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
 }/*# sourceMappingURL=main.css.map */
