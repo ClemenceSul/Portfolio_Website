@@ -18,84 +18,23 @@
     <link href="./bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xqf1uow.css">
 
-
-    <style>
-        .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
-
-    <!-- Custom styles for this template -->
+    <!-- Website styles -->
     <link href="./main.css" rel="stylesheet">
   </head>
 
-<!-- The following line doesn't impact the header -->
-  <body class="text-start text-bg-light" style="overflow: hidden; height: 100%;">
-    <!-- 
-    Header 
-    -->
-
-    <nav class="navbar navbar-expand-md the_header" aria-label="Fourth navbar example" style="position: relative; z-index: 2;">
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md the_header">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html" style="margin-right: 0;"><h3>Clémence Sulmont</h3></a>
-        <button style="margin-left: 0;" class="navbar-toggler justify-self-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand" href="./index.html"><h3>Clémence Sulmont</h3></a>
   
         <div class="nav nav-masthead collapse navbar-collapse justify-content-end float-md-end" id="navbarsExample04">
           <ul class="navbar-nav me-2 mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link fw-semibold fs-5 py-1 px-0" aria-current="page" href="./work.html">Portfolio</a>
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./work.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold fs-5 py-1 px-0" aria-current="page" href="./Gallery.html">Gallery</a>
+              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./Gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./About_Me.html">About</a>
@@ -105,69 +44,14 @@
       </div>
     </nav>
 
-    <!-- Slideshow  -->
-    <div class="tilt hidden-mobile-xs">
-      <div class="slider_2">
-        <div class="slide-track_2">
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Color Master.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Discover Windows.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Dress.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Race Car.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Sensko.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Spotfind.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Taking Over.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Color Master.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Discover Windows.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Dress.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Race Car.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Sensko.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Spotfind.png"/>
-            </div>
-            <div class="slide_2">
-                <img src="./Images/Portfolio_Menu/Taking Over.png"/>
-            </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="w-100 d-flex" id="index_img_div">
-        <!-- <img src="./Images/IMG_E2169_cleaned.png" id="index_img"> -->
+
+    <div class="w-100 d-flex">
         <div id="index_text_div">
-            <!-- <h4>Hi! I'm</h4> -->
             <h1 style="margin-top: 1rem; font-family: hobeaux, sans-serif; font-style: normal; font-weight: 500; font-size: 3rem;">Clémence Sulmont</h1>
             <h4 style="margin-top: 1rem;">Designer • Engineer • Developer</h4>
             <a role="button" class="btn btn-action btn-lg px-4 gap-3" style="margin-top: 2rem;" href="./work.html">Portfolio ➜</a>
         </div>
     </div>
-    
-
-
-
-    <script src="./Assets/Javascript/bootstrap.bundle.min.js"></script>  
   </body>
 </html>
