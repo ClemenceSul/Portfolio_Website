@@ -91,14 +91,6 @@
 }
 
 /* last gallery */
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-150vw);
-  }
-}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -134,8 +126,7 @@
   top: 0;
 }
 .slider .slide-track {
-  -webkit-animation: scroll 30s linear infinite;
-          animation: scroll 30s linear infinite;
+  animation: scroll 30s linear infinite;
   display: flex;
   width: 300vw;
 }
