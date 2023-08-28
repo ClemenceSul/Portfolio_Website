@@ -1,11 +1,17 @@
 /*
  * BASE STRUCTURE OF PAGE & CUSTOM COMPONENTS ______________________________
  */
+:root {
+  --dark-blue: #002B5B;
+  --red-orange: #EA5455;
+  --black: #333333;
+}
+
 body {
   height: auto;
   width: 100%;
-  color: #000 !important;
-  background-color: RGBA(248, 249, 250, 1) !important;
+  color: var(--black) !important;
+  background-color: #FEFCF8 !important;
 }
 
 .cover-container {
@@ -13,15 +19,16 @@ body {
 }
 
 .btn-action {
-  background-color: rgba(230, 0, 126, 0.7);
-  outline-color: rgb(230, 0, 126);
+  background-color: var(--red-orange);
+  outline: none;
   color: #fff;
   font-weight: 700;
+  border-radius: 3px;
 }
 
 .btn-action:hover {
-  background-color: rgb(230, 0, 126);
-  outline-color: rgb(230, 0, 126);
+  background-color: var(--red-orange);
+  outline: none;
   color: #fff;
 }
 
@@ -38,11 +45,35 @@ body {
     font-size: 3.5rem;
   }
 }
+h3 {
+  font-family: "Francois One", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
 /* 
  * HEADER ___________________________________________________________________
  */
 .the_header {
-  background-color: rgb(248, 249, 250);
   padding: 0.5rem 2rem 0.5rem 1rem;
   position: relative;
   z-index: 2;
@@ -50,24 +81,24 @@ body {
 
 .navbar-brand {
   /* My name in the header */
-  font-family: hobeaux, sans-serif;
-  font-style: normal;
-  font-weight: 500;
   margin-top: 0.2rem;
   margin-right: 0;
+  color: var(--dark-blue);
 }
 
 .nav-masthead .nav-link {
   /* Unselected button color */
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--dark-blue);
   /* Size of line under buttons */
   border-bottom: 0.2rem solid transparent;
+  /* Button text style - weight and size are set with bootstrap classes */
+  font-family: "roboto", sans-serif;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
   /* Color of the bar under button when hovered upon */
-  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-bottom-color: var(--red-orange);
 }
 
 .nav-masthead .nav-item .nav-link {
@@ -77,9 +108,9 @@ body {
 
 .nav-masthead .active {
   /* Text color of selected button */
-  color: #000;
+  color: var(--black);
   /* Color of line under selected button */
-  border-bottom-color: #000;
+  border-bottom-color: var(--black);
 }
 
 /* 
@@ -100,12 +131,102 @@ body {
 /*
  * LANDING PAGE ______________________________________________________
 */
-#index_text_div {
-  margin-top: 30rem;
-  margin-left: 70%;
-  position: relative;
-  z-index: 5;
-  transition: transform 0.5s ease;
+#top_section {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#top_section img {
+  width: 100%;
+}
+
+#top-text {
+  position: absolute;
+  width: 50%;
+  left: 47%;
+  top: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#top-text h3 {
+  color: var(--dark-blue);
+}
+
+#frames-section {
+  width: 100%;
+  margin-top: 900px;
+  background-image: url(./Images/FrameBackground.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.oneFrame {
+  display: flex;
+  align-items: flex-end;
+}
+
+#frame-l {
+  padding-top: 175px;
+  padding-left: 175px;
+}
+
+#frame-r {
+  padding-top: 200px;
+  padding-left: 300px;
+}
+
+.photoFrame {
+  width: 1000px;
+}
+
+.frameCard {
+  background-color: white;
+  padding: 10px;
+  width: 350px;
+  margin: 0px 20px 23px 20px;
+  box-shadow: -2px 4px 4px 0 rgba(0, 0, 0, 0.25), 0px 0px 4px 0 rgba(0, 0, 0, 0.1); /* Second shadow */
+}
+
+.more_details {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: right;
+  margin-top: 5px;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+
+.more_details p:hover {
+  font-weight: 700;
+}
+
+.button-action {
+  background-color: var(--red-orange);
+  border-radius: 3px;
+  width: 300px;
+  justify-content: center;
+  gap: 10px;
+  height: 50px;
+  display: flex;
+}
+
+.button-action p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.center-button-div {
+  width: 100%;
+  padding-left: calc(50% - 150px);
+  padding-top: 100px;
+  height: 300px;
 }
 
 /*
@@ -130,8 +251,8 @@ body {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
-  margin: 0 auto;
+  background-color: var(--red-orange);
+  margin: 20px auto 0 auto;
 }
 
 .work-box {

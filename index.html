@@ -16,7 +16,7 @@
     <meta name="author" content="Clémence Sulmont">
     <title>Clémence Sulmont</title>
     <link href="./bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/xqf1uow.css">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
 
     <!-- Website styles -->
     <link href="./main.css" rel="stylesheet">
@@ -26,32 +26,103 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-md the_header">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"><h3>Clémence Sulmont</h3></a>
-  
+        <a class="navbar-brand" href="./index.html"><h3 style="opacity: 0;">Clémence Sulmont</h3></a>
         <div class="nav nav-masthead collapse navbar-collapse justify-content-end float-md-end" id="navbarsExample04">
-          <ul class="navbar-nav me-2 mb-2 mb-md-0">
+          <ul class="navbar-nav me-5 mb-md-0 gap-5">
             <li class="nav-item">
-              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./work.html">Portfolio</a>
+              <a class="nav-link fw-normal fs-5 py-1 px-0" href="./work.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./Gallery.html">Gallery</a>
+              <a class="nav-link fw-normal fs-5 py-1 px-0" href="./Gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold fs-5 py-1 px-0" href="./About_Me.html">About</a>
+              <a class="nav-link fw-normal fs-5 py-1 px-0" href="./About_Me.html">About</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-
-
-    <div class="w-100 d-flex">
-        <div id="index_text_div">
-            <h1 style="margin-top: 1rem; font-family: hobeaux, sans-serif; font-style: normal; font-weight: 500; font-size: 3rem;">Clémence Sulmont</h1>
-            <h4 style="margin-top: 1rem;">Designer • Engineer • Developer</h4>
-            <a role="button" class="btn btn-action btn-lg px-4 gap-3" style="margin-top: 2rem;" href="./work.html">Portfolio ➜</a>
+    <div id="top_section">
+        <img src="./Images/LandingPageTop.png">
+        <div id="top-text">
+            <h3 style="font-size: 2.75rem;">Hello! I'm</h3>
+            <h3 style="font-size: 5rem;">Clémence Sulmont</h3>
+            <h3 style="font-size: 1.75rem;">a product designer, meticulous engineer and avid learner.</h3>
         </div>
     </div>
+
+    <div id="frames-section">
+        <div class="oneFrame" id="frame-l">
+            <img class="photoFrame" src="./Images/Spotfind frame.png">
+            <div class="frameCard">
+                <p style="font-style: italic; font-weight: 600;">SpotFind</p>
+                <p>Spotfind aims to help care-givers and care-receivers locate their frequently lost belongings. UX, CAD, programming and electronics were used to create this product.</p>
+                <a href="./Spotfind.html">
+                    <div class="more_details" >
+                        <p>More details</p>
+                        <img class="icon" src="./Images/Icons/right_arrow.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="oneFrame" id="frame-r">
+            <div class="frameCard">
+                <p style="font-style: italic; font-weight: 600;">Color Master</p>
+                <p>Mastermind is a simple logic game in which the user attempts to find the hidden code through multiple iterations. Play against the Color Master, built and programmed to be a sassy opponent.</p>
+                <a href="./Color_Master.html">
+                    <div class="more_details" >
+                        <p>More details</p>
+                        <img class="icon" src="./Images/Icons/right_arrow.png">
+                    </div>
+                </a>
+            </div>
+            <img class="photoFrame" src="./Images/Colormasterframe.png">
+        </div>
+        <div class="oneFrame" id="frame-l">
+            <img class="photoFrame" src="./Images/DiscoverW frame.png">
+            <div class="frameCard">
+                <p style="font-style: italic; font-weight: 600;">Discover Windows</p>
+                <p>This webapp is an easy interactive guide to give the elderly the necessary tools to communicate, understand and use their computers.</p>
+                <a href="./Discover_Windows.html">
+                    <div class="more_details" >
+                        <p>More details</p>
+                        <img class="icon" src="./Images/Icons/right_arrow.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-button-div">
+        <a href="./work.html">
+            <div class="more_details button-action">
+                <p>See more of my work</p>
+                <img class="icon" src="./Images/Icons/Arrow white.png">
+            </div>
+        </a>
+    </div>
+
+    <hr style="margin: 5rem 0 2rem 5%; width: 90%;">
+      <footer class="footer mt-auto py-3" style="width: 70%; margin-left: 15%;">
+        <div class="d-flex justify-content-center row gap-3">
+          <div class="col-md-7 footer_col">
+            <h3>CONTACT ME :</h3>
+          </div>
+          <div class="col-md-5 footer_col">
+            <div>
+                <a href="mailto:clemence.sulmont@gmail.com" style="text-decoration: none; color: 333333;">
+                    <p style="text-align: center;">clemence.sulmont@gmail.com</p>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/cl%C3%A9mence-sulmont/" style="text-decoration: none; color: 333333;">
+                    <p style="text-align: center;">www.linkedin.com/in/clémence-sulmont/</p>
+                </a>
+            </div>
+          </div>
+        </div>
+        <p style="text-align: center; margin-top: 5rem;">This website was designed and created by Clémence Sulmont. <br> © 2022 Clémence Sulmont</p>
+      </footer>
   </body>
 </html>
