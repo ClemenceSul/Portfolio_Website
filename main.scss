@@ -142,8 +142,8 @@ p {
 #top-text {
   position: absolute;
   width: 50%;
-  left: 47%;
-  top: 350px;
+  left: 45%;
+  top: 45%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -151,13 +151,24 @@ p {
 
 #top-text h3 {
   color: var(--dark-blue);
+  position: relative;
+}
+
+#top-text h3:nth-of-type(1) {
+  font-size: 2.75rem;
+}
+#top-text h3:nth-of-type(2) {
+  font-size: 5rem;
+}
+#top-text h3:nth-of-type(3) {
+  font-size: 1.75rem;
 }
 
 #frames-section {
   width: 100%;
-  margin-top: 900px;
+  margin-top: 40%;
   background-image: url(./Images/FrameBackground.png);
-  background-size: 100%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
 }
 
@@ -168,12 +179,13 @@ p {
 
 #frame-l {
   padding-top: 175px;
-  padding-left: 175px;
+  padding-left: 10%;
 }
 
 #frame-r {
   padding-top: 200px;
-  padding-left: 300px;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .photoFrame {
@@ -726,17 +738,33 @@ figure:hover {
 /*
 * RESPONSIVENESS ____________________________________________________________
 */
-@media (max-width: 1500px) {
-  #index_text_div {
-    transform: translateX(-25%) translateY(5rem);
+@media (max-width: 1600px) {
+  .oneFrame {
+    flex-direction: column;
+  }
+  #frame-l {
+    align-items: flex-start;
+  }
+  #frame-r {
+    flex-direction: column-reverse;
   }
 }
 
 @media (max-width: 1300px) {
-  #index_text_div {
-    width: 15rem;
-    transform: translateX(0%);
-    text-align: center;
+  #top-text h3:nth-of-type(1) {
+    font-size: 1.9rem;
+  }
+  #top-text h3:nth-of-type(2) {
+    font-size: 3.5rem;
+  }
+  #top-text h3:nth-of-type(3) {
+    font-size: 1.225rem;
+  }
+  .photoFrame {
+    width: 85%;
+  }
+  #frame-r .photoFrame {
+    width: 100%;
   }
 }
 
@@ -768,10 +796,29 @@ figure:hover {
     margin-left: 5%; 
     margin-top: 5rem;
   }
-  #index_text_div {
-    text-align: center;
-    width: 17rem;
-    transform: translateX(-40%) translateY(5rem);
+  #top_section img {
+    display: none;
+  }
+  #top-text {
+    left: 10%;
+    top: 150px;
+    width: 80%;
+  }
+  #frame-l {
+    padding-left: 2.5%;
+  }
+  #frame-r {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+  }
+  .photoFrame {
+    width: 95%;
+  }
+}
+
+@media (max-width: 700px) {
+  #top-text {
+    top: 50px;
   }
 }
 
@@ -779,13 +826,9 @@ figure:hover {
   .hidden-mobile-xs {
     display: none;
   }
-  #index_text_div {
-    margin-top: 30%;
-    width: 100%;
-    margin-left: 0;
-    transform: none;
-  }
 }
+
+
 
 
 
