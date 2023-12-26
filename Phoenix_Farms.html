@@ -58,11 +58,11 @@
     <div class="carousel-inner">
       <div class="carousel-item m active">
         <!-- TODO change image -->
-        <img src="./Assets/Images/P_Color_Master/img_user_playing.png" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img src="./Assets/Images/P_Phoenix_Farms/carrousel img.png" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
         <div class="container hidden-mobile">
           <div class="carousel-caption right">
-            <h1>Phoenix Farms</h1>
-            <p>Fully self-sufficient, Phoenix Farm offers an innovative solution to cultivate crops efficiently and sustainably in some of the harshest environments on Earth. Tent structures protect the crops, with a fleet of DARTs (robotic entities) handling various tasks, using the resources available in the central unit.</p>
+            <h1 style="color: black;">Phoenix Farms</h1>
+            <p style="color: black;">Fully self-sufficient, Phoenix Farm offers an innovative solution to cultivate crops efficiently and sustainably in some of the harshest environments on Earth. Tent structures protect the crops, with a fleet of DARTs (robotic entities) handling various tasks, using the resources available in the central unit.</p>
             <!-- <p><a class="btn btn-lg btn-outline-light" href="#block_color">➜ Color detection</a></p> -->
           </div>
         </div>
@@ -72,11 +72,11 @@
       </div>
       <div class="carousel-item r">
         <!-- TODO change image -->
-        <img src="./Assets/Images/P_Color_Master/img_pushing_off.png" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img src="./Assets/Images/P_Phoenix_Farms/Central Unit Wireframe.png" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
         <div class="container hidden-mobile">
           <div class="carousel-caption left">
-            <h1>Phoenix Farms</h1>
-            <p>The central unit contains all critical, power demanding subsystems in a compact and easy to transport manner. The aim was to minimise the infrastructure surrounding each individual tent. Each unit can provide for up to 12 tents.</p>
+            <h1 style="color: black;">Phoenix Farms</h1>
+            <p style="color: black;">The central unit contains all critical, power demanding subsystems in a compact and easy to transport manner. The aim was to minimise the infrastructure surrounding each individual tent. Each unit can provide for up to 12 tents.</p>
             <!-- <p><a class="btn btn-lg btn-outline-light" href="#program_code">➜ Operating the Arms</a></p> -->
           </div>
         </div>
@@ -86,9 +86,9 @@
       </div>
       <div class="carousel-item l">
         <!-- TODO change image -->
-        <img src="./Assets/Images/P_Color_Master/img_box_inside.png" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img src="./Assets/Images/P_Phoenix_Farms/dart.png" width="auto" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
         <div class="container hidden-mobile">
-          <div class="carousel-caption right">
+          <div class="carousel-caption left">
             <h1>Phoenix Farms</h1>
             <p>The DARTs are capable of preparing the crops, delivering the appropriate nutrients, collecting the harvest and handling various failures. One of the DART's main feature is it's ability to work with others. Their underbelly was designed to enable the DARTs to handle bulkier machinery such as the seeder and crate support for harvesting.</p>
             <!-- <p><a class="btn btn-lg btn-outline-light" href="#design_cad">➜ CAD validation</a></p> -->
@@ -119,20 +119,20 @@
         <img src="./Assets/Images/P_Skills/S_Research.png" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
         <h2 class="fw-normal">In Depth Research</h2>
         <!-- TODO change text -->
-        <p>I developed cheap color sensors using RGB LEDs and CDS Photocells, calibrating them to each color. Each arm was individually motorized with a servo motor and controlled with an Arduino Mega 2650.</p>
-      </div>
-      <div class="col-lg-4">
-        <img src="./Assets/Images/P_Skills/S_Draw.png" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-        <h2 class="fw-normal">Ideation</h2>
-        <!-- TODO change text -->
-        <p>Multiple cardboard prototypes were built to refine the overall structure and shape of the box. The plywood pieces were then laser cutted, polished and assembled.</p>
+        <p>This project was centered around analysing what the world would look like in 30 years, and finding solutions to mitigate problems in 2042. As such, substantial research was done to piece together the future scenario and identify the tech enablers that would be available then.</p>
       </div>
       <div class="col-lg-4">
         <!-- TODO create icon -->
         <img src="./Assets/Images/P_Skills/S_User.png" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
         <h2 class="fw-normal">System Design</h2>
         <!-- TODO change text -->
-        <p>The Color Master was programmed in C++, and taught a variation of behaviors to grant it a ‘sassy’ personality, similar to the reactions a real opponent would have.</p>
+        <p>The solution proposed is the implementation of a fully autonomous agricultural system. Thus, the overall functionality of the system was primodial in all ideation sessions and I evaluated each part of Phoenix Farms to ensure they would work with the other subsystems.</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="./Assets/Images/P_Skills/S_Group.png" width="140" height="140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
+        <h2 class="fw-normal">COO Role</h2>
+        <!-- TODO change text -->
+        <p>In my group of 5, I took on the role of a COO during this project. I organised all the group meetings, notes, timeline, and coordinated the work between all other group members.</p>
       </div>
     </div>
 
@@ -141,40 +141,22 @@
 
     <hr class="featurette-divider" id="block_color">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Detecting block colors. <span class="text-muted">Without read-made color sensors.</span></h2>
-        <p class="lead">These color sensors were developed with an RGB LED and a CDS Photocell. Red, green and blue is flashed by the LED, and the corresponding reflected light perceived by the CDs Photocells is recorded. The difference in values, identified through a prior analysis, enables each color to be identified.</p>
-      </div>
-      <div class="col-md-5">
-        <img src="./Assets/Images/P_Color_Master/IMG_1518.jpg"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-      </div>
+    <p class="lead">The work I have done for this project can be seen in the final report available below. The video also available below was part of our presentation to a panel of experts and displays how our solution would operate.</p>
+
+    <div class="center-button-div">
+      <a href="./Assets/Images/P_Phoenix_Farms/Phoenix_Farms.pdf">
+          <div class="more_details button-action">
+              <p>Final Report</p>
+              <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+          </div>
+      </a>
     </div>
 
-    <hr class="featurette-divider" id="program_code">
+    <video controls style="width: 80%; margin-left: 10%; margin-top: 1em;">
+      <!-- FIXME video is missing  -->
+      <source src="./Assets/Images/P_Mobot/Mobot_Group 3.mp4" type="video/mp4">
+    </video> 
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Programming it's behavior. <span class="text-muted">Sassy like a real opponent.</span></h2>
-        <p class="lead">Robots lack the spontaneity and personality a human opponent would have. Therefore, a series of different movements were taught to the box and selected at random when blocks had to be pushed off.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="./Assets/Images/P_Color_Master/Artboard 3.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-      </div>
-    </div>
-
-    <hr class="featurette-divider" id="design_cad">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Validating design in CAD. <span class="text-muted">To avoid preventable errors.</span></h2>
-        <p class="lead">Prior to building the Color Master in plywood, a CAD model was created using Solidworks to ensure all components would fit together correctly. The edges of each piece was dented to enable an easier and more precise assembly.</p>
-      </div>
-      <div class="col-md-5">
-        <img src="./Assets/Images/P_Color_Master/Portfolio 1.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-      </div>
-    </div>
-    <!-- /END THE FEATURETTES -->
   </div><!-- /.container -->
 </main>
 
