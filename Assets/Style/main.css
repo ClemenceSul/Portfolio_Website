@@ -11,7 +11,7 @@ body {
   height: auto;
   width: 100%;
   color: var(--black) !important;
-  background-color: #FEFCF8 !important;
+  background-color: #F5F5F5 !important;
 }
 
 .cover-container {
@@ -447,20 +447,20 @@ a {
 /*
 * About Me page _____________________________________________________________
 */
-.my_Name {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 20%;
+.about-me-section {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4rem;
 }
 
-#CV_img {
-  width: 60%;
-  margin-left: 20%;
-  margin-top: 10rem;
-  box-shadow: -1px 1px 10px 0 rgba(0, 0, 0, 0.4);
+#section-1 {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+#section-2 {
+  display: flex;
 }
 
 /*
@@ -762,11 +762,6 @@ figure:hover figcaption {
     width: 200%;
     margin-left: -25%;
   }
-  #CV_img {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 5rem;
-  }
   #top_section img {
     display: none;
   }
@@ -784,6 +779,9 @@ figure:hover figcaption {
   }
   .photoFrame {
     width: 95%;
+  }
+  #section-1 {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 700px) {
