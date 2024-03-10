@@ -48,13 +48,28 @@
 
 
     <div id="top_section">
-        <img src="./Assets/Images/LandingPageTop.png">
-        <div id="top-text">
+        <img src="./Assets/Images/LandingPagePicMe.png">
+        <div class="w-100 pe-5">
+          <div id="top-text">
             <h3>Hello! I'm</h3>
             <h3>Clémence Sulmont</h3>
             <h3>a product designer, meticulous engineer and avid learner.</h3>
+          </div>
+          <div id="top-action-btns">
+            <a href="">
+              <div class="more_details button-action" id="contact-me-btn">
+                  <p>Contact me</p>
+              </div>
+            </a>
+            <a href="./work.html">
+              <div class="more_details button-secondary">
+                  <p>See my work</p>
+              </div>
+            </a>
+          </div>
         </div>
     </div>
+    <div id="top-line"></div>
 
     <div id="frames-section">
         <div class="oneFrame" id="frame-l">
@@ -128,5 +143,37 @@
         </div>
         <p style="text-align: center; margin-top: 5rem;">This website was designed and created by Clémence Sulmont. <br> © 2022 Clémence Sulmont</p>
       </footer>
+
+      <script>
+        document.getElementById('contact-me-btn').addEventListener('click', function() {
+          // Your email address
+          const email = 'clemence.sulmont@gmail.com';
+          
+          // Create a temporary input element to hold the email
+          const tempInput = document.createElement('input');
+          
+          // Append it to the body
+          document.body.appendChild(tempInput);
+          
+          // Set its value to the email address
+          tempInput.value = email;
+          
+          // Select the content of the input
+          tempInput.select();
+          tempInput.setSelectionRange(0, 99999); // For mobile devices
+          
+          // Copy the selected text to the clipboard
+          document.execCommand('copy');
+          
+          // Remove the temporary input from the document
+          document.body.removeChild(tempInput);
+          
+          // Alert the user
+          alert('Email address copied to clipboard: ' + email);
+        });
+
+
+      </script>
+
   </body>
 </html>
