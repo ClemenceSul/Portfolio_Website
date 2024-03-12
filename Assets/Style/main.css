@@ -83,12 +83,10 @@ p {
   /* My name in the header */
   margin-top: 0.2rem;
   margin-right: 0;
-  color: var(--dark-blue);
 }
 
 .nav-masthead .nav-link {
   /* Unselected button color */
-  color: var(--dark-blue);
   /* Size of line under buttons */
   border-bottom: 0.2rem solid transparent;
   /* Button text style - weight and size are set with bootstrap classes */
@@ -133,7 +131,7 @@ p {
 */
 #top_section {
   width: 100%;
-  padding-top: 3rem;
+  padding-top: 6rem;
   display: flex;
   gap: 3rem;
   align-items: flex-end;
@@ -172,7 +170,6 @@ p {
 }
 
 #top-text h3 {
-  color: var(--dark-blue);
   position: relative;
 }
 
@@ -407,7 +404,13 @@ a {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
+.featurette {
+  padding: 1.5rem 0;
+  align-items: center;
+}
+
 .featurette-heading {
+  margin-top: 1.5rem;
   letter-spacing: -0.05rem;
 }
 
@@ -415,10 +418,8 @@ a {
   .featurette-heading {
     font-size: 50px;
   }
-}
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+  .featurette p {
+    margin-bottom: 1.5rem;
   }
 }
 /*
