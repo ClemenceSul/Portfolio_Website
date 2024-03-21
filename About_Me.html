@@ -55,8 +55,8 @@
       </div>
     </div>
 
-    <div class="center-button-div">
-      <a href="./Assets/Images/About_Me/Clemence Sulmont - CV.pdf">
+    <div class="center-button-div pt-4" style="height: 150px;">
+      <a style="width: fit-content;" href="./Assets/Images/About_Me/Clemence Sulmont - CV.pdf">
           <div class="more_details button-action">
               <p>My CV</p>
               <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
@@ -65,14 +65,369 @@
     </div>
 
 
-    <!-- <div class="about-me-section">
+    <div class="about-me-section">
       <div class="title-box text-center">
         <h3 class="title-a">
           My Skills
         </h3>
         <div class="line-mf"></div>
       </div>
-      <div id="section-2" style="margin-top: 2vw;">
+      <div class="mb-5">
+        <h2>
+          Hardware & Robotics
+        </h2>
+        <div class="skills_carrousel">
+          <button class="carrousel_btn" id="prev_hardware"><</button>
+          <div class="skills_container hardware_container">
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Hardware/ColorMaster_Final.png">
+              </div>
+              <div class="skills_overlay">
+                <a href="./Color_Master.html">
+                  <div class="more_details" >
+                      <p>Color Master</p>
+                      <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+                  </div>
+                </a>
+              </div>
+              <p class="mt-3">Laser cutting and wood working</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Hardware/DEX_Hand.png">
+              </div>
+              <p class="mt-3">Robotic hand assembly (DEX Hand)</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Hardware/LightsOn.png">
+              </div>
+              <div class="skills_overlay">
+                <a href="./Lights_on.html">
+                  <div class="more_details" >
+                      <p>Lights On</p>
+                      <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+                  </div>
+                </a>
+              </div>
+              <p class="mt-3">Combining sensors to collect data</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Hardware/ICRA.png">
+              </div>
+              <p class="mt-3">Designing robotics lessons for children</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Hardware/mobot.png">
+              </div>
+              <div class="skills_overlay">
+                <a href="./Mobot.html">
+                  <div class="more_details" >
+                      <p>Mobot</p>
+                      <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+                  </div>
+                </a>
+              </div>
+              <p class="mt-3">Rapid prototyping of robot</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Hardware/Spotfind.png">
+              </div>
+              <div class="skills_overlay">
+                <a href="./Spotfind.html">
+                  <div class="more_details" >
+                      <p>Spotfind</p>
+                      <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+                  </div>
+                </a>
+              </div>
+              <p class="mt-3">Controlling an item tracker with Raspberry Pi</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Hardware/SumoBot.png">
+              </div>
+              <p class="mt-3">Rapid prototyping of robot with a team</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Hardware/ColorMaster_CAD.png">
+              </div>
+              <div class="skills_overlay">
+                <a href="./Color_Master.html">
+                  <div class="more_details" >
+                      <p>Color Master</p>
+                      <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+                  </div>
+                </a>
+              </div>
+              <p class="mt-3">Optimising assembly of electronic components</p>
+            </div>
+          </div>
+          <button class="carrousel_btn" id="next_hardware">></button>
+        </div>
+
+        <script>
+          document.getElementById('next_hardware').addEventListener('click', function() {
+              document.querySelector('.hardware_container').scrollLeft += 500; // Scrolls right
+          });
+  
+          document.getElementById('prev_hardware').addEventListener('click', function() {
+              document.querySelector('.hardware_container').scrollLeft -= 500; // Scrolls left
+          });
+          </script>
+      </div>
+
+
+      <div class="mb-5 pt-5">
+        <h2>
+          Product Design
+        </h2>
+        <div class="skills_carrousel">
+          <button class="carrousel_btn" id="prev_product"><</button>
+          <div class="skills_container product_container">
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Product/CompactKeyboard.png">
+              </div>
+              <p class="mt-3">Concept exploration of a 1-hand keyboard through CAD</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Product/EasyVac_summary.png">
+              </div>
+              <p class="mt-3">Concept exploration of a vaccum through CAD</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Product/finite.png">
+              </div>
+              <p class="mt-3">Developing a game to teach about limited natural resources</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Product/FoldingShoe_sketch.png">
+              </div>
+              <div class="skills_overlay">
+                <a href="./Sensko.html">
+                  <div class="more_details" >
+                      <p>Sensko</p>
+                      <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+                  </div>
+                </a>
+              </div>
+              <p class="mt-3">Sketching a folding shoe concept to reduce friction</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Product/FutureCar.png">
+              </div>
+              <p class="mt-3">Sketching a futuristic car</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Product/LightingPath_Sketch.png">
+              </div>
+              <p class="mt-3">Defining en energy recuperation flooring</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Product/LigntingPath_Story.png">
+              </div>
+              <p class="mt-3">Defining the solution within user context</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Product/Sensko_prototype.png">
+              </div>
+              <div class="skills_overlay">
+                <a href="./Sensko.html">
+                  <div class="more_details" >
+                      <p>Sensko</p>
+                      <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+                  </div>
+                </a>
+              </div>
+              <p class="mt-3">Prototyping a folding shoe designed to reduce friction</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Product/EasyVac_exploded.png">
+              </div>
+              <p class="mt-3">Concept exploration of a vaccum through CAD</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Product/Spotfind_tags.png">
+              </div>
+              <div class="skills_overlay">
+                <a href="./Spotfind.html">
+                  <div class="more_details" >
+                      <p>Spotfind</p>
+                      <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+                  </div>
+                </a>
+              </div>
+              <p class="mt-3">CAD design of item tracking tags</p>
+            </div>
+      
+          </div>
+          <button class="carrousel_btn" id="next_product">></button>
+        </div>
+      
+        <script>
+          document.getElementById('next_product').addEventListener('click', function() {
+              document.querySelector('.product_container').scrollLeft += 500; // Scrolls right
+          });
+      
+          document.getElementById('prev_product').addEventListener('click', function() {
+              document.querySelector('.product_container').scrollLeft -= 500; // Scrolls left
+          });
+        </script>
+      </div>
+
+          
+
+
+      <div class="mb-5 pt-5">
+        <h2>
+          Software
+        </h2>
+        <div class="skills_carrousel">
+          <button class="carrousel_btn" id="prev_software"><</button>
+          <div class="skills_container software_container">
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Software/DescoverWindows.png">
+              </div>
+              <div class="skills_overlay">
+                <a href="./Discover_Windows.html">
+                  <div class="more_details" >
+                      <p>Discover Windows</p>
+                      <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+                  </div>
+                </a>
+              </div>
+              <p class="mt-3">Coding and design of interactive webapp</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Software/LunchLab.png">
+              </div>
+              <div class="skills_overlay">
+                <a href="./LunchLab.html">
+                  <div class="more_details" >
+                      <p>LunchLab</p>
+                      <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+                  </div>
+                </a>
+              </div>
+              <p class="mt-3">Coding of start-up website</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Software/portfolio.png">
+              </div>
+              <p class="mt-3">Complete coding and design of this portfolio</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Software/LigntsOn_app.png">
+              </div>
+              <div class="skills_overlay">
+                <a href="./Lights_on.html">
+                  <div class="more_details" >
+                      <p>Lights On</p>
+                      <img class="icon" src="./Assets/Images/Icons/Arrow white.png">
+                  </div>
+                </a>
+              </div>
+              <p class="mt-3">Coding of webapp to display complex data</p>
+            </div>
+
+          </div>
+          <button class="carrousel_btn" id="next_software">></button>
+        </div>
+
+        <script>
+          document.getElementById('next_software').addEventListener('click', function() {
+              document.querySelector('.software_container').scrollLeft += 500; // Scrolls right
+          });
+
+          document.getElementById('prev_software').addEventListener('click', function() {
+              document.querySelector('.software_container').scrollLeft -= 500; // Scrolls left
+          });
+        </script>
+      </div>
+
+
+
+
+      <div class="mb-5 pt-5">
+        <h2>
+          Other
+        </h2>
+        <div class="skills_carrousel">
+          <button class="carrousel_btn" id="prev_other"><</button>
+          <div class="skills_container other_container">
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Other/BallGown.png">
+              </div>
+              <p class="mt-3">Sewing an intricate ball gown</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Other/House_sketches.png">
+              </div>
+              <p class="mt-3">Pencil sketching of a house</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Other/RaceCar_metal.png">
+              </div>
+              <p class="mt-3">CAD of a Lego Race Car</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Other/TakingOver.png">
+              </div>
+              <p class="mt-3">Design of a 3D Printed mechanism</p>
+            </div>
+            <div style="position: relative;">
+              <div class="skills_frame">
+                <img src="./Assets/Images/About_Me/Other/RaceCar_blue.png">
+              </div>
+              <p class="mt-3">CAD of a Lego Race Car</p>
+            </div>
+
+          </div>
+          <button class="carrousel_btn" id="next_other">></button>
+        </div>
+
+        <script>
+          document.getElementById('next_other').addEventListener('click', function() {
+              document.querySelector('.other_container').scrollLeft += 500; // Scrolls right
+          });
+
+          document.getElementById('prev_other').addEventListener('click', function() {
+              document.querySelector('.other_container').scrollLeft -= 500; // Scrolls left
+          });
+        </script>
+      </div>
+
+      <div style="width: 100%; height: 6rem;">
+
+      </div>
+
+
+
+
+      <!-- <div id="section-2" style="margin-top: 2vw;">
         <div class="col-md-4 order-md-2" style="align-self: center; border: 1px solid green;">
           <h4 style="position: relative; text-align: center; top: 1vw; margin-bottom: 3vw;">UX/UI</h4>
           <ul>
@@ -103,8 +458,8 @@
             <li><h4>LEGO Mindstorm EV3 and NXT</h4></li>
           </ul>
         </div>
-      </div>
-    </div> -->
+      </div> -->
+    </div>
 
     <hr style="margin: 5rem 0 2rem 5%; width: 90%;">
     <footer class="footer mt-auto py-3" style="width: 70%; margin-left: 15%;">
