@@ -262,11 +262,12 @@ a {
   p {
     color: var(--red-orange);
   }
-}
+} 
 
 .center-button-div {
   width: 100%;
-  padding-left: calc(50% - 150px);
+  display: flex;
+  justify-content: center;
   padding-top: 100px;
   height: 300px;
 }
@@ -511,16 +512,104 @@ $width: 500px;
   // margin-bottom: 8rem;
 }
 
-#section-1 {
-  display: flex;
-  gap: 4rem;
-  justify-content: center;
-}
-
 #section-2 {
   display: flex;
-  
 }
+
+.skills_carrousel {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.skills_container {
+  display: flex;
+  gap: 3rem;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-behavior: smooth; /* Optional: Enables smooth scrolling */
+}
+
+.item {
+  width: 300px; /* Set fixed width for each item */
+  margin-right: 10px; /* Adds space between items */
+  text-align: center;
+}
+
+/* Optional: Style for hiding scrollbar (Chrome, Safari, Edge) */
+.skills_container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: Style for hiding scrollbar (Firefox) */
+.skills_container {
+  scrollbar-width: none; /* Firefox */
+}
+
+.carrousel_btn {
+  background-color: transparent;
+  border: none;
+  padding: 0 0.5rem;
+  @extend h3;
+  transition: transform 0.3s ease;
+}
+
+.carrousel_btn:hover {
+  font-weight: 700;
+}
+
+.carrousel_btn:focus {
+  outline: none;
+}
+
+
+
+
+
+
+.skills_frame {
+  width: fit-content;
+  padding: 1.5rem;
+  border: 6px solid var(--black);
+  background-color: white;
+  box-shadow: -4px 5px 12px -1px rgba(0, 0, 0, 0.26), -2px 2px 12px 0px rgba(0, 0, 0, 0.25) inset;
+
+  img {
+    height: 200px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.35) inset;
+  }
+}
+
+.skills_overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  height: calc(200px + 3rem + 12px);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  p {
+    color: white;
+    font-size: 1.5rem;
+
+  }
+
+  p:hover {
+    font-weight: 500;
+  }
+
+}
+
+.skills_overlay:hover {
+  opacity: 1;
+}
+
+
+
+
+
 
 /*
 * Gallery Page _____________________________________________________________
